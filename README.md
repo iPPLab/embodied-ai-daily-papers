@@ -1,5 +1,7 @@
 # Embodied AI Daily Papers
 
+Website: [Embodied AI Daily Papers](https://ipplab.github.io/embodied-daily-papers-site/)
+
 Hugging Face 具身智能论文周列表，支持中英文总结及黑白主题。
 
 - 每日论文：按周归档，以 HF 收录日期分组；一句话总结默认折叠。
