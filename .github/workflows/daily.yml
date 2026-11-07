@@ -1,0 +1,222 @@
+name: Daily embodied papers
+
+on:
+  schedule:
+    - cron: '17 2 * * *'
+  workflow_dispatch:
+    inputs:
+      refresh_only:
+        description: '更新页面、英文总结/Slides 和代码链接；复用现有中文 PPT'
+        type: boolean
+        default: false
+      date:
+        description: 'HF 日报结束日期 YYYY-MM-DD，留空为今天'
+        required: false
+        type: string
+      days:
+        description: '补拉天数（1–31）'
+        default: '3'
+        required: true
+        type: string
+      limit:
+        description: '生成数量，0 表示全部；首次验证可填 1'
+        default: '0'
+        required: true
+        type: string
+      paper_ids:
+        description: '仅补跑已确认入选的 HF 论文 ID，逗号分隔；留空按日正常筛选'
+        default: ''
+        required: false
+        type: string
+
+concurrency:
+  group: embodied-daily-publication
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  generate:
+    if: ${{ github.event_name == 'workflow_dispatch' || vars.DAILY_ENABLED == 'true' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 330
+    env:
+      PUBLIC_SITE_OWNER: ${{ github.repository_owner }}
+      PDF_STORAGE_OWNER: ${{ vars.PDF_STORAGE_OWNER }}
+    permissions:
+      contents: write
+      pages: read
+    steps:
+      - name: Check out public site
+        uses: actions/checkout@v6
+        with:
+          path: public
+          ref: main
+      - name: Check out private engine
+        uses: actions/checkout@v6
+        with:
+          repository: ${{ vars.SOURCE_REPOSITORY || format('{0}/embodied-daily-papers', github.repository_owner) }}
+          ssh-key: ${{ secrets.SOURCE_READ_KEY }}
+          persist-credentials: false
+          path: engine
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.11'
+      - name: Install document tools
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y --no-install-recommends libreoffice-impress poppler-utils fonts-noto-cjk libcairo2
+          python -m pip install -r engine/requirements.txt
+      - name: Prepare isolated Chinese slide renderer
+        if: ${{ !inputs.refresh_only }}
+        run: |
+          docker build -f engine/Dockerfile.render -t paper-reading-render:local engine
+      - name: Install Devin CLI
+        working-directory: engine
+        run: python -m pipeline.install_devin
+      - name: Configure private model authentication
+        env:
+          DEVIN_SESSION_TOKEN: ${{ secrets.DEVIN_SESSION_TOKEN }}
+        run: |
+          python - <<'PY'
+          import json, os
+          from pathlib import Path
+          value = os.environ['DEVIN_SESSION_TOKEN']
+          if not value.strip():
+              raise SystemExit('Missing Devin authentication secret')
+          directory = Path.home() / '.local/share/devin'
+          directory.mkdir(parents=True, exist_ok=True)
+          directory.chmod(0o700)
+          fields = {'windsurf_api_key': value,
+                    'api_server_url': 'https://server.codeium.com',
+                    'devin_webapp_host': 'https://app.devin.ai',
+                    'devin_api_url': 'https://api.devin.ai'}
+          path = directory / 'credentials.toml'
+          path.write_text('\n'.join(k + ' = ' + json.dumps(v) for k, v in fields.items()) + '\n')
+          path.chmod(0o600)
+          PY
+      - name: Restore published catalog
+        run: |
+          mkdir -p engine/state
+          if [ -f public/data/catalog.json ]; then cp public/data/catalog.json engine/state/catalog.json; fi
+      - name: Validate engine and configured model
+        working-directory: engine
+        run: |
+          python -m unittest discover -s tests -v
+          for model_attempt in 1 2 3 4; do
+            if devin models list --format json > "$RUNNER_TEMP/models.json"; then
+              break
+            fi
+            if [ "$model_attempt" -eq 4 ]; then exit 1; fi
+            echo "Temporary model-list connection failure; retrying"
+            sleep "$((model_attempt * 5))"
+          done
+          python - <<'PY'
+          import json, os
+          from pipeline.core import MODEL
+          with open(os.environ['RUNNER_TEMP'] + '/models.json') as f:
+              data = json.load(f)
+          models = {v['model_uid'] for family in data['families'] for v in family['variants']}
+          if MODEL not in models:
+              raise SystemExit('Configured Claude model is unavailable: ' + MODEL)
+          print('Verified model:', MODEL)
+          PY
+      - name: Generate paper readings
+        if: ${{ !inputs.refresh_only }}
+        working-directory: engine
+        env:
+          INPUT_DATE: ${{ inputs.date }}
+          INPUT_DAYS: ${{ inputs.days || '3' }}
+          INPUT_LIMIT: ${{ inputs.limit || '0' }}
+          INPUT_PAPER_IDS: ${{ inputs.paper_ids }}
+        run: |
+          python - <<'PY'
+          import os, subprocess, sys
+          args = [sys.executable, '-u', '-m', 'pipeline.main', '--days', os.environ['INPUT_DAYS'], '--limit', os.environ['INPUT_LIMIT']]
+          if os.environ.get('INPUT_DATE'):
+              args += ['--date', os.environ['INPUT_DATE']]
+          if os.environ.get('INPUT_PAPER_IDS'):
+              args += ['--paper-ids', os.environ['INPUT_PAPER_IDS']]
+          subprocess.run(args, check=True)
+          PY
+      - name: Prepare English summaries and code links
+        working-directory: engine
+        run: python -u -m pipeline.metadata
+      - name: Translate existing slides without changing layout
+        working-directory: engine
+        run: python -u -m pipeline.english_slides --previous-site ../public
+      - name: Publish and verify monthly PDF archives
+        if: ${{ vars.PDF_STORAGE_OWNER != '' }}
+        working-directory: engine
+        env:
+          GH_TOKEN: ${{ secrets.PDF_STORAGE_TOKEN }}
+        run: |
+          if [ -z "$GH_TOKEN" ]; then
+            echo 'Missing PDF_STORAGE_TOKEN for cross-organization archive publication.' >&2
+            exit 1
+          fi
+          python -u -m pipeline.pdf_storage --previous-site ../public
+      - name: Build static site
+        working-directory: engine
+        run: python -m pipeline.build --previous-site ../public
+      - name: Save generated publication bundle
+        continue-on-error: true
+        uses: actions/upload-artifact@v4
+        with:
+          name: publication-bundle
+          path: |
+            engine/state/catalog.json
+            engine/state/artifacts/
+          retention-days: 14
+          if-no-files-found: error
+      - name: Publish downloads and site files
+        working-directory: engine
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python -m pipeline.publish ../public
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: engine/dist
+      - name: Report publication results
+        if: always()
+        run: |
+          if [ -f engine/state/run-report.json ]; then
+            python - <<'PY' >> "$GITHUB_STEP_SUMMARY"
+          import json
+          with open('engine/state/run-report.json') as f:
+              data=json.load(f)
+          print('已收录论文：', data['published'])
+          print('\n失败或待重试任务：', len(data['errors']))
+          for error in data['errors']:
+              print('- ' + error.replace('\n', ' '))
+          PY
+          fi
+          if [ -f engine/state/english-report.json ]; then
+            python - <<'PY' >> "$GITHUB_STEP_SUMMARY"
+          import json
+          with open('engine/state/english-report.json') as f:
+              data = json.load(f)
+          print('\n英文 Slides 已完成：', data['translated'])
+          for aid in data['failed']:
+              print('- 英文 Slides 待重试：' + aid)
+          PY
+          fi
+      - name: Remove authentication file
+        if: always()
+        run: rm -f "$HOME/.local/share/devin/credentials.toml"
+  deploy:
+    needs: generate
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
