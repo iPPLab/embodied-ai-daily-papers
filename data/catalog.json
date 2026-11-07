@@ -122,9 +122,22 @@
           "repository": "paper-pdfs-2026-11",
           "bytes": 1554155,
           "sha256": "d1516c6c83e8fe2be221a622820a3931af978e7a4fd73ef24a0beecdd3b16abb"
+        },
+        "en": {
+          "repository": "paper-pdfs-2026-11",
+          "bytes": 1347639,
+          "sha256": "7622d0201e1e18cb976a800ab60176a3e7fc52dbc14a31faf3d68c84a3366564"
         }
       },
-      "slide_count": 14
+      "slide_count": 14,
+      "pdf_url_en": "https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.07613.en.pdf?v=7622d0201e1e18cb",
+      "slides_en_source": "9096762d759eecc024956dcf4578b0bbcdb56ca705a4d5d132592df055f3dc6c",
+      "slides_en_revision": null,
+      "slides_en_version": "text-only-v1",
+      "downloads_en": {
+        "pptx": "https://github.com/iPPLab/embodied-daily-papers-site/releases/download/paper-2611.07613/deck.en.pptx",
+        "pdf": "https://github.com/iPPLab/embodied-daily-papers-site/releases/download/paper-2611.07613/deck.en.pdf"
+      }
     },
     {
       "id": "2611.06817",
