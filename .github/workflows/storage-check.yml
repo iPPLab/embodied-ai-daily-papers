@@ -1,0 +1,55 @@
+name: Check PDF archive authorization
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Verify organization-only upload credentials
+        env:
+          GH_TOKEN: ${{ secrets.PDF_STORAGE_TOKEN }}
+          PDF_STORAGE_OWNER: ${{ vars.PDF_STORAGE_OWNER }}
+        run: |
+          python - <<'PY'
+          import json, os, re, subprocess
+
+          owner = os.environ['PDF_STORAGE_OWNER']
+          if not os.environ.get('GH_TOKEN') or not re.fullmatch(r'[A-Za-z0-9-]+', owner):
+              raise SystemExit('Set PDF_STORAGE_OWNER and PDF_STORAGE_TOKEN before checking access')
+
+          def api(path, data=None, method='POST'):
+              args = ['gh', 'api', path]
+              if data is not None:
+                  args += ['--method', method, '--input', '-']
+              result = subprocess.run(args, input=json.dumps(data) if data is not None else None,
+                                      capture_output=True, text=True, timeout=90)
+              if result.returncode:
+                  raise SystemExit(result.stderr[-1200:])
+              return json.loads(result.stdout) if result.stdout.strip() else None
+
+          repos = api(f'orgs/{owner}/repos?per_page=100')
+          archives = [r for r in repos if r['name'].startswith('paper-pdfs-') and not r['archived']
+                      and r.get('description') == 'Monthly bilingual PDF slides archive for Embodied AI Daily Papers']
+          if not archives:
+              raise SystemExit('No migrated PDF repository exists yet')
+          repo = sorted(archives, key=lambda r: r['name'])[0]
+          name = repo['full_name']
+          # Identical metadata updates check Administration permission without changing it.
+          api(f'repos/{name}', {'description': repo['description']}, method='PATCH')
+          # The empty blob already exists as .nojekyll. No branch or PDF is changed.
+          blob = api(f'repos/{name}/git/blobs', {'content': '', 'encoding': 'utf-8'})
+          assert blob['sha'] == 'e69de29bb2d1d6434b8b29ae775ad8c2e48c5391'
+          pages = api(f'repos/{name}/pages')
+          assert pages.get('build_type') == 'legacy'
+          assert pages.get('source') == {'branch': 'main', 'path': '/'}
+          api(f'repos/{name}/pages', {'build_type': 'legacy', 'source': pages['source']}, method='PUT')
+          print(f'Verified Administration, Contents, and Pages write access: {name}')
+          with open(os.environ['GITHUB_STEP_SUMMARY'], 'a') as summary:
+              summary.write(f'组织专用令牌校验通过：{name}。未改动 PDF 内容或分支。\n')
+          PY
