@@ -12,6 +12,8 @@ const messages = {
 const t = (key, value) => typeof messages[language][key] === 'function' ? messages[language][key](value) : messages[language][key];
 Object.assign(messages.zh, {showAll:'展开全部总结',hideAll:'收起全部总结'});
 Object.assign(messages.en, {showAll:'Expand all summaries',hideAll:'Collapse all summaries'});
+Object.assign(messages.zh, {slides:'ppt'});
+Object.assign(messages.en, {slides:'Slides'});
 const make = (tag, text, className) => {
   const element = document.createElement(tag);
   if (text !== undefined) element.textContent = text;
@@ -87,8 +89,8 @@ function paperCard(paper,popular=false) {
   const title=make('div',undefined,'paper-title');
   const actions=make('div',undefined,'paper-actions');
   const pdf=pdfURL(paper);
-  if(pdf) actions.append(anchor('Slides',pdf));
-  else {const unavailable=make('span','Slides','unavailable');unavailable.setAttribute('aria-disabled','true');unavailable.title='English slides are being prepared.';actions.append(unavailable);}
+  if(pdf) actions.append(anchor(t('slides'),pdf));
+  else {const unavailable=make('span',t('slides'),'unavailable');unavailable.setAttribute('aria-disabled','true');unavailable.title='English slides are being prepared.';actions.append(unavailable);}
   actions.append(anchor('arXiv',safeExternal(paper.arxiv_url)||`https://arxiv.org/abs/${paper.id}`));
   const code=safeExternal(paper.code_url);
   if(code && new URL(code).hostname==='github.com') actions.append(anchor('Code',code));
