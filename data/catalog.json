@@ -22,7 +22,7 @@
       "summary_en_source": "c92d40e5f47253ea932f88df451118e09e08207c14fb81717a957f8f0acb324e",
       "code_url": "https://github.com/NVlabs/Eagle",
       "code_checked_at": "2026-11-07",
-      "pdf_url_en": "https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.08449.en.pdf?v=533e65ad6f97bdce",
+      "pdf_url_en": "https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.08449_slides.en.pdf?v=533e65ad6f97bdce",
       "slides_en_source": "1228042d5613e9161677f5623abc1b5adaba351978a5b4e5567625ee0d040061",
       "slides_en_revision": null,
       "slides_en_version": "text-only-v1",
@@ -30,19 +30,21 @@
         "pptx": "https://github.com/BojunZou/embodied-daily-papers-site/releases/download/paper-2611.08449/deck.en.pptx",
         "pdf": "https://github.com/BojunZou/embodied-daily-papers-site/releases/download/paper-2611.08449/deck.en.pdf"
       },
-      "pdf_url": "https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.08449.pdf?v=fc535a35f7aedecd",
+      "pdf_url": "https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.08449_slides.pdf?v=fc535a35f7aedecd",
       "pdf_archive": {
         "owner": "bjipppp",
         "month": "2026-11",
         "zh": {
           "repository": "paper-pdfs-2026-11",
           "bytes": 1183315,
-          "sha256": "fc535a35f7aedecdad19423dce0228aacb75b76b2c70ce2d2ae9650cf9270e22"
+          "sha256": "fc535a35f7aedecdad19423dce0228aacb75b76b2c70ce2d2ae9650cf9270e22",
+          "file": "pdfs/2611.08449_slides.pdf"
         },
         "en": {
           "repository": "paper-pdfs-2026-11",
           "bytes": 992453,
-          "sha256": "533e65ad6f97bdce640de3aa97ce1ff468d4f473e5ff010a890cf015f0457cb8"
+          "sha256": "533e65ad6f97bdce640de3aa97ce1ff468d4f473e5ff010a890cf015f0457cb8",
+          "file": "pdfs/2611.08449_slides.en.pdf"
         }
       },
       "slide_count": 15
@@ -68,7 +70,7 @@
       "summary_en_source": "350db657c3749095f56dc235beb5ea67383ed655332d50e5c9ca6d0082667036",
       "code_url": "https://github.com/OpenHelix-Team/Spatial-Forcing",
       "code_checked_at": "2026-11-07",
-      "pdf_url_en": "https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.08373.en.pdf?v=d70a0bbc6417546c",
+      "pdf_url_en": "https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.08373_slides.en.pdf?v=d70a0bbc6417546c",
       "slides_en_source": "a0d5fcf485b3071ecf73193070cf95675c357bbb6f81d878aa46333659f5fcc5",
       "slides_en_revision": null,
       "slides_en_version": "text-only-v1",
@@ -76,19 +78,21 @@
         "pptx": "https://github.com/BojunZou/embodied-daily-papers-site/releases/download/paper-2611.08373/deck.en.pptx",
         "pdf": "https://github.com/BojunZou/embodied-daily-papers-site/releases/download/paper-2611.08373/deck.en.pdf"
       },
-      "pdf_url": "https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.08373.pdf?v=448e9e6367e2472f",
+      "pdf_url": "https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.08373_slides.pdf?v=448e9e6367e2472f",
       "pdf_archive": {
         "owner": "bjipppp",
         "month": "2026-11",
         "zh": {
           "repository": "paper-pdfs-2026-11",
           "bytes": 1028640,
-          "sha256": "448e9e6367e2472fe34762118e08967e7c189d326b9581924e9d802e4226883d"
+          "sha256": "448e9e6367e2472fe34762118e08967e7c189d326b9581924e9d802e4226883d",
+          "file": "pdfs/2611.08373_slides.pdf"
         },
         "en": {
           "repository": "paper-pdfs-2026-11",
           "bytes": 834892,
-          "sha256": "d70a0bbc6417546cf95b11baf9338391b449900afd0de75813e8c9f9414f8b24"
+          "sha256": "d70a0bbc6417546cf95b11baf9338391b449900afd0de75813e8c9f9414f8b24",
+          "file": "pdfs/2611.08373_slides.en.pdf"
         }
       },
       "slide_count": 12
@@ -114,23 +118,25 @@
       "summary_en_source": "2b1d6a0641398de0552c038473b7b430e27239993ae90149ac936302223a75fc",
       "code_url": "https://github.com/Keio-CSG/FWL-ToPM",
       "code_checked_at": "2026-11-07",
-      "pdf_url": "https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.07613.pdf?v=d1516c6c83e8fe2b",
+      "pdf_url": "https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.07613_slides.pdf?v=d1516c6c83e8fe2b",
       "pdf_archive": {
         "owner": "bjipppp",
         "month": "2026-11",
         "zh": {
           "repository": "paper-pdfs-2026-11",
           "bytes": 1554155,
-          "sha256": "d1516c6c83e8fe2be221a622820a3931af978e7a4fd73ef24a0beecdd3b16abb"
+          "sha256": "d1516c6c83e8fe2be221a622820a3931af978e7a4fd73ef24a0beecdd3b16abb",
+          "file": "pdfs/2611.07613_slides.pdf"
         },
         "en": {
           "repository": "paper-pdfs-2026-11",
           "bytes": 1347639,
-          "sha256": "7622d0201e1e18cb976a800ab60176a3e7fc52dbc14a31faf3d68c84a3366564"
+          "sha256": "7622d0201e1e18cb976a800ab60176a3e7fc52dbc14a31faf3d68c84a3366564",
+          "file": "pdfs/2611.07613_slides.en.pdf"
         }
       },
       "slide_count": 14,
-      "pdf_url_en": "https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.07613.en.pdf?v=7622d0201e1e18cb",
+      "pdf_url_en": "https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.07613_slides.en.pdf?v=7622d0201e1e18cb",
       "slides_en_source": "9096762d759eecc024956dcf4578b0bbcdb56ca705a4d5d132592df055f3dc6c",
       "slides_en_revision": null,
       "slides_en_version": "text-only-v1",
@@ -160,7 +166,7 @@
       "summary_en_source": "fca308b621592b1dad81d589d9edcd936ea4134a01fbd8d7a11b282481a6b388",
       "code_url": "https://github.com/DAGroup-PKU/HumanNet",
       "code_checked_at": "2026-11-07",
-      "pdf_url_en": "https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.06817.en.pdf?v=a9665d1d5dc9e35b",
+      "pdf_url_en": "https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.06817_slides.en.pdf?v=a9665d1d5dc9e35b",
       "slides_en_source": "25bb0cae32f497b12d1bd0e363fe63255786a6354f997d446139f0f548e0d8a5",
       "slides_en_revision": null,
       "slides_en_version": "text-only-v1",
@@ -168,19 +174,21 @@
         "pptx": "https://github.com/BojunZou/embodied-daily-papers-site/releases/download/paper-2611.06817/deck.en.pptx",
         "pdf": "https://github.com/BojunZou/embodied-daily-papers-site/releases/download/paper-2611.06817/deck.en.pdf"
       },
-      "pdf_url": "https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.06817.pdf?v=fb2fe4ce6fed5bc5",
+      "pdf_url": "https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.06817_slides.pdf?v=fb2fe4ce6fed5bc5",
       "pdf_archive": {
         "owner": "bjipppp",
         "month": "2026-11",
         "zh": {
           "repository": "paper-pdfs-2026-11",
           "bytes": 3483339,
-          "sha256": "fb2fe4ce6fed5bc57e1de93f4f0bf13ef86a3a2beda09baae8d1425fe0f19c12"
+          "sha256": "fb2fe4ce6fed5bc57e1de93f4f0bf13ef86a3a2beda09baae8d1425fe0f19c12",
+          "file": "pdfs/2611.06817_slides.pdf"
         },
         "en": {
           "repository": "paper-pdfs-2026-11",
           "bytes": 3262783,
-          "sha256": "a9665d1d5dc9e35b810fd1173323dc6cbb5e462d9aab050e4f739e40a3b69d7b"
+          "sha256": "a9665d1d5dc9e35b810fd1173323dc6cbb5e462d9aab050e4f739e40a3b69d7b",
+          "file": "pdfs/2611.06817_slides.en.pdf"
         }
       },
       "slide_count": 20
@@ -206,7 +214,7 @@
       "summary_en_source": "a2e518f2f5bbf77bbf2b8ac760372c0754e1677d0d84aed415b83ccb453fd0eb",
       "code_url": "https://github.com/harryjo97/dreamfree",
       "code_checked_at": "2026-11-07",
-      "pdf_url_en": "https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.04527.en.pdf?v=f8925d0ec0eba795",
+      "pdf_url_en": "https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.04527_slides.en.pdf?v=f8925d0ec0eba795",
       "slides_en_source": "c1018ee73cfb10007c722bb6dd3d2ebf1661ed4952bf10d77cbc43819453ad2f",
       "slides_en_revision": null,
       "slides_en_version": "text-only-v1",
@@ -214,19 +222,21 @@
         "pptx": "https://github.com/BojunZou/embodied-daily-papers-site/releases/download/paper-2611.04527/deck.en.pptx",
         "pdf": "https://github.com/BojunZou/embodied-daily-papers-site/releases/download/paper-2611.04527/deck.en.pdf"
       },
-      "pdf_url": "https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.04527.pdf?v=2d5d86f661681aec",
+      "pdf_url": "https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.04527_slides.pdf?v=2d5d86f661681aec",
       "pdf_archive": {
         "owner": "bjipppp",
         "month": "2026-11",
         "zh": {
           "repository": "paper-pdfs-2026-11",
           "bytes": 927617,
-          "sha256": "2d5d86f661681aec964d04d80e74f7b6bcfc973a1b51ff6925a52b5d11f90183"
+          "sha256": "2d5d86f661681aec964d04d80e74f7b6bcfc973a1b51ff6925a52b5d11f90183",
+          "file": "pdfs/2611.04527_slides.pdf"
         },
         "en": {
           "repository": "paper-pdfs-2026-11",
           "bytes": 728485,
-          "sha256": "f8925d0ec0eba795c717bba0d44f0bb9cf04c6d14d82d3843a10395f81e24095"
+          "sha256": "f8925d0ec0eba795c717bba0d44f0bb9cf04c6d14d82d3843a10395f81e24095",
+          "file": "pdfs/2611.04527_slides.en.pdf"
         }
       },
       "slide_count": 14
@@ -252,7 +262,7 @@
       "summary_en_source": "95ce09ad60148ab7efaf61b6d985b6ad5405a0294caf3776f48ab891c7036922",
       "code_url": "https://github.com/kimspacehuni/HeLM",
       "code_checked_at": "2026-11-07",
-      "pdf_url_en": "https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.02660.en.pdf?v=1d0213b7bd9741fa",
+      "pdf_url_en": "https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.02660_slides.en.pdf?v=1d0213b7bd9741fa",
       "slides_en_source": "3201fbe814659a1dcac12b62e99c57bd203f37a73c5a8f8849352cb81158b736",
       "slides_en_revision": null,
       "slides_en_version": "text-only-v1",
@@ -260,19 +270,21 @@
         "pptx": "https://github.com/BojunZou/embodied-daily-papers-site/releases/download/paper-2611.02660/deck.en.pptx",
         "pdf": "https://github.com/BojunZou/embodied-daily-papers-site/releases/download/paper-2611.02660/deck.en.pdf"
       },
-      "pdf_url": "https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.02660.pdf?v=f7570fb78834b54a",
+      "pdf_url": "https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.02660_slides.pdf?v=f7570fb78834b54a",
       "pdf_archive": {
         "owner": "bjipppp",
         "month": "2026-11",
         "zh": {
           "repository": "paper-pdfs-2026-11",
           "bytes": 1489817,
-          "sha256": "f7570fb78834b54abd340298b0590332a46a934e35d7af037933e4bd83ab9f8a"
+          "sha256": "f7570fb78834b54abd340298b0590332a46a934e35d7af037933e4bd83ab9f8a",
+          "file": "pdfs/2611.02660_slides.pdf"
         },
         "en": {
           "repository": "paper-pdfs-2026-11",
           "bytes": 1296993,
-          "sha256": "1d0213b7bd9741fa5364178328024aa6a9c0fd877ba46ece83972c385adfc3ec"
+          "sha256": "1d0213b7bd9741fa5364178328024aa6a9c0fd877ba46ece83972c385adfc3ec",
+          "file": "pdfs/2611.02660_slides.en.pdf"
         }
       },
       "slide_count": 15
@@ -298,8 +310,8 @@
       "summary_en_source": "587b39e3dbdd4cedb0a0e0368acbc12254125966753d7765464f46c57e4205e4",
       "code_url": "https://github.com/EvolvingLMMs-Lab/NEO",
       "code_checked_at": "2026-11-07",
-      "pdf_url": "https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.06918.pdf?v=599bbe7743578d4e",
-      "pdf_url_en": "https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.06918.en.pdf?v=66ee679282f33d97",
+      "pdf_url": "https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.06918_slides.pdf?v=599bbe7743578d4e",
+      "pdf_url_en": "https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.06918_slides.en.pdf?v=66ee679282f33d97",
       "slides_en_source": "a6a900a052490d55e1ec4c88fe9d617d09d27278d917d41c3a8c253f9d7996ff",
       "slides_en_version": "text-only-v1",
       "downloads_en": {
@@ -312,12 +324,14 @@
         "zh": {
           "repository": "paper-pdfs-2026-11",
           "bytes": 1856488,
-          "sha256": "599bbe7743578d4e344fa9d619ae1904dc4af6b4a99bd82a4db88408f6134c9a"
+          "sha256": "599bbe7743578d4e344fa9d619ae1904dc4af6b4a99bd82a4db88408f6134c9a",
+          "file": "pdfs/2611.06918_slides.pdf"
         },
         "en": {
           "repository": "paper-pdfs-2026-11",
           "bytes": 1580771,
-          "sha256": "66ee679282f33d9782768589d9fb84c72a856cd1f8d24edbc5f7ea13a786dd4a"
+          "sha256": "66ee679282f33d9782768589d9fb84c72a856cd1f8d24edbc5f7ea13a786dd4a",
+          "file": "pdfs/2611.06918_slides.en.pdf"
         }
       },
       "slide_count": 19
@@ -343,8 +357,8 @@
       "summary_en_source": "f63dcd0981f9f52e6a46acb7e78d05486588f6df5df3c92177f6804754e4695d",
       "code_url": "https://github.com/DAGroup-PKU/PyRUA-Lean",
       "code_checked_at": "2026-11-07",
-      "pdf_url": "https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.06768.pdf?v=2c28e391e943f073",
-      "pdf_url_en": "https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.06768.en.pdf?v=e640ea379965476d",
+      "pdf_url": "https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.06768_slides.pdf?v=2c28e391e943f073",
+      "pdf_url_en": "https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.06768_slides.en.pdf?v=e640ea379965476d",
       "slides_en_source": "9ee2ce6af981700d65189489f19f808b2794930c7c9eacc380e773f6d13a24ea",
       "slides_en_version": "text-only-v1",
       "downloads_en": {
@@ -357,12 +371,14 @@
         "zh": {
           "repository": "paper-pdfs-2026-11",
           "bytes": 1693031,
-          "sha256": "2c28e391e943f073c7dd3e13fa172a0cf43966dc4e303bdf534380cb82d8c8b9"
+          "sha256": "2c28e391e943f073c7dd3e13fa172a0cf43966dc4e303bdf534380cb82d8c8b9",
+          "file": "pdfs/2611.06768_slides.pdf"
         },
         "en": {
           "repository": "paper-pdfs-2026-11",
           "bytes": 1425564,
-          "sha256": "e640ea379965476d48c15b3f521ea66cb6f34e15c44bc5abdacaed46a4aa3cd5"
+          "sha256": "e640ea379965476d48c15b3f521ea66cb6f34e15c44bc5abdacaed46a4aa3cd5",
+          "file": "pdfs/2611.06768_slides.en.pdf"
         }
       },
       "slide_count": 19
@@ -388,8 +404,8 @@
       "summary_en_source": "25b74d85ac6d1c58bd7f3db33e3707f8ce9adff68c64e749eaf5881e48667ca1",
       "code_url": "https://github.com/DAGroup-PKU/PyRUA-Lean",
       "code_checked_at": "2026-11-07",
-      "pdf_url": "https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.05320.pdf?v=ca0880096266f41f",
-      "pdf_url_en": "https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.05320.en.pdf?v=7076ded8d776d78f",
+      "pdf_url": "https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.05320_slides.pdf?v=ca0880096266f41f",
+      "pdf_url_en": "https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.05320_slides.en.pdf?v=7076ded8d776d78f",
       "slides_en_source": "ea5af734cb35c7afee03b7fdc80e82ceba4fea7b011d25bd3a9b99e1ea6012ba",
       "slides_en_version": "text-only-v1",
       "downloads_en": {
@@ -402,12 +418,14 @@
         "zh": {
           "repository": "paper-pdfs-2026-11",
           "bytes": 1069220,
-          "sha256": "ca0880096266f41f8b753b6bde127bb98bf5c436914df0ef30a8a54e4c820410"
+          "sha256": "ca0880096266f41f8b753b6bde127bb98bf5c436914df0ef30a8a54e4c820410",
+          "file": "pdfs/2611.05320_slides.pdf"
         },
         "en": {
           "repository": "paper-pdfs-2026-11",
           "bytes": 791411,
-          "sha256": "7076ded8d776d78f5657961a9b663f74f79724b97568dff9d54ae201414836dd"
+          "sha256": "7076ded8d776d78f5657961a9b663f74f79724b97568dff9d54ae201414836dd",
+          "file": "pdfs/2611.05320_slides.en.pdf"
         }
       },
       "slide_count": 16
@@ -433,7 +451,7 @@
       "summary_en_source": "9518aeabf7bcdbb12602675e21fa4b46b5655e59b3c24b38fb80d7f6bae621e6",
       "code_url": "https://github.com/oswaldoludwig/DRAP-Dynamics-Risk-Adaptive-Plasticity",
       "code_checked_at": "2026-11-07",
-      "pdf_url_en": "https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.05029.en.pdf?v=2ab9cd273c9df7fc",
+      "pdf_url_en": "https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.05029_slides.en.pdf?v=2ab9cd273c9df7fc",
       "slides_en_source": "bdde866552f05685f070bbbaca856c7cd257cb68535ff57b9c460f9eaf5c2f56",
       "slides_en_revision": null,
       "slides_en_version": "text-only-v1",
@@ -441,19 +459,21 @@
         "pptx": "https://github.com/BojunZou/embodied-daily-papers-site/releases/download/paper-2611.05029/deck.en.pptx",
         "pdf": "https://github.com/BojunZou/embodied-daily-papers-site/releases/download/paper-2611.05029/deck.en.pdf"
       },
-      "pdf_url": "https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.05029.pdf?v=0f268bf93ee4d89e",
+      "pdf_url": "https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.05029_slides.pdf?v=0f268bf93ee4d89e",
       "pdf_archive": {
         "owner": "bjipppp",
         "month": "2026-11",
         "zh": {
           "repository": "paper-pdfs-2026-11",
           "bytes": 885486,
-          "sha256": "0f268bf93ee4d89eae1267ffdf918dc7118e69a0e3c7b35367fec5e90dd0206f"
+          "sha256": "0f268bf93ee4d89eae1267ffdf918dc7118e69a0e3c7b35367fec5e90dd0206f",
+          "file": "pdfs/2611.05029_slides.pdf"
         },
         "en": {
           "repository": "paper-pdfs-2026-11",
           "bytes": 669823,
-          "sha256": "2ab9cd273c9df7fc720bda35f8d0abcda9f066c0642f10a6d54b346c282c992a"
+          "sha256": "2ab9cd273c9df7fc720bda35f8d0abcda9f066c0642f10a6d54b346c282c992a",
+          "file": "pdfs/2611.05029_slides.en.pdf"
         }
       },
       "slide_count": 13
@@ -479,8 +499,8 @@
       "summary_en_source": "74f3447b4cdc4276610fd9e69fe607aebf4c8ea8e57da8bb43eecd4ecb6214c0",
       "code_url": "https://github.com/jun-brro/h2rb-code",
       "code_checked_at": "2026-11-07",
-      "pdf_url": "https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.04391.pdf?v=da871431b358a18f",
-      "pdf_url_en": "https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.04391.en.pdf?v=ea668c9cc4077f7c",
+      "pdf_url": "https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.04391_slides.pdf?v=da871431b358a18f",
+      "pdf_url_en": "https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.04391_slides.en.pdf?v=ea668c9cc4077f7c",
       "slides_en_source": "dd4b963f7cdc91df8d80b6aa2d47de286c1ff0c6dbfa4fd559391108154110a8",
       "slides_en_version": "text-only-v1",
       "downloads_en": {
@@ -493,12 +513,14 @@
         "zh": {
           "repository": "paper-pdfs-2026-11",
           "bytes": 2291347,
-          "sha256": "da871431b358a18f0b8fdeda96709a78f809ea83ae5b229517b1f01567d42c2b"
+          "sha256": "da871431b358a18f0b8fdeda96709a78f809ea83ae5b229517b1f01567d42c2b",
+          "file": "pdfs/2611.04391_slides.pdf"
         },
         "en": {
           "repository": "paper-pdfs-2026-11",
           "bytes": 2052717,
-          "sha256": "ea668c9cc4077f7c78fbac9e5928777fb6f752095b13d8cdc25c053cfed60ea5"
+          "sha256": "ea668c9cc4077f7c78fbac9e5928777fb6f752095b13d8cdc25c053cfed60ea5",
+          "file": "pdfs/2611.04391_slides.en.pdf"
         }
       },
       "slide_count": 18
@@ -524,8 +546,8 @@
       "summary_en_source": "d160f031034a8cb9213a3eed7364936ef97707489bea8b94729b991f8065eeff",
       "code_url": null,
       "code_checked_at": "2026-11-07",
-      "pdf_url": "https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.05377.pdf?v=3a7e7fc426e80882",
-      "pdf_url_en": "https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.05377.en.pdf?v=1bbb7939410e6f9f",
+      "pdf_url": "https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.05377_slides.pdf?v=3a7e7fc426e80882",
+      "pdf_url_en": "https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.05377_slides.en.pdf?v=1bbb7939410e6f9f",
       "slides_en_source": "5a09959b742f7fe5a4e95acb6af8fdb0d64016310799dd327c1909d11fdac658",
       "slides_en_version": "text-only-v1",
       "downloads_en": {
@@ -538,12 +560,14 @@
         "zh": {
           "repository": "paper-pdfs-2026-11",
           "bytes": 2225255,
-          "sha256": "3a7e7fc426e8088213116b2edcc475c887f365f53bdaddf25e1d91d8616e363c"
+          "sha256": "3a7e7fc426e8088213116b2edcc475c887f365f53bdaddf25e1d91d8616e363c",
+          "file": "pdfs/2611.05377_slides.pdf"
         },
         "en": {
           "repository": "paper-pdfs-2026-11",
           "bytes": 2033857,
-          "sha256": "1bbb7939410e6f9faa7d5b37aad77494fdd14a436c6398db691d5a97c0fd1eea"
+          "sha256": "1bbb7939410e6f9faa7d5b37aad77494fdd14a436c6398db691d5a97c0fd1eea",
+          "file": "pdfs/2611.05377_slides.en.pdf"
         }
       },
       "slide_count": 16
@@ -569,8 +593,8 @@
       "summary_en_source": "0a29b2fc9085c19181a76137d2380e8ea7b4d02a662666a1e8fc6b5792734963",
       "code_url": "https://github.com/InfRec-Cardinal/route-anything",
       "code_checked_at": "2026-11-07",
-      "pdf_url": "https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.05275.pdf?v=8a2e2622849e53b2",
-      "pdf_url_en": "https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.05275.en.pdf?v=16a9228cd6c10605",
+      "pdf_url": "https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.05275_slides.pdf?v=8a2e2622849e53b2",
+      "pdf_url_en": "https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.05275_slides.en.pdf?v=16a9228cd6c10605",
       "slides_en_source": "408608c4fc8e30fcfef986702530d29f33923f037993879fb5389ba2410ecaf8",
       "slides_en_version": "text-only-v1",
       "downloads_en": {
@@ -583,12 +607,14 @@
         "zh": {
           "repository": "paper-pdfs-2026-11",
           "bytes": 944414,
-          "sha256": "8a2e2622849e53b2d6c293faab3c13aa699857325867933ca8affd4b3af9cd8a"
+          "sha256": "8a2e2622849e53b2d6c293faab3c13aa699857325867933ca8affd4b3af9cd8a",
+          "file": "pdfs/2611.05275_slides.pdf"
         },
         "en": {
           "repository": "paper-pdfs-2026-11",
           "bytes": 714654,
-          "sha256": "16a9228cd6c10605a02780e55e56ca5f7178706254e16655c5f43c7fec4e3994"
+          "sha256": "16a9228cd6c10605a02780e55e56ca5f7178706254e16655c5f43c7fec4e3994",
+          "file": "pdfs/2611.05275_slides.en.pdf"
         }
       },
       "slide_count": 16
@@ -614,8 +640,8 @@
       "summary_en_source": "5a7df8fbfb0d101bdf7cc3bc0dc5254b50a27f97d1712b73911c0ee48c052a5d",
       "code_url": "https://github.com/ryan-seungyong-lee/RoboTryOn",
       "code_checked_at": "2026-11-07",
-      "pdf_url": "https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.05163.pdf?v=d32623a0a30e0e85",
-      "pdf_url_en": "https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.05163.en.pdf?v=40ac6269170768d1",
+      "pdf_url": "https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.05163_slides.pdf?v=d32623a0a30e0e85",
+      "pdf_url_en": "https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.05163_slides.en.pdf?v=40ac6269170768d1",
       "slides_en_source": "48f491c4a670921a67c74132869012b2dc00e7ec1505c7eebf28f2af0dd2e1e3",
       "slides_en_version": "text-only-v1",
       "downloads_en": {
@@ -628,12 +654,14 @@
         "zh": {
           "repository": "paper-pdfs-2026-11",
           "bytes": 1498626,
-          "sha256": "d32623a0a30e0e851c9782a47ab3baadf4fe38190ef19aefc7c83850a8673dc9"
+          "sha256": "d32623a0a30e0e851c9782a47ab3baadf4fe38190ef19aefc7c83850a8673dc9",
+          "file": "pdfs/2611.05163_slides.pdf"
         },
         "en": {
           "repository": "paper-pdfs-2026-11",
           "bytes": 1288938,
-          "sha256": "40ac6269170768d11a295dd25b18c1e937a64b6bce1e056d1af16bf764cfed51"
+          "sha256": "40ac6269170768d11a295dd25b18c1e937a64b6bce1e056d1af16bf764cfed51",
+          "file": "pdfs/2611.05163_slides.en.pdf"
         }
       },
       "slide_count": 16
@@ -659,8 +687,8 @@
       "summary_en_source": "dd70e06daac813e479f4024ea9a00b233794cdbeed8281ad0faab89e4707c6ec",
       "code_url": "https://github.com/PrimebotTech/PrimeSim",
       "code_checked_at": "2026-11-07",
-      "pdf_url": "https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.04870.pdf?v=5f034c149bb65ffd",
-      "pdf_url_en": "https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.04870.en.pdf?v=06c2563ed7bb9e0f",
+      "pdf_url": "https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.04870_slides.pdf?v=5f034c149bb65ffd",
+      "pdf_url_en": "https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.04870_slides.en.pdf?v=06c2563ed7bb9e0f",
       "slides_en_source": "eed50c95ce48ddef43537102761ef6b7563a12d1f62d2fb5a35cf959c1f659ea",
       "slides_en_version": "text-only-v1",
       "downloads_en": {
@@ -674,12 +702,14 @@
         "zh": {
           "repository": "paper-pdfs-2026-11",
           "bytes": 2780228,
-          "sha256": "5f034c149bb65ffdc6c895ade6fc5f1950ffdb250a1658c89d2b56a9ee69af90"
+          "sha256": "5f034c149bb65ffdc6c895ade6fc5f1950ffdb250a1658c89d2b56a9ee69af90",
+          "file": "pdfs/2611.04870_slides.pdf"
         },
         "en": {
           "repository": "paper-pdfs-2026-11",
           "bytes": 2477379,
-          "sha256": "06c2563ed7bb9e0fa0d1bd60b23ca137db4cd8789ba246fc65f6ca4ca83328f1"
+          "sha256": "06c2563ed7bb9e0fa0d1bd60b23ca137db4cd8789ba246fc65f6ca4ca83328f1",
+          "file": "pdfs/2611.04870_slides.en.pdf"
         }
       },
       "slide_count": 20
@@ -705,8 +735,8 @@
       "summary_en_source": "95b02a0a4d7883b9406e43e42629e0da7bc89366fdc71824fdfa97835b8cfae5",
       "code_url": "https://github.com/nerfies/nerfies.github.io",
       "code_checked_at": "2026-11-07",
-      "pdf_url": "https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.04166.pdf?v=445262cd6ef3d67c",
-      "pdf_url_en": "https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.04166.en.pdf?v=e045c3ef8581b389",
+      "pdf_url": "https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.04166_slides.pdf?v=445262cd6ef3d67c",
+      "pdf_url_en": "https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.04166_slides.en.pdf?v=e045c3ef8581b389",
       "slides_en_source": "51675952c8db9edefd72166b3d09bc5cbe9fdd32e3103644dfd3a7b35a94ae35",
       "slides_en_version": "text-only-v1",
       "downloads_en": {
@@ -719,12 +749,14 @@
         "zh": {
           "repository": "paper-pdfs-2026-11",
           "bytes": 1432580,
-          "sha256": "445262cd6ef3d67c56962721885890e9a525aaa670d253397081dde9224dcecd"
+          "sha256": "445262cd6ef3d67c56962721885890e9a525aaa670d253397081dde9224dcecd",
+          "file": "pdfs/2611.04166_slides.pdf"
         },
         "en": {
           "repository": "paper-pdfs-2026-11",
           "bytes": 1215031,
-          "sha256": "e045c3ef8581b3890bbcabbf73341b1171294a88229b32e8f5f361950c8de9fd"
+          "sha256": "e045c3ef8581b3890bbcabbf73341b1171294a88229b32e8f5f361950c8de9fd",
+          "file": "pdfs/2611.04166_slides.en.pdf"
         }
       },
       "slide_count": 16
@@ -750,8 +782,8 @@
       "summary_en_source": "2c6279176d837cf28b91d3fe5b9336bf6acdcfc37b066e9a9b55ca5c793b7dc8",
       "code_url": "https://github.com/RoboColosseum/robocolosseum-client",
       "code_checked_at": "2026-11-07",
-      "pdf_url": "https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.02497.pdf?v=4196d06bd5188744",
-      "pdf_url_en": "https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.02497.en.pdf?v=4a877e8f2942284a",
+      "pdf_url": "https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.02497_slides.pdf?v=4196d06bd5188744",
+      "pdf_url_en": "https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.02497_slides.en.pdf?v=4a877e8f2942284a",
       "slides_en_source": "188ef7febd438a779dd7f227b2dbd2d05030a203cc18ac54257a1815dc80ff19",
       "slides_en_version": "text-only-v1",
       "downloads_en": {
@@ -764,12 +796,14 @@
         "zh": {
           "repository": "paper-pdfs-2026-11",
           "bytes": 2306181,
-          "sha256": "4196d06bd51887443525733c4942c74a3c0ce7f8571dbc9cf7c0f22845132ce3"
+          "sha256": "4196d06bd51887443525733c4942c74a3c0ce7f8571dbc9cf7c0f22845132ce3",
+          "file": "pdfs/2611.02497_slides.pdf"
         },
         "en": {
           "repository": "paper-pdfs-2026-11",
           "bytes": 2085837,
-          "sha256": "4a877e8f2942284a44463af922d95acfa1aa2a3f37c8a2d14ac3f2631f740621"
+          "sha256": "4a877e8f2942284a44463af922d95acfa1aa2a3f37c8a2d14ac3f2631f740621",
+          "file": "pdfs/2611.02497_slides.en.pdf"
         }
       },
       "slide_count": 21
@@ -795,8 +829,8 @@
       "summary_en_source": "a8207d35f43eecde8b35c3600ac84135088adfb958dcad99e59f6a5e68d39c09",
       "code_url": "https://github.com/embodied-agent-arena/embodied-agent-arena",
       "code_checked_at": "2026-11-07",
-      "pdf_url": "https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2610.00854.pdf?v=52a4f0873c6e3291",
-      "pdf_url_en": "https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2610.00854.en.pdf?v=3592d68d0f51d3ee",
+      "pdf_url": "https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2610.00854_slides.pdf?v=52a4f0873c6e3291",
+      "pdf_url_en": "https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2610.00854_slides.en.pdf?v=3592d68d0f51d3ee",
       "slides_en_source": "6ffff7870708d81126ae2538bcc979167bf420854179ede5698af8e9aedff45c",
       "slides_en_version": "text-only-v1",
       "downloads_en": {
@@ -809,12 +843,14 @@
         "zh": {
           "repository": "paper-pdfs-2026-11",
           "bytes": 1386046,
-          "sha256": "52a4f0873c6e3291d6ac12f867615d664710ffd94038883e731ba9e8656df9f9"
+          "sha256": "52a4f0873c6e3291d6ac12f867615d664710ffd94038883e731ba9e8656df9f9",
+          "file": "pdfs/2610.00854_slides.pdf"
         },
         "en": {
           "repository": "paper-pdfs-2026-11",
           "bytes": 1146545,
-          "sha256": "3592d68d0f51d3eee62d25cf3138246ead846d1c4429b388713fa53f5a94c4e6"
+          "sha256": "3592d68d0f51d3eee62d25cf3138246ead846d1c4429b388713fa53f5a94c4e6",
+          "file": "pdfs/2610.00854_slides.en.pdf"
         }
       },
       "slide_count": 14
@@ -840,8 +876,8 @@
       "summary_en_source": "c4f37f88cab50440aba5f154c3820388c54d302d0f4d8852410426e2d0574bc7",
       "code_url": "https://github.com/3-ml/jepa-surprise",
       "code_checked_at": "2026-11-07",
-      "pdf_url": "https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.01815.pdf?v=5a29c04940bb7dab",
-      "pdf_url_en": "https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.01815.en.pdf?v=29643aaea4a30042",
+      "pdf_url": "https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.01815_slides.pdf?v=5a29c04940bb7dab",
+      "pdf_url_en": "https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.01815_slides.en.pdf?v=29643aaea4a30042",
       "slides_en_source": "341fc72bbaf19821dac8baea87581b1c9e2456702a29ca099e2666d2f7a2b367",
       "slides_en_version": "text-only-v1",
       "downloads_en": {
@@ -854,12 +890,14 @@
         "zh": {
           "repository": "paper-pdfs-2026-11",
           "bytes": 1210376,
-          "sha256": "5a29c04940bb7dabdb39508d1667e9053f50fcd5c6e4732bb2a8471d8ca8dfd9"
+          "sha256": "5a29c04940bb7dabdb39508d1667e9053f50fcd5c6e4732bb2a8471d8ca8dfd9",
+          "file": "pdfs/2611.01815_slides.pdf"
         },
         "en": {
           "repository": "paper-pdfs-2026-11",
           "bytes": 1004465,
-          "sha256": "29643aaea4a3004235f000e248af331989e7894c93ffe2bf255404ece572bd7b"
+          "sha256": "29643aaea4a3004235f000e248af331989e7894c93ffe2bf255404ece572bd7b",
+          "file": "pdfs/2611.01815_slides.en.pdf"
         }
       },
       "slide_count": 14
@@ -885,8 +923,8 @@
       "summary_en_source": "adcfbdbedcdc903b35a3135a60f27af2f16cf9f09f7d57288c976ba07619e94b",
       "code_url": "https://github.com/Open-RUA/uni-robot-agent",
       "code_checked_at": "2026-11-07",
-      "pdf_url": "https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.01560.pdf?v=5903bc133d53b93e",
-      "pdf_url_en": "https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.01560.en.pdf?v=e4c17a7649d75ef2",
+      "pdf_url": "https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.01560_slides.pdf?v=5903bc133d53b93e",
+      "pdf_url_en": "https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.01560_slides.en.pdf?v=e4c17a7649d75ef2",
       "slides_en_source": "4221a76c09cd830f507ef90815d7fa933da510112ebe81859eae8b89f4cf8652",
       "slides_en_version": "text-only-v1",
       "downloads_en": {
@@ -899,12 +937,14 @@
         "zh": {
           "repository": "paper-pdfs-2026-11",
           "bytes": 1703773,
-          "sha256": "5903bc133d53b93ebfe6218da28e5d15d92911bfc90e2c13a66f827801261d81"
+          "sha256": "5903bc133d53b93ebfe6218da28e5d15d92911bfc90e2c13a66f827801261d81",
+          "file": "pdfs/2611.01560_slides.pdf"
         },
         "en": {
           "repository": "paper-pdfs-2026-11",
           "bytes": 1454342,
-          "sha256": "e4c17a7649d75ef2c73bec6bb96de22b248ae3fa6516c0fe47adb4147c4d2a79"
+          "sha256": "e4c17a7649d75ef2c73bec6bb96de22b248ae3fa6516c0fe47adb4147c4d2a79",
+          "file": "pdfs/2611.01560_slides.en.pdf"
         }
       },
       "slide_count": 20
@@ -930,8 +970,8 @@
       "summary_en_source": "5e831269eba9f1efaaefde83998087f0847fcd09446a834f54cedea6c2aca7b1",
       "code_url": "https://github.com/Garfield-kh/TinyAstral",
       "code_checked_at": "2026-11-07",
-      "pdf_url": "https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2610.41216.pdf?v=2710179ef71348e3",
-      "pdf_url_en": "https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2610.41216.en.pdf?v=837d6cbd7e6539a6",
+      "pdf_url": "https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2610.41216_slides.pdf?v=2710179ef71348e3",
+      "pdf_url_en": "https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2610.41216_slides.en.pdf?v=837d6cbd7e6539a6",
       "slides_en_source": "c4d256d1ea38b37658d47711f70291fdad6d752e9de74c190494acbc697f4348",
       "slides_en_version": "text-only-v1",
       "downloads_en": {
@@ -944,12 +984,14 @@
         "zh": {
           "repository": "paper-pdfs-2026-11",
           "bytes": 1174499,
-          "sha256": "2710179ef71348e3e0549c812aa300a7c76dce80882c48c2d4aab2802e62de6c"
+          "sha256": "2710179ef71348e3e0549c812aa300a7c76dce80882c48c2d4aab2802e62de6c",
+          "file": "pdfs/2610.41216_slides.pdf"
         },
         "en": {
           "repository": "paper-pdfs-2026-11",
           "bytes": 938149,
-          "sha256": "837d6cbd7e6539a650e2394251ea5f5152a7848d7dc171e946a8d9684a6b019e"
+          "sha256": "837d6cbd7e6539a650e2394251ea5f5152a7848d7dc171e946a8d9684a6b019e",
+          "file": "pdfs/2610.41216_slides.en.pdf"
         }
       },
       "slide_count": 17
@@ -975,8 +1017,8 @@
       "summary_en_source": "b4607e9382ef8bea4cc391843188ea16cc48f81477bf0aa6bb726575a855a297",
       "code_url": "https://github.com/worldflow-rbs/worldflow",
       "code_checked_at": "2026-11-07",
-      "pdf_url": "https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2610.39278.pdf?v=13614a1d6df9f091",
-      "pdf_url_en": "https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2610.39278.en.pdf?v=32586fcf9686c169",
+      "pdf_url": "https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2610.39278_slides.pdf?v=13614a1d6df9f091",
+      "pdf_url_en": "https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2610.39278_slides.en.pdf?v=32586fcf9686c169",
       "slides_en_source": "0677f5943d23ad33835812435b3af14b284badf3008f05b7eaf0709a4a38ed6b",
       "slides_en_version": "text-only-v1",
       "downloads_en": {
@@ -989,12 +1031,14 @@
         "zh": {
           "repository": "paper-pdfs-2026-11",
           "bytes": 1454022,
-          "sha256": "13614a1d6df9f09152ba0fb4647780882f05ffff117a1804eace1555ff20a227"
+          "sha256": "13614a1d6df9f09152ba0fb4647780882f05ffff117a1804eace1555ff20a227",
+          "file": "pdfs/2610.39278_slides.pdf"
         },
         "en": {
           "repository": "paper-pdfs-2026-11",
           "bytes": 1250175,
-          "sha256": "32586fcf9686c1696c5d768fbeccc1e780352888a0104d04dd23481ef4aa6293"
+          "sha256": "32586fcf9686c1696c5d768fbeccc1e780352888a0104d04dd23481ef4aa6293",
+          "file": "pdfs/2610.39278_slides.en.pdf"
         }
       },
       "slide_count": 14
@@ -1020,8 +1064,8 @@
       "summary_en_source": "58360f08d973582de774e8fa14c5cbaf362261afb6cc4047fe0125d1c7f30b09",
       "code_url": "https://github.com/roboarchitect-ai/RoboArchitect",
       "code_checked_at": "2026-11-07",
-      "pdf_url": "https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2610.42141.pdf?v=b1ecb4d04df3ae37",
-      "pdf_url_en": "https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2610.42141.en.pdf?v=19cd1be1baa0272e",
+      "pdf_url": "https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2610.42141_slides.pdf?v=b1ecb4d04df3ae37",
+      "pdf_url_en": "https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2610.42141_slides.en.pdf?v=19cd1be1baa0272e",
       "slides_en_source": "532aaf1ecfe812edcb94fcc7f0e9668f7f96f61c91235744e5fb15b3293ba7a5",
       "slides_en_version": "text-only-v1",
       "downloads_en": {
@@ -1034,12 +1078,14 @@
         "zh": {
           "repository": "paper-pdfs-2026-11",
           "bytes": 1685462,
-          "sha256": "b1ecb4d04df3ae3762dfcce2d5077440c8fd49a452131dd55b5eb382644a208a"
+          "sha256": "b1ecb4d04df3ae3762dfcce2d5077440c8fd49a452131dd55b5eb382644a208a",
+          "file": "pdfs/2610.42141_slides.pdf"
         },
         "en": {
           "repository": "paper-pdfs-2026-11",
           "bytes": 1455065,
-          "sha256": "19cd1be1baa0272e24296e2ce7156f8e21c578c54e090b6ae2f80083b9051ade"
+          "sha256": "19cd1be1baa0272e24296e2ce7156f8e21c578c54e090b6ae2f80083b9051ade",
+          "file": "pdfs/2610.42141_slides.en.pdf"
         }
       },
       "slide_count": 15
@@ -1065,8 +1111,8 @@
       "summary_en_source": "040d7182bd77ece70dfc97c6e41b60890d1817d0f216c31ab52028837a7dd063",
       "code_url": null,
       "code_checked_at": "2026-11-07",
-      "pdf_url": "https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2610.42096.pdf?v=005b5978dfe88c18",
-      "pdf_url_en": "https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2610.42096.en.pdf?v=895d73873299254d",
+      "pdf_url": "https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2610.42096_slides.pdf?v=005b5978dfe88c18",
+      "pdf_url_en": "https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2610.42096_slides.en.pdf?v=895d73873299254d",
       "slides_en_source": "0231c7f12421ca04072195c24bdbee653ffcefba0eb90b21932a8cd0287351ed",
       "slides_en_version": "text-only-v1",
       "downloads_en": {
@@ -1079,12 +1125,14 @@
         "zh": {
           "repository": "paper-pdfs-2026-11",
           "bytes": 982808,
-          "sha256": "005b5978dfe88c18e1e81f307a16054e6ff1db9f0928cc89b2056cd703175c94"
+          "sha256": "005b5978dfe88c18e1e81f307a16054e6ff1db9f0928cc89b2056cd703175c94",
+          "file": "pdfs/2610.42096_slides.pdf"
         },
         "en": {
           "repository": "paper-pdfs-2026-11",
           "bytes": 774772,
-          "sha256": "895d73873299254dee0c5452e9602bbb9040cb3cd1d265c3e6f8fcb6a9770964"
+          "sha256": "895d73873299254dee0c5452e9602bbb9040cb3cd1d265c3e6f8fcb6a9770964",
+          "file": "pdfs/2610.42096_slides.en.pdf"
         }
       },
       "slide_count": 12
@@ -1110,8 +1158,8 @@
       "summary_en_source": "ac2b35bba4922e4416dc2c5f1abbff6f99bf9945578d21945addd75508b36eed",
       "code_url": null,
       "code_checked_at": "2026-11-07",
-      "pdf_url": "https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2610.42053.pdf?v=4ba90c08ae18b51d",
-      "pdf_url_en": "https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2610.42053.en.pdf?v=4a8b6e4d6574b06d",
+      "pdf_url": "https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2610.42053_slides.pdf?v=4ba90c08ae18b51d",
+      "pdf_url_en": "https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2610.42053_slides.en.pdf?v=4a8b6e4d6574b06d",
       "slides_en_source": "987ae0b0ac27f917c754073c9af4399fa7926a00193c36980579e2401325cf03",
       "slides_en_version": "text-only-v1",
       "downloads_en": {
@@ -1124,12 +1172,14 @@
         "zh": {
           "repository": "paper-pdfs-2026-11",
           "bytes": 1174376,
-          "sha256": "4ba90c08ae18b51d43b65a67e3075a1ff64a6523d474dbd5f663a834af458698"
+          "sha256": "4ba90c08ae18b51d43b65a67e3075a1ff64a6523d474dbd5f663a834af458698",
+          "file": "pdfs/2610.42053_slides.pdf"
         },
         "en": {
           "repository": "paper-pdfs-2026-11",
           "bytes": 952811,
-          "sha256": "4a8b6e4d6574b06d156a4becf41a7b816907b5b7b0d018185e86520202a56774"
+          "sha256": "4a8b6e4d6574b06d156a4becf41a7b816907b5b7b0d018185e86520202a56774",
+          "file": "pdfs/2610.42053_slides.en.pdf"
         }
       },
       "slide_count": 17
@@ -1155,8 +1205,8 @@
       "summary_en_source": "b916b5960cd72a65dfea197f608e7fbded7b14ceb21c095bd96a3ce03a4cafcd",
       "code_url": "https://github.com/waltstephen/CaPtain",
       "code_checked_at": "2026-11-07",
-      "pdf_url": "https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2610.40799.pdf?v=92c13daa2238dbc1",
-      "pdf_url_en": "https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2610.40799.en.pdf?v=942d0559d7bcbbab",
+      "pdf_url": "https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2610.40799_slides.pdf?v=92c13daa2238dbc1",
+      "pdf_url_en": "https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2610.40799_slides.en.pdf?v=942d0559d7bcbbab",
       "slides_en_source": "a662747b1eb6d67c46405000fb3aea4ab81488abf3afcf0af818fa010917b0d5",
       "slides_en_version": "text-only-v1",
       "downloads_en": {
@@ -1169,12 +1219,14 @@
         "zh": {
           "repository": "paper-pdfs-2026-11",
           "bytes": 1855685,
-          "sha256": "92c13daa2238dbc16ace9a87c41488f39e6983915f0bb06bcf218e501cb48085"
+          "sha256": "92c13daa2238dbc16ace9a87c41488f39e6983915f0bb06bcf218e501cb48085",
+          "file": "pdfs/2610.40799_slides.pdf"
         },
         "en": {
           "repository": "paper-pdfs-2026-11",
           "bytes": 1603021,
-          "sha256": "942d0559d7bcbbab0fd56eea2bebcab2ee03eb288ac7284d39d15ae397c0d6af"
+          "sha256": "942d0559d7bcbbab0fd56eea2bebcab2ee03eb288ac7284d39d15ae397c0d6af",
+          "file": "pdfs/2610.40799_slides.en.pdf"
         }
       },
       "slide_count": 16
@@ -1200,8 +1252,8 @@
       "summary_en_source": "5553162e08c10bc1516d4b1c7eaf9d71e2eb23d17930ec31fad2d981cfbc4e0d",
       "code_url": null,
       "code_checked_at": "2026-11-07",
-      "pdf_url": "https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2610.40748.pdf?v=a4994c610582ada6",
-      "pdf_url_en": "https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2610.40748.en.pdf?v=857d49a68fd4c796",
+      "pdf_url": "https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2610.40748_slides.pdf?v=a4994c610582ada6",
+      "pdf_url_en": "https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2610.40748_slides.en.pdf?v=857d49a68fd4c796",
       "slides_en_source": "c71197a0798c3ecad1b31f6d459386dffd68eb2ffe408f97441fdc643a33695c",
       "slides_en_version": "text-only-v1",
       "downloads_en": {
@@ -1214,12 +1266,14 @@
         "zh": {
           "repository": "paper-pdfs-2026-11",
           "bytes": 2088406,
-          "sha256": "a4994c610582ada66d360f2bb3ea30a1baa0b37252fda977112d6c640a93ffb6"
+          "sha256": "a4994c610582ada66d360f2bb3ea30a1baa0b37252fda977112d6c640a93ffb6",
+          "file": "pdfs/2610.40748_slides.pdf"
         },
         "en": {
           "repository": "paper-pdfs-2026-11",
           "bytes": 1860307,
-          "sha256": "857d49a68fd4c796502e425e92cfdc56e5530369fdd19d1a1ef3d055cb073075"
+          "sha256": "857d49a68fd4c796502e425e92cfdc56e5530369fdd19d1a1ef3d055cb073075",
+          "file": "pdfs/2610.40748_slides.en.pdf"
         }
       },
       "slide_count": 16
@@ -1245,8 +1299,8 @@
       "summary_en_source": "47b2ba68862d91065a9d646000494b418b4f256548faf750c0bdbf8b2968fa70",
       "code_url": "https://github.com/yyyybq/Probing_Spatial_State_Release",
       "code_checked_at": "2026-11-07",
-      "pdf_url": "https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2610.40636.pdf?v=5454537e0d72b40f",
-      "pdf_url_en": "https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2610.40636.en.pdf?v=1a7ea56e558bbbe8",
+      "pdf_url": "https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2610.40636_slides.pdf?v=5454537e0d72b40f",
+      "pdf_url_en": "https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2610.40636_slides.en.pdf?v=1a7ea56e558bbbe8",
       "slides_en_source": "e25fc695005ae46d7254fc6676b4419f26b9300e8d3f792a6906d0d28178de16",
       "slides_en_version": "text-only-v1",
       "downloads_en": {
@@ -1259,12 +1313,14 @@
         "zh": {
           "repository": "paper-pdfs-2026-11",
           "bytes": 1334379,
-          "sha256": "5454537e0d72b40f9397e5dc831df4b747e35847275c1dbdbfe53ec9fd0c6e97"
+          "sha256": "5454537e0d72b40f9397e5dc831df4b747e35847275c1dbdbfe53ec9fd0c6e97",
+          "file": "pdfs/2610.40636_slides.pdf"
         },
         "en": {
           "repository": "paper-pdfs-2026-11",
           "bytes": 1128829,
-          "sha256": "1a7ea56e558bbbe8b8fd1d5f1e666ce5320ba4e85796ad0b1429a190abb86787"
+          "sha256": "1a7ea56e558bbbe8b8fd1d5f1e666ce5320ba4e85796ad0b1429a190abb86787",
+          "file": "pdfs/2610.40636_slides.en.pdf"
         }
       },
       "slide_count": 15
@@ -1290,8 +1346,8 @@
       "summary_en_source": "f2627bcfa2d0694e60b695681111e70c3a1f9f12326929d62b7033ae3060a923",
       "code_url": null,
       "code_checked_at": "2026-11-07",
-      "pdf_url": "https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2610.40373.pdf?v=ab45ee52df7bd773",
-      "pdf_url_en": "https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2610.40373.en.pdf?v=a05ee3eee9f7bdce",
+      "pdf_url": "https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2610.40373_slides.pdf?v=ab45ee52df7bd773",
+      "pdf_url_en": "https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2610.40373_slides.en.pdf?v=a05ee3eee9f7bdce",
       "slides_en_source": "5a9552492ddeaa5cc377bc6ab2c6bd1935be169b259a432adc415314898df71d",
       "slides_en_version": "text-only-v1",
       "downloads_en": {
@@ -1304,12 +1360,14 @@
         "zh": {
           "repository": "paper-pdfs-2026-11",
           "bytes": 1144956,
-          "sha256": "ab45ee52df7bd7733ba322da82c003332bbdd3657de33ea72b350d4614aa476d"
+          "sha256": "ab45ee52df7bd7733ba322da82c003332bbdd3657de33ea72b350d4614aa476d",
+          "file": "pdfs/2610.40373_slides.pdf"
         },
         "en": {
           "repository": "paper-pdfs-2026-11",
           "bytes": 944473,
-          "sha256": "a05ee3eee9f7bdceaf5293ca3ecd1c8330c2c6621a25e38154df7c2ecc080381"
+          "sha256": "a05ee3eee9f7bdceaf5293ca3ecd1c8330c2c6621a25e38154df7c2ecc080381",
+          "file": "pdfs/2610.40373_slides.en.pdf"
         }
       },
       "slide_count": 15
@@ -1335,8 +1393,8 @@
       "summary_en_source": "4f65d1791c67563557a34b5ed4fe00e957e47d79da9b49097de9fe036cbc3664",
       "code_url": "https://github.com/google-deepmind/mujoco_menagerie",
       "code_checked_at": "2026-11-07",
-      "pdf_url": "https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2610.37393.pdf?v=c589a925686ae487",
-      "pdf_url_en": "https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2610.37393.en.pdf?v=e995f724cc2e7e14",
+      "pdf_url": "https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2610.37393_slides.pdf?v=c589a925686ae487",
+      "pdf_url_en": "https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2610.37393_slides.en.pdf?v=e995f724cc2e7e14",
       "slides_en_source": "8add463e4ed6cf5059abf74b64ad80c63d2cdf43ba9ad42ef2eaa94e663234c1",
       "slides_en_version": "text-only-v1",
       "downloads_en": {
@@ -1349,12 +1407,14 @@
         "zh": {
           "repository": "paper-pdfs-2026-11",
           "bytes": 1508818,
-          "sha256": "c589a925686ae487b45e5cf8f8b530bed235ee4dd34c8f460bab615a6b19d54b"
+          "sha256": "c589a925686ae487b45e5cf8f8b530bed235ee4dd34c8f460bab615a6b19d54b",
+          "file": "pdfs/2610.37393_slides.pdf"
         },
         "en": {
           "repository": "paper-pdfs-2026-11",
           "bytes": 1287497,
-          "sha256": "e995f724cc2e7e14655ad2f488bbf04757ad1eb84ebef1391abe4c6869f046e3"
+          "sha256": "e995f724cc2e7e14655ad2f488bbf04757ad1eb84ebef1391abe4c6869f046e3",
+          "file": "pdfs/2610.37393_slides.en.pdf"
         }
       },
       "slide_count": 16
@@ -1380,8 +1440,8 @@
       "summary_en_source": "78170a6f9e12cc48be2347a8ea7cafbb340f3dab4559825ea4b89e5d175e0a46",
       "code_url": "https://github.com/PolyU-VCLab/OSWAM",
       "code_checked_at": "2026-11-07",
-      "pdf_url": "https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2610.35850.pdf?v=99e78fe0a3d09ed1",
-      "pdf_url_en": "https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2610.35850.en.pdf?v=16f5733751b662e1",
+      "pdf_url": "https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2610.35850_slides.pdf?v=99e78fe0a3d09ed1",
+      "pdf_url_en": "https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2610.35850_slides.en.pdf?v=16f5733751b662e1",
       "slides_en_source": "7cc9385147d598e7504db4f7130496d877b2a2905e369bddc910185a74811084",
       "slides_en_version": "text-only-v1",
       "downloads_en": {
@@ -1394,12 +1454,14 @@
         "zh": {
           "repository": "paper-pdfs-2026-11",
           "bytes": 1636627,
-          "sha256": "99e78fe0a3d09ed1d9b4bebdc4f8e1c45d44dea105847e19754bd2f079cf289d"
+          "sha256": "99e78fe0a3d09ed1d9b4bebdc4f8e1c45d44dea105847e19754bd2f079cf289d",
+          "file": "pdfs/2610.35850_slides.pdf"
         },
         "en": {
           "repository": "paper-pdfs-2026-11",
           "bytes": 1395541,
-          "sha256": "16f5733751b662e17922fb5793a55ff351db5a8028e3a9ec560a80b4ef88dd3c"
+          "sha256": "16f5733751b662e17922fb5793a55ff351db5a8028e3a9ec560a80b4ef88dd3c",
+          "file": "pdfs/2610.35850_slides.en.pdf"
         }
       },
       "slide_count": 20
@@ -1407,6 +1469,6 @@
   ],
   "last_checked_at": "2026-11-07T16:59:00.234237+08:00",
   "title": "Embodied AI Daily Papers",
-  "today": "2026-11-07",
+  "today": "2026-11-08",
   "timezone": "Asia/Shanghai"
 }

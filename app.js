@@ -34,11 +34,13 @@ function pdfURL(paper) {
   // Both the main site and the monthly archive serve PDFs inline via Pages.
   if (!/^\d{4}\.\d{4,5}(?:v\d+)?$/.test(paper.id)) throw Error(t('invalidData'));
   if(language==='en' && !paper.pdf_url_en) return null;
-  const filename=`${paper.id}${language==='en'?'.en':''}.pdf`;
+  const filename=`${paper.id}_slides${language==='en'?'.en':''}.pdf`;
+  const legacyFilename=`${paper.id}${language==='en'?'.en':''}.pdf`;
   const value=(language==='en'?paper.pdf_url_en:paper.pdf_url)||`pdfs/${filename}`;
   const url=new URL(value,location.href);
-  const local=url.origin===location.origin && url.pathname.endsWith(`/pdfs/${filename}`);
-  const archive=url.protocol==='https:' && /^[a-z0-9-]+\.github\.io$/.test(url.hostname) && url.pathname.endsWith(`/pdfs/${filename}`);
+  const knownFilename=[filename,legacyFilename].some(name=>url.pathname.endsWith(`/pdfs/${name}`));
+  const local=url.origin===location.origin && knownFilename;
+  const archive=url.protocol==='https:' && /^[a-z0-9-]+\.github\.io$/.test(url.hostname) && knownFilename;
   if((!local && !archive) || url.username || url.password) throw Error(t('invalidData'));
   return url.href;
 }

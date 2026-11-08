@@ -1,6 +1,6 @@
 # Embodied AI Daily Papers
 
-Website: [Embodied AI Daily Papers](https://ipplab.github.io/embodied-daily-papers-site/)
+Website: [Embodied AI Daily Papers](https://ipplab.github.io/embodied-ai-daily-papers/)
 
 Daily embodied AI papers from Hugging Face, with paper summaries and reading slides.
 
@@ -17,7 +17,7 @@ Dates refer to the first Hugging Face daily listing. Each paper appears once in 
 ### November 6, 2026
 
 **VFlash: Fast, Accurate Visual Planning via Flash Primitive Decoding**  
-[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.08449.en.pdf?v=533e65ad6f97bdce>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.08449.pdf?v=fc535a35f7aedecd>) · [arXiv](<https://arxiv.org/abs/2611.08449>) · [Code](<https://github.com/NVlabs/Eagle>) · [HF](<https://huggingface.co/papers/2611.08449>)
+[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.08449_slides.en.pdf?v=533e65ad6f97bdce>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.08449_slides.pdf?v=fc535a35f7aedecd>) · [arXiv](<https://arxiv.org/abs/2611.08449>) · [Code](<https://github.com/NVlabs/Eagle>) · [HF](<https://huggingface.co/papers/2611.08449>)
 
 <details>
 <summary>Summary</summary>
@@ -27,7 +27,7 @@ VFlash first uses a tool call to declare the type and length of a visual primiti
 </details>
 
 **SLA: Scaling Spatial-Language-Action Model via Continual Pre-training**  
-[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.08373.en.pdf?v=d70a0bbc6417546c>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.08373.pdf?v=448e9e6367e2472f>) · [arXiv](<https://arxiv.org/abs/2611.08373>) · [Code](<https://github.com/OpenHelix-Team/Spatial-Forcing>) · [HF](<https://huggingface.co/papers/2611.08373>)
+[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.08373_slides.en.pdf?v=d70a0bbc6417546c>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.08373_slides.pdf?v=448e9e6367e2472f>) · [arXiv](<https://arxiv.org/abs/2611.08373>) · [Code](<https://github.com/OpenHelix-Team/Spatial-Forcing>) · [HF](<https://huggingface.co/papers/2611.08373>)
 
 <details>
 <summary>Summary</summary>
@@ -37,7 +37,7 @@ SLA starts from π0.5 and performs continual pre-training on about 1.7M heteroge
 </details>
 
 **Towards Real-Time Full-Waveform LiDAR Transformers via Intensity-Guided Token Reduction and Physics-Aware Augmentation**  
-[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.07613.en.pdf?v=7622d0201e1e18cb>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.07613.pdf?v=d1516c6c83e8fe2b>) · [arXiv](<https://arxiv.org/abs/2611.07613>) · [Code](<https://github.com/Keio-CSG/FWL-ToPM>) · [HF](<https://huggingface.co/papers/2611.07613>)
+[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.07613_slides.en.pdf?v=7622d0201e1e18cb>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.07613_slides.pdf?v=d1516c6c83e8fe2b>) · [arXiv](<https://arxiv.org/abs/2611.07613>) · [Code](<https://github.com/Keio-CSG/FWL-ToPM>) · [HF](<https://huggingface.co/papers/2611.07613>)
 
 <details>
 <summary>Summary</summary>
@@ -47,7 +47,7 @@ In full-waveform LiDAR data, the vast majority of voxels are near-zero backgroun
 </details>
 
 **Open-HumanScale: An Open Recipe for Scaling Human and Robot Experience for Embodied Foundation Models**  
-[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.06817.en.pdf?v=a9665d1d5dc9e35b>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.06817.pdf?v=fb2fe4ce6fed5bc5>) · [arXiv](<https://arxiv.org/abs/2611.06817>) · [Code](<https://github.com/DAGroup-PKU/HumanNet>) · [HF](<https://huggingface.co/papers/2611.06817>)
+[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.06817_slides.en.pdf?v=a9665d1d5dc9e35b>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.06817_slides.pdf?v=fb2fe4ce6fed5bc5>) · [arXiv](<https://arxiv.org/abs/2611.06817>) · [Code](<https://github.com/DAGroup-PKU/HumanNet>) · [HF](<https://huggingface.co/papers/2611.06817>)
 
 <details>
 <summary>Summary</summary>
@@ -57,7 +57,7 @@ In full-waveform LiDAR data, the vast majority of voxels are near-zero backgroun
 </details>
 
 **Future Representation Distillation for Imagination-free World Action Models**  
-[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.04527.en.pdf?v=f8925d0ec0eba795>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.04527.pdf?v=2d5d86f661681aec>) · [arXiv](<https://arxiv.org/abs/2611.04527>) · [Code](<https://github.com/harryjo97/dreamfree>) · [HF](<https://huggingface.co/papers/2611.04527>)
+[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.04527_slides.en.pdf?v=f8925d0ec0eba795>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.04527_slides.pdf?v=2d5d86f661681aec>) · [arXiv](<https://arxiv.org/abs/2611.04527>) · [Code](<https://github.com/harryjo97/dreamfree>) · [HF](<https://huggingface.co/papers/2611.04527>)
 
 <details>
 <summary>Summary</summary>
@@ -67,7 +67,7 @@ DreamFree uses a frozen video diffusion model (which has seen the complete futur
 </details>
 
 **HeLM: Hierarchical Explicit Language Memory for Non-Markovian Manipulation**  
-[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.02660.en.pdf?v=1d0213b7bd9741fa>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.02660.pdf?v=f7570fb78834b54a>) · [arXiv](<https://arxiv.org/abs/2611.02660>) · [Code](<https://github.com/kimspacehuni/HeLM>) · [HF](<https://huggingface.co/papers/2611.02660>)
+[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.02660_slides.en.pdf?v=1d0213b7bd9741fa>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.02660_slides.pdf?v=f7570fb78834b54a>) · [arXiv](<https://arxiv.org/abs/2611.02660>) · [Code](<https://github.com/kimspacehuni/HeLM>) · [HF](<https://huggingface.co/papers/2611.02660>)
 
 <details>
 <summary>Summary</summary>
@@ -79,7 +79,7 @@ HeLM uses a fine-tuned VLM as the high-level policy, which writes task progress 
 ### November 5, 2026
 
 **From Pixels to Actions - Towards Native Vision-Language-Action Policies**  
-[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.06918.en.pdf?v=66ee679282f33d97>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.06918.pdf?v=599bbe7743578d4e>) · [arXiv](<https://arxiv.org/abs/2611.06918>) · [Code](<https://github.com/EvolvingLMMs-Lab/NEO>) · [HF](<https://huggingface.co/papers/2611.06918>)
+[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.06918_slides.en.pdf?v=66ee679282f33d97>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.06918_slides.pdf?v=599bbe7743578d4e>) · [arXiv](<https://arxiv.org/abs/2611.06918>) · [Code](<https://github.com/EvolvingLMMs-Lab/NEO>) · [HF](<https://huggingface.co/papers/2611.06918>)
 
 <details>
 <summary>Summary</summary>
@@ -89,7 +89,7 @@ NEO-VLA removes the vision encoder: pixels are patchified via convolution and fe
 </details>
 
 **PyRUA-REAL: Robot Exploration and Adaptive Learning through RSI in the Real World**  
-[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.06768.en.pdf?v=e640ea379965476d>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.06768.pdf?v=2c28e391e943f073>) · [arXiv](<https://arxiv.org/abs/2611.06768>) · [Code](<https://github.com/DAGroup-PKU/PyRUA-Lean>) · [HF](<https://huggingface.co/papers/2611.06768>)
+[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.06768_slides.en.pdf?v=e640ea379965476d>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.06768_slides.pdf?v=2c28e391e943f073>) · [arXiv](<https://arxiv.org/abs/2611.06768>) · [Code](<https://github.com/DAGroup-PKU/PyRUA-Lean>) · [HF](<https://huggingface.co/papers/2611.06768>)
 
 <details>
 <summary>Summary</summary>
@@ -99,7 +99,7 @@ NEO-VLA removes the vision encoder: pixels are patchified via convolution and fe
 </details>
 
 **PyRUA-DataFarm: LLM Agent as a Cost-Efficient Teleoperator for Real-Ready Robot Data**  
-[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.05320.en.pdf?v=7076ded8d776d78f>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.05320.pdf?v=ca0880096266f41f>) · [arXiv](<https://arxiv.org/abs/2611.05320>) · [Code](<https://github.com/DAGroup-PKU/PyRUA-Lean>) · [HF](<https://huggingface.co/papers/2611.05320>)
+[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.05320_slides.en.pdf?v=7076ded8d776d78f>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.05320_slides.pdf?v=ca0880096266f41f>) · [arXiv](<https://arxiv.org/abs/2611.05320>) · [Code](<https://github.com/DAGroup-PKU/PyRUA-Lean>) · [HF](<https://huggingface.co/papers/2611.05320>)
 
 <details>
 <summary>Summary</summary>
@@ -109,7 +109,7 @@ NEO-VLA removes the vision encoder: pixels are patchified via convolution and fe
 </details>
 
 **DRAP: Dynamics-Risk Adaptive Plasticity for Continual Learning in Physical AI**  
-[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.05029.en.pdf?v=2ab9cd273c9df7fc>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.05029.pdf?v=0f268bf93ee4d89e>) · [arXiv](<https://arxiv.org/abs/2611.05029>) · [Code](<https://github.com/oswaldoludwig/DRAP-Dynamics-Risk-Adaptive-Plasticity>) · [HF](<https://huggingface.co/papers/2611.05029>)
+[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.05029_slides.en.pdf?v=2ab9cd273c9df7fc>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.05029_slides.pdf?v=0f268bf93ee4d89e>) · [arXiv](<https://arxiv.org/abs/2611.05029>) · [Code](<https://github.com/oswaldoludwig/DRAP-Dynamics-Risk-Adaptive-Plasticity>) · [HF](<https://huggingface.co/papers/2611.05029>)
 
 <details>
 <summary>Summary</summary>
@@ -119,7 +119,7 @@ DRAP first fits local linear dynamics from expert trajectories and uses the larg
 </details>
 
 **Human-to-Robot Transfer via Bridging Representation and Action Space in VLAs**  
-[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.04391.en.pdf?v=ea668c9cc4077f7c>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.04391.pdf?v=da871431b358a18f>) · [arXiv](<https://arxiv.org/abs/2611.04391>) · [Code](<https://github.com/jun-brro/h2rb-code>) · [HF](<https://huggingface.co/papers/2611.04391>)
+[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.04391_slides.en.pdf?v=ea668c9cc4077f7c>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.04391_slides.pdf?v=da871431b358a18f>) · [arXiv](<https://arxiv.org/abs/2611.04391>) · [Code](<https://github.com/jun-brro/h2rb-code>) · [HF](<https://huggingface.co/papers/2611.04391>)
 
 <details>
 <summary>Summary</summary>
@@ -131,7 +131,7 @@ H2RB builds two "bridges" on top of a VLA pretrained on robot data: on the perce
 ### November 4, 2026
 
 **DreamX: Video Diffusion Model is a Universal Latent Action Learner**  
-[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.05377.en.pdf?v=1bbb7939410e6f9f>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.05377.pdf?v=3a7e7fc426e80882>) · [arXiv](<https://arxiv.org/abs/2611.05377>) · Code · [HF](<https://huggingface.co/papers/2611.05377>)
+[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.05377_slides.en.pdf?v=1bbb7939410e6f9f>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.05377_slides.pdf?v=3a7e7fc426e80882>) · [arXiv](<https://arxiv.org/abs/2611.05377>) · Code · [HF](<https://huggingface.co/papers/2611.05377>)
 
 <details>
 <summary>Summary</summary>
@@ -141,7 +141,7 @@ DreamX uses the pretrained video diffusion model Cosmos-Predict2.5 (2B) \*\*as b
 </details>
 
 **Route Anything: A Study of Model and Policy Routing for General-Purpose AI Systems**  
-[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.05275.en.pdf?v=16a9228cd6c10605>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.05275.pdf?v=8a2e2622849e53b2>) · [arXiv](<https://arxiv.org/abs/2611.05275>) · [Code](<https://github.com/InfRec-Cardinal/route-anything>) · [HF](<https://huggingface.co/papers/2611.05275>)
+[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.05275_slides.en.pdf?v=16a9228cd6c10605>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.05275_slides.pdf?v=8a2e2622849e53b2>) · [arXiv](<https://arxiv.org/abs/2611.05275>) · [Code](<https://github.com/InfRec-Cardinal/route-anything>) · [HF](<https://huggingface.co/papers/2611.05275>)
 
 <details>
 <summary>Summary</summary>
@@ -151,7 +151,7 @@ The authors first build a unified theory of routing (prices, reference models, a
 </details>
 
 **RoboTryOn: Synthesizing Dexterous Robot Demonstrations from Human Videos via Virtual Try-On**  
-[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.05163.en.pdf?v=40ac6269170768d1>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.05163.pdf?v=d32623a0a30e0e85>) · [arXiv](<https://arxiv.org/abs/2611.05163>) · [Code](<https://github.com/ryan-seungyong-lee/RoboTryOn>) · [HF](<https://huggingface.co/papers/2611.05163>)
+[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.05163_slides.en.pdf?v=40ac6269170768d1>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.05163_slides.pdf?v=d32623a0a30e0e85>) · [arXiv](<https://arxiv.org/abs/2611.05163>) · [Code](<https://github.com/ryan-seungyong-lee/RoboTryOn>) · [HF](<https://huggingface.co/papers/2611.05163>)
 
 <details>
 <summary>Summary</summary>
@@ -161,7 +161,7 @@ The authors first build a unified theory of routing (prices, reference models, a
 </details>
 
 **PrimeSim: A Generalist World Model Simulator from Large-Scale Cross-Embodiment Demonstrations**  
-[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.04870.en.pdf?v=06c2563ed7bb9e0f>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.04870.pdf?v=5f034c149bb65ffd>) · [arXiv](<https://arxiv.org/abs/2611.04870>) · [Code](<https://github.com/PrimebotTech/PrimeSim>) · [HF](<https://huggingface.co/papers/2611.04870>)
+[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.04870_slides.en.pdf?v=06c2563ed7bb9e0f>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.04870_slides.pdf?v=5f034c149bb65ffd>) · [arXiv](<https://arxiv.org/abs/2611.04870>) · [Code](<https://github.com/PrimebotTech/PrimeSim>) · [HF](<https://huggingface.co/papers/2611.04870>)
 
 <details>
 <summary>Summary</summary>
@@ -171,7 +171,7 @@ PrimeSim starts from the Wan2.2-TI2V-5B video generation model, first performing
 </details>
 
 **Say the Same, Act Differently: Diagnosing and Steering Text-Action Divergence in Reasoning VLAs**  
-[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.04166.en.pdf?v=e045c3ef8581b389>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.04166.pdf?v=445262cd6ef3d67c>) · [arXiv](<https://arxiv.org/abs/2611.04166>) · [Code](<https://github.com/nerfies/nerfies.github.io>) · [HF](<https://huggingface.co/papers/2611.04166>)
+[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.04166_slides.en.pdf?v=e045c3ef8581b389>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.04166_slides.pdf?v=445262cd6ef3d67c>) · [arXiv](<https://arxiv.org/abs/2611.04166>) · [Code](<https://github.com/nerfies/nerfies.github.io>) · [HF](<https://huggingface.co/papers/2611.04166>)
 
 <details>
 <summary>Summary</summary>
@@ -181,7 +181,7 @@ In VLA models with reasoning, text and actions read from the same hidden state, 
 </details>
 
 **RoboColosseum: Evaluating Physical Intelligence at Scale In-The-Wild**  
-[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.02497.en.pdf?v=4a877e8f2942284a>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.02497.pdf?v=4196d06bd5188744>) · [arXiv](<https://arxiv.org/abs/2611.02497>) · [Code](<https://github.com/RoboColosseum/robocolosseum-client>) · [HF](<https://huggingface.co/papers/2611.02497>)
+[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.02497_slides.en.pdf?v=4a877e8f2942284a>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.02497_slides.pdf?v=4196d06bd5188744>) · [arXiv](<https://arxiv.org/abs/2611.02497>) · [Code](<https://github.com/RoboColosseum/robocolosseum-client>) · [HF](<https://huggingface.co/papers/2611.02497>)
 
 <details>
 <summary>Summary</summary>
@@ -191,7 +191,7 @@ RoboColosseum evaluates 8 models in a distributed manner across 124 real-world s
 </details>
 
 **Are Frontier VLM Agents Ready to Be Robot Generalists? An Empirical Study with the Embodied Agent Arena**  
-[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2610.00854.en.pdf?v=3592d68d0f51d3ee>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2610.00854.pdf?v=52a4f0873c6e3291>) · [arXiv](<https://arxiv.org/abs/2610.00854>) · [Code](<https://github.com/embodied-agent-arena/embodied-agent-arena>) · [HF](<https://huggingface.co/papers/2610.00854>)
+[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2610.00854_slides.en.pdf?v=3592d68d0f51d3ee>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2610.00854_slides.pdf?v=52a4f0873c6e3291>) · [arXiv](<https://arxiv.org/abs/2610.00854>) · [Code](<https://github.com/embodied-agent-arena/embodied-agent-arena>) · [HF](<https://huggingface.co/papers/2610.00854>)
 
 <details>
 <summary>Summary</summary>
@@ -203,7 +203,7 @@ RoboColosseum evaluates 8 models in a distributed manner across 124 real-world s
 ### November 3, 2026
 
 **When Does Latent Prediction Error Support Physical Surprise Claims in Video World Models?**  
-[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.01815.en.pdf?v=29643aaea4a30042>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.01815.pdf?v=5a29c04940bb7dab>) · [arXiv](<https://arxiv.org/abs/2611.01815>) · [Code](<https://github.com/3-ml/jepa-surprise>) · [HF](<https://huggingface.co/papers/2611.01815>)
+[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.01815_slides.en.pdf?v=29643aaea4a30042>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.01815_slides.pdf?v=5a29c04940bb7dab>) · [arXiv](<https://arxiv.org/abs/2611.01815>) · [Code](<https://github.com/3-ml/jepa-surprise>) · [HF](<https://huggingface.co/papers/2611.01815>)
 
 <details>
 <summary>Summary</summary>
@@ -213,7 +213,7 @@ RoboColosseum evaluates 8 models in a distributed manner across 124 real-world s
 </details>
 
 **Democratizing Robot-Use Agents: A Unified Harness with Open Models**  
-[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.01560.en.pdf?v=e4c17a7649d75ef2>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.01560.pdf?v=5903bc133d53b93e>) · [arXiv](<https://arxiv.org/abs/2611.01560>) · [Code](<https://github.com/Open-RUA/uni-robot-agent>) · [HF](<https://huggingface.co/papers/2611.01560>)
+[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.01560_slides.en.pdf?v=e4c17a7649d75ef2>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.01560_slides.pdf?v=5903bc133d53b93e>) · [arXiv](<https://arxiv.org/abs/2611.01560>) · [Code](<https://github.com/Open-RUA/uni-robot-agent>) · [HF](<https://huggingface.co/papers/2611.01560>)
 
 <details>
 <summary>Summary</summary>
@@ -223,7 +223,7 @@ The paper proposes uni-robot-agent, a unified, modular robot-use agent framework
 </details>
 
 **TinyAstral: Transferring Self-Evolving Harnesses to Tiny Generalist Manipulation Agents**  
-[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2610.41216.en.pdf?v=837d6cbd7e6539a6>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2610.41216.pdf?v=2710179ef71348e3>) · [arXiv](<https://arxiv.org/abs/2610.41216>) · [Code](<https://github.com/Garfield-kh/TinyAstral>) · [HF](<https://huggingface.co/papers/2610.41216>)
+[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2610.41216_slides.en.pdf?v=837d6cbd7e6539a6>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2610.41216_slides.pdf?v=2710179ef71348e3>) · [arXiv](<https://arxiv.org/abs/2610.41216>) · [Code](<https://github.com/Garfield-kh/TinyAstral>) · [HF](<https://huggingface.co/papers/2610.41216>)
 
 <details>
 <summary>Summary</summary>
@@ -233,7 +233,7 @@ TinyAstral first freezes an open-source large-model teacher (Qwen3.8-Flash-Next,
 </details>
 
 **WorldFlow: Joint Video and 3D Motion Prediction via Large-Scale Pretraining**  
-[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2610.39278.en.pdf?v=32586fcf9686c169>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2610.39278.pdf?v=13614a1d6df9f091>) · [arXiv](<https://arxiv.org/abs/2610.39278>) · [Code](<https://github.com/worldflow-rbs/worldflow>) · [HF](<https://huggingface.co/papers/2610.39278>)
+[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2610.39278_slides.en.pdf?v=32586fcf9686c169>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2610.39278_slides.pdf?v=13614a1d6df9f091>) · [arXiv](<https://arxiv.org/abs/2610.39278>) · [Code](<https://github.com/worldflow-rbs/worldflow>) · [HF](<https://huggingface.co/papers/2610.39278>)
 
 <details>
 <summary>Summary</summary>
@@ -245,7 +245,7 @@ WorldFlow adds a "3D displacement token" modality to the pretrained video world 
 ### November 2, 2026
 
 **RoboArchitect: Automating the Design of Robotic Agents with Persistent Memory**  
-[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2610.42141.en.pdf?v=19cd1be1baa0272e>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2610.42141.pdf?v=b1ecb4d04df3ae37>) · [arXiv](<https://arxiv.org/abs/2610.42141>) · [Code](<https://github.com/roboarchitect-ai/RoboArchitect>) · [HF](<https://huggingface.co/papers/2610.42141>)
+[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2610.42141_slides.en.pdf?v=19cd1be1baa0272e>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2610.42141_slides.pdf?v=b1ecb4d04df3ae37>) · [arXiv](<https://arxiv.org/abs/2610.42141>) · [Code](<https://github.com/roboarchitect-ai/RoboArchitect>) · [HF](<https://huggingface.co/papers/2610.42141>)
 
 <details>
 <summary>Summary</summary>
@@ -255,7 +255,7 @@ WorldFlow adds a "3D displacement token" modality to the pretrained video world 
 </details>
 
 **CausalWAM: Learning the Causes of Actions in World Action Models**  
-[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2610.42096.en.pdf?v=895d73873299254d>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2610.42096.pdf?v=005b5978dfe88c18>) · [arXiv](<https://arxiv.org/abs/2610.42096>) · Code · [HF](<https://huggingface.co/papers/2610.42096>)
+[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2610.42096_slides.en.pdf?v=895d73873299254d>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2610.42096_slides.pdf?v=005b5978dfe88c18>) · [arXiv](<https://arxiv.org/abs/2610.42096>) · Code · [HF](<https://huggingface.co/papers/2610.42096>)
 
 <details>
 <summary>Summary</summary>
@@ -265,7 +265,7 @@ World action models (WAMs) must encode the entire scene in order to predict fram
 </details>
 
 **REA: A Routed Embodied Agent Runtime for Asynchronous Brain-Cerebellum Control**  
-[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2610.42053.en.pdf?v=4a8b6e4d6574b06d>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2610.42053.pdf?v=4ba90c08ae18b51d>) · [arXiv](<https://arxiv.org/abs/2610.42053>) · Code · [HF](<https://huggingface.co/papers/2610.42053>)
+[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2610.42053_slides.en.pdf?v=4a8b6e4d6574b06d>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2610.42053_slides.pdf?v=4ba90c08ae18b51d>) · [arXiv](<https://arxiv.org/abs/2610.42053>) · Code · [HF](<https://huggingface.co/papers/2610.42053>)
 
 <details>
 <summary>Summary</summary>
@@ -275,7 +275,7 @@ REA is a three-layer "brain-router-cerebellum" embodied runtime. Its rule is tha
 </details>
 
 **CaPtain: A Pipeline for Post-Training Code-as-Policy Robot Agents**  
-[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2610.40799.en.pdf?v=942d0559d7bcbbab>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2610.40799.pdf?v=92c13daa2238dbc1>) · [arXiv](<https://arxiv.org/abs/2610.40799>) · [Code](<https://github.com/waltstephen/CaPtain>) · [HF](<https://huggingface.co/papers/2610.40799>)
+[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2610.40799_slides.en.pdf?v=942d0559d7bcbbab>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2610.40799_slides.pdf?v=92c13daa2238dbc1>) · [arXiv](<https://arxiv.org/abs/2610.40799>) · [Code](<https://github.com/waltstephen/CaPtain>) · [HF](<https://huggingface.co/papers/2610.40799>)
 
 <details>
 <summary>Summary</summary>
@@ -285,7 +285,7 @@ CaPtain gives a 4B open-source VLM only low-level primitives, first performs SFT
 </details>
 
 **WorldBridge: Bridging Video and Action for Task Generalization in World Action Models**  
-[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2610.40748.en.pdf?v=857d49a68fd4c796>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2610.40748.pdf?v=a4994c610582ada6>) · [arXiv](<https://arxiv.org/abs/2610.40748>) · Code · [HF](<https://huggingface.co/papers/2610.40748>)
+[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2610.40748_slides.en.pdf?v=857d49a68fd4c796>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2610.40748_slides.pdf?v=a4994c610582ada6>) · [arXiv](<https://arxiv.org/abs/2610.40748>) · Code · [HF](<https://huggingface.co/papers/2610.40748>)
 
 <details>
 <summary>Summary</summary>
@@ -295,7 +295,7 @@ WorldBridge decomposes task generalization in world action models into video pre
 </details>
 
 **Probing Spatial State Representations in Visual Foundation Models**  
-[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2610.40636.en.pdf?v=1a7ea56e558bbbe8>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2610.40636.pdf?v=5454537e0d72b40f>) · [arXiv](<https://arxiv.org/abs/2610.40636>) · [Code](<https://github.com/yyyybq/Probing_Spatial_State_Release>) · [HF](<https://huggingface.co/papers/2610.40636>)
+[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2610.40636_slides.en.pdf?v=1a7ea56e558bbbe8>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2610.40636_slides.pdf?v=5454537e0d72b40f>) · [arXiv](<https://arxiv.org/abs/2610.40636>) · [Code](<https://github.com/yyyybq/Probing_Spatial_State_Release>) · [HF](<https://huggingface.co/papers/2610.40636>)
 
 <details>
 <summary>Summary</summary>
@@ -305,7 +305,7 @@ The paper decomposes "spatial state representation" into four progressively hier
 </details>
 
 **HiFOR: Hierarchical Foresight with Action-Guided World Grounding for Vision-Language-Action Model**  
-[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2610.40373.en.pdf?v=a05ee3eee9f7bdce>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2610.40373.pdf?v=ab45ee52df7bd773>) · [arXiv](<https://arxiv.org/abs/2610.40373>) · Code · [HF](<https://huggingface.co/papers/2610.40373>)
+[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2610.40373_slides.en.pdf?v=a05ee3eee9f7bdce>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2610.40373_slides.pdf?v=ab45ee52df7bd773>) · [arXiv](<https://arxiv.org/abs/2610.40373>) · Code · [HF](<https://huggingface.co/papers/2610.40373>)
 
 <details>
 <summary>Summary</summary>
@@ -315,7 +315,7 @@ HiFOR jointly predicts short-term states, semantic milestones, and the final goa
 </details>
 
 **Learning Quality-Controllable Robot Policies with Iterative Hindsight Relabeling**  
-[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2610.37393.en.pdf?v=e995f724cc2e7e14>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2610.37393.pdf?v=c589a925686ae487>) · [arXiv](<https://arxiv.org/abs/2610.37393>) · [Code](<https://github.com/google-deepmind/mujoco_menagerie>) · [HF](<https://huggingface.co/papers/2610.37393>)
+[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2610.37393_slides.en.pdf?v=e995f724cc2e7e14>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2610.37393_slides.pdf?v=c589a925686ae487>) · [arXiv](<https://arxiv.org/abs/2610.37393>) · [Code](<https://github.com/google-deepmind/mujoco_menagerie>) · [HF](<https://huggingface.co/papers/2610.37393>)
 
 <details>
 <summary>Summary</summary>
@@ -325,7 +325,7 @@ The authors quantize "execution quality" (speed, smoothness, path length, tray s
 </details>
 
 **OSWAM: An Effective World Action Model with One-Step Action Generation**  
-[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2610.35850.en.pdf?v=16f5733751b662e1>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2610.35850.pdf?v=99e78fe0a3d09ed1>) · [arXiv](<https://arxiv.org/abs/2610.35850>) · [Code](<https://github.com/PolyU-VCLab/OSWAM>) · [HF](<https://huggingface.co/papers/2610.35850>)
+[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2610.35850_slides.en.pdf?v=16f5733751b662e1>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2610.35850_slides.pdf?v=99e78fe0a3d09ed1>) · [arXiv](<https://arxiv.org/abs/2610.35850>) · [Code](<https://github.com/PolyU-VCLab/OSWAM>) · [HF](<https://huggingface.co/papers/2610.35850>)
 
 <details>
 <summary>Summary</summary>
@@ -338,14 +338,14 @@ Instead of having the Action DiT start from Gaussian noise, OSWAM places a small
 ## Popular Papers
 
 
-Snapshot: 2026-11-07 (Asia/Shanghai). Ranked by current cumulative Hugging Face upvotes; updated with the daily publication.
+Snapshot: 2026-11-08 (Asia/Shanghai). Ranked by current cumulative Hugging Face upvotes; updated with the daily publication.
 
 
 ### Last 7 Days
 
 
 **SLA: Scaling Spatial-Language-Action Model via Continual Pre-training**  
-[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.08373.en.pdf?v=d70a0bbc6417546c>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.08373.pdf?v=448e9e6367e2472f>) · [arXiv](<https://arxiv.org/abs/2611.08373>) · [Code](<https://github.com/OpenHelix-Team/Spatial-Forcing>) · [HF](<https://huggingface.co/papers/2611.08373>) · 150 HF upvotes
+[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.08373_slides.en.pdf?v=d70a0bbc6417546c>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.08373_slides.pdf?v=448e9e6367e2472f>) · [arXiv](<https://arxiv.org/abs/2611.08373>) · [Code](<https://github.com/OpenHelix-Team/Spatial-Forcing>) · [HF](<https://huggingface.co/papers/2611.08373>) · 150 HF upvotes
 
 <details>
 <summary>Summary</summary>
@@ -356,7 +356,7 @@ SLA starts from π0.5 and performs continual pre-training on about 1.7M heteroge
 
 
 **Are Frontier VLM Agents Ready to Be Robot Generalists? An Empirical Study with the Embodied Agent Arena**  
-[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2610.00854.en.pdf?v=3592d68d0f51d3ee>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2610.00854.pdf?v=52a4f0873c6e3291>) · [arXiv](<https://arxiv.org/abs/2610.00854>) · [Code](<https://github.com/embodied-agent-arena/embodied-agent-arena>) · [HF](<https://huggingface.co/papers/2610.00854>) · 106 HF upvotes
+[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2610.00854_slides.en.pdf?v=3592d68d0f51d3ee>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2610.00854_slides.pdf?v=52a4f0873c6e3291>) · [arXiv](<https://arxiv.org/abs/2610.00854>) · [Code](<https://github.com/embodied-agent-arena/embodied-agent-arena>) · [HF](<https://huggingface.co/papers/2610.00854>) · 106 HF upvotes
 
 <details>
 <summary>Summary</summary>
@@ -367,7 +367,7 @@ SLA starts from π0.5 and performs continual pre-training on about 1.7M heteroge
 
 
 **VFlash: Fast, Accurate Visual Planning via Flash Primitive Decoding**  
-[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.08449.en.pdf?v=533e65ad6f97bdce>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.08449.pdf?v=fc535a35f7aedecd>) · [arXiv](<https://arxiv.org/abs/2611.08449>) · [Code](<https://github.com/NVlabs/Eagle>) · [HF](<https://huggingface.co/papers/2611.08449>) · 96 HF upvotes
+[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.08449_slides.en.pdf?v=533e65ad6f97bdce>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.08449_slides.pdf?v=fc535a35f7aedecd>) · [arXiv](<https://arxiv.org/abs/2611.08449>) · [Code](<https://github.com/NVlabs/Eagle>) · [HF](<https://huggingface.co/papers/2611.08449>) · 96 HF upvotes
 
 <details>
 <summary>Summary</summary>
@@ -378,7 +378,7 @@ VFlash first uses a tool call to declare the type and length of a visual primiti
 
 
 **Route Anything: A Study of Model and Policy Routing for General-Purpose AI Systems**  
-[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.05275.en.pdf?v=16a9228cd6c10605>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.05275.pdf?v=8a2e2622849e53b2>) · [arXiv](<https://arxiv.org/abs/2611.05275>) · [Code](<https://github.com/InfRec-Cardinal/route-anything>) · [HF](<https://huggingface.co/papers/2611.05275>) · 86 HF upvotes
+[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.05275_slides.en.pdf?v=16a9228cd6c10605>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.05275_slides.pdf?v=8a2e2622849e53b2>) · [arXiv](<https://arxiv.org/abs/2611.05275>) · [Code](<https://github.com/InfRec-Cardinal/route-anything>) · [HF](<https://huggingface.co/papers/2611.05275>) · 86 HF upvotes
 
 <details>
 <summary>Summary</summary>
@@ -389,7 +389,7 @@ The authors first build a unified theory of routing (prices, reference models, a
 
 
 **From Pixels to Actions - Towards Native Vision-Language-Action Policies**  
-[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.06918.en.pdf?v=66ee679282f33d97>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.06918.pdf?v=599bbe7743578d4e>) · [arXiv](<https://arxiv.org/abs/2611.06918>) · [Code](<https://github.com/EvolvingLMMs-Lab/NEO>) · [HF](<https://huggingface.co/papers/2611.06918>) · 59 HF upvotes
+[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.06918_slides.en.pdf?v=66ee679282f33d97>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.06918_slides.pdf?v=599bbe7743578d4e>) · [arXiv](<https://arxiv.org/abs/2611.06918>) · [Code](<https://github.com/EvolvingLMMs-Lab/NEO>) · [HF](<https://huggingface.co/papers/2611.06918>) · 59 HF upvotes
 
 <details>
 <summary>Summary</summary>
@@ -400,7 +400,7 @@ NEO-VLA removes the vision encoder: pixels are patchified via convolution and fe
 
 
 **DreamX: Video Diffusion Model is a Universal Latent Action Learner**  
-[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.05377.en.pdf?v=1bbb7939410e6f9f>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.05377.pdf?v=3a7e7fc426e80882>) · [arXiv](<https://arxiv.org/abs/2611.05377>) · Code · [HF](<https://huggingface.co/papers/2611.05377>) · 57 HF upvotes
+[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.05377_slides.en.pdf?v=1bbb7939410e6f9f>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.05377_slides.pdf?v=3a7e7fc426e80882>) · [arXiv](<https://arxiv.org/abs/2611.05377>) · Code · [HF](<https://huggingface.co/papers/2611.05377>) · 57 HF upvotes
 
 <details>
 <summary>Summary</summary>
@@ -411,7 +411,7 @@ DreamX uses the pretrained video diffusion model Cosmos-Predict2.5 (2B) \*\*as b
 
 
 **RoboColosseum: Evaluating Physical Intelligence at Scale In-The-Wild**  
-[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.02497.en.pdf?v=4a877e8f2942284a>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.02497.pdf?v=4196d06bd5188744>) · [arXiv](<https://arxiv.org/abs/2611.02497>) · [Code](<https://github.com/RoboColosseum/robocolosseum-client>) · [HF](<https://huggingface.co/papers/2611.02497>) · 49 HF upvotes
+[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.02497_slides.en.pdf?v=4a877e8f2942284a>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.02497_slides.pdf?v=4196d06bd5188744>) · [arXiv](<https://arxiv.org/abs/2611.02497>) · [Code](<https://github.com/RoboColosseum/robocolosseum-client>) · [HF](<https://huggingface.co/papers/2611.02497>) · 49 HF upvotes
 
 <details>
 <summary>Summary</summary>
@@ -422,7 +422,7 @@ RoboColosseum evaluates 8 models in a distributed manner across 124 real-world s
 
 
 **Democratizing Robot-Use Agents: A Unified Harness with Open Models**  
-[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.01560.en.pdf?v=e4c17a7649d75ef2>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.01560.pdf?v=5903bc133d53b93e>) · [arXiv](<https://arxiv.org/abs/2611.01560>) · [Code](<https://github.com/Open-RUA/uni-robot-agent>) · [HF](<https://huggingface.co/papers/2611.01560>) · 48 HF upvotes
+[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.01560_slides.en.pdf?v=e4c17a7649d75ef2>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.01560_slides.pdf?v=5903bc133d53b93e>) · [arXiv](<https://arxiv.org/abs/2611.01560>) · [Code](<https://github.com/Open-RUA/uni-robot-agent>) · [HF](<https://huggingface.co/papers/2611.01560>) · 48 HF upvotes
 
 <details>
 <summary>Summary</summary>
@@ -433,7 +433,7 @@ The paper proposes uni-robot-agent, a unified, modular robot-use agent framework
 
 
 **When Does Latent Prediction Error Support Physical Surprise Claims in Video World Models?**  
-[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.01815.en.pdf?v=29643aaea4a30042>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.01815.pdf?v=5a29c04940bb7dab>) · [arXiv](<https://arxiv.org/abs/2611.01815>) · [Code](<https://github.com/3-ml/jepa-surprise>) · [HF](<https://huggingface.co/papers/2611.01815>) · 27 HF upvotes
+[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.01815_slides.en.pdf?v=29643aaea4a30042>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.01815_slides.pdf?v=5a29c04940bb7dab>) · [arXiv](<https://arxiv.org/abs/2611.01815>) · [Code](<https://github.com/3-ml/jepa-surprise>) · [HF](<https://huggingface.co/papers/2611.01815>) · 27 HF upvotes
 
 <details>
 <summary>Summary</summary>
@@ -444,7 +444,7 @@ The paper proposes uni-robot-agent, a unified, modular robot-use agent framework
 
 
 **PyRUA-DataFarm: LLM Agent as a Cost-Efficient Teleoperator for Real-Ready Robot Data**  
-[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.05320.en.pdf?v=7076ded8d776d78f>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.05320.pdf?v=ca0880096266f41f>) · [arXiv](<https://arxiv.org/abs/2611.05320>) · [Code](<https://github.com/DAGroup-PKU/PyRUA-Lean>) · [HF](<https://huggingface.co/papers/2611.05320>) · 27 HF upvotes
+[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.05320_slides.en.pdf?v=7076ded8d776d78f>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.05320_slides.pdf?v=ca0880096266f41f>) · [arXiv](<https://arxiv.org/abs/2611.05320>) · [Code](<https://github.com/DAGroup-PKU/PyRUA-Lean>) · [HF](<https://huggingface.co/papers/2611.05320>) · 27 HF upvotes
 
 <details>
 <summary>Summary</summary>
@@ -455,7 +455,7 @@ The paper proposes uni-robot-agent, a unified, modular robot-use agent framework
 
 
 **HiFOR: Hierarchical Foresight with Action-Guided World Grounding for Vision-Language-Action Model**  
-[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2610.40373.en.pdf?v=a05ee3eee9f7bdce>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2610.40373.pdf?v=ab45ee52df7bd773>) · [arXiv](<https://arxiv.org/abs/2610.40373>) · Code · [HF](<https://huggingface.co/papers/2610.40373>) · 25 HF upvotes
+[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2610.40373_slides.en.pdf?v=a05ee3eee9f7bdce>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2610.40373_slides.pdf?v=ab45ee52df7bd773>) · [arXiv](<https://arxiv.org/abs/2610.40373>) · Code · [HF](<https://huggingface.co/papers/2610.40373>) · 25 HF upvotes
 
 <details>
 <summary>Summary</summary>
@@ -466,7 +466,7 @@ HiFOR jointly predicts short-term states, semantic milestones, and the final goa
 
 
 **Probing Spatial State Representations in Visual Foundation Models**  
-[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2610.40636.en.pdf?v=1a7ea56e558bbbe8>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2610.40636.pdf?v=5454537e0d72b40f>) · [arXiv](<https://arxiv.org/abs/2610.40636>) · [Code](<https://github.com/yyyybq/Probing_Spatial_State_Release>) · [HF](<https://huggingface.co/papers/2610.40636>) · 20 HF upvotes
+[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2610.40636_slides.en.pdf?v=1a7ea56e558bbbe8>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2610.40636_slides.pdf?v=5454537e0d72b40f>) · [arXiv](<https://arxiv.org/abs/2610.40636>) · [Code](<https://github.com/yyyybq/Probing_Spatial_State_Release>) · [HF](<https://huggingface.co/papers/2610.40636>) · 20 HF upvotes
 
 <details>
 <summary>Summary</summary>
@@ -480,7 +480,7 @@ The paper decomposes "spatial state representation" into four progressively hier
 
 
 **SLA: Scaling Spatial-Language-Action Model via Continual Pre-training**  
-[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.08373.en.pdf?v=d70a0bbc6417546c>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.08373.pdf?v=448e9e6367e2472f>) · [arXiv](<https://arxiv.org/abs/2611.08373>) · [Code](<https://github.com/OpenHelix-Team/Spatial-Forcing>) · [HF](<https://huggingface.co/papers/2611.08373>) · 150 HF upvotes
+[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.08373_slides.en.pdf?v=d70a0bbc6417546c>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.08373_slides.pdf?v=448e9e6367e2472f>) · [arXiv](<https://arxiv.org/abs/2611.08373>) · [Code](<https://github.com/OpenHelix-Team/Spatial-Forcing>) · [HF](<https://huggingface.co/papers/2611.08373>) · 150 HF upvotes
 
 <details>
 <summary>Summary</summary>
@@ -491,7 +491,7 @@ SLA starts from π0.5 and performs continual pre-training on about 1.7M heteroge
 
 
 **Are Frontier VLM Agents Ready to Be Robot Generalists? An Empirical Study with the Embodied Agent Arena**  
-[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2610.00854.en.pdf?v=3592d68d0f51d3ee>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2610.00854.pdf?v=52a4f0873c6e3291>) · [arXiv](<https://arxiv.org/abs/2610.00854>) · [Code](<https://github.com/embodied-agent-arena/embodied-agent-arena>) · [HF](<https://huggingface.co/papers/2610.00854>) · 106 HF upvotes
+[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2610.00854_slides.en.pdf?v=3592d68d0f51d3ee>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2610.00854_slides.pdf?v=52a4f0873c6e3291>) · [arXiv](<https://arxiv.org/abs/2610.00854>) · [Code](<https://github.com/embodied-agent-arena/embodied-agent-arena>) · [HF](<https://huggingface.co/papers/2610.00854>) · 106 HF upvotes
 
 <details>
 <summary>Summary</summary>
@@ -502,7 +502,7 @@ SLA starts from π0.5 and performs continual pre-training on about 1.7M heteroge
 
 
 **VFlash: Fast, Accurate Visual Planning via Flash Primitive Decoding**  
-[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.08449.en.pdf?v=533e65ad6f97bdce>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.08449.pdf?v=fc535a35f7aedecd>) · [arXiv](<https://arxiv.org/abs/2611.08449>) · [Code](<https://github.com/NVlabs/Eagle>) · [HF](<https://huggingface.co/papers/2611.08449>) · 96 HF upvotes
+[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.08449_slides.en.pdf?v=533e65ad6f97bdce>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.08449_slides.pdf?v=fc535a35f7aedecd>) · [arXiv](<https://arxiv.org/abs/2611.08449>) · [Code](<https://github.com/NVlabs/Eagle>) · [HF](<https://huggingface.co/papers/2611.08449>) · 96 HF upvotes
 
 <details>
 <summary>Summary</summary>
@@ -513,7 +513,7 @@ VFlash first uses a tool call to declare the type and length of a visual primiti
 
 
 **Route Anything: A Study of Model and Policy Routing for General-Purpose AI Systems**  
-[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.05275.en.pdf?v=16a9228cd6c10605>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.05275.pdf?v=8a2e2622849e53b2>) · [arXiv](<https://arxiv.org/abs/2611.05275>) · [Code](<https://github.com/InfRec-Cardinal/route-anything>) · [HF](<https://huggingface.co/papers/2611.05275>) · 86 HF upvotes
+[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.05275_slides.en.pdf?v=16a9228cd6c10605>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.05275_slides.pdf?v=8a2e2622849e53b2>) · [arXiv](<https://arxiv.org/abs/2611.05275>) · [Code](<https://github.com/InfRec-Cardinal/route-anything>) · [HF](<https://huggingface.co/papers/2611.05275>) · 86 HF upvotes
 
 <details>
 <summary>Summary</summary>
@@ -524,7 +524,7 @@ The authors first build a unified theory of routing (prices, reference models, a
 
 
 **From Pixels to Actions - Towards Native Vision-Language-Action Policies**  
-[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.06918.en.pdf?v=66ee679282f33d97>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.06918.pdf?v=599bbe7743578d4e>) · [arXiv](<https://arxiv.org/abs/2611.06918>) · [Code](<https://github.com/EvolvingLMMs-Lab/NEO>) · [HF](<https://huggingface.co/papers/2611.06918>) · 59 HF upvotes
+[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.06918_slides.en.pdf?v=66ee679282f33d97>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.06918_slides.pdf?v=599bbe7743578d4e>) · [arXiv](<https://arxiv.org/abs/2611.06918>) · [Code](<https://github.com/EvolvingLMMs-Lab/NEO>) · [HF](<https://huggingface.co/papers/2611.06918>) · 59 HF upvotes
 
 <details>
 <summary>Summary</summary>
@@ -535,7 +535,7 @@ NEO-VLA removes the vision encoder: pixels are patchified via convolution and fe
 
 
 **DreamX: Video Diffusion Model is a Universal Latent Action Learner**  
-[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.05377.en.pdf?v=1bbb7939410e6f9f>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.05377.pdf?v=3a7e7fc426e80882>) · [arXiv](<https://arxiv.org/abs/2611.05377>) · Code · [HF](<https://huggingface.co/papers/2611.05377>) · 57 HF upvotes
+[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.05377_slides.en.pdf?v=1bbb7939410e6f9f>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.05377_slides.pdf?v=3a7e7fc426e80882>) · [arXiv](<https://arxiv.org/abs/2611.05377>) · Code · [HF](<https://huggingface.co/papers/2611.05377>) · 57 HF upvotes
 
 <details>
 <summary>Summary</summary>
@@ -546,7 +546,7 @@ DreamX uses the pretrained video diffusion model Cosmos-Predict2.5 (2B) \*\*as b
 
 
 **RoboColosseum: Evaluating Physical Intelligence at Scale In-The-Wild**  
-[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.02497.en.pdf?v=4a877e8f2942284a>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.02497.pdf?v=4196d06bd5188744>) · [arXiv](<https://arxiv.org/abs/2611.02497>) · [Code](<https://github.com/RoboColosseum/robocolosseum-client>) · [HF](<https://huggingface.co/papers/2611.02497>) · 49 HF upvotes
+[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.02497_slides.en.pdf?v=4a877e8f2942284a>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.02497_slides.pdf?v=4196d06bd5188744>) · [arXiv](<https://arxiv.org/abs/2611.02497>) · [Code](<https://github.com/RoboColosseum/robocolosseum-client>) · [HF](<https://huggingface.co/papers/2611.02497>) · 49 HF upvotes
 
 <details>
 <summary>Summary</summary>
@@ -557,7 +557,7 @@ RoboColosseum evaluates 8 models in a distributed manner across 124 real-world s
 
 
 **Democratizing Robot-Use Agents: A Unified Harness with Open Models**  
-[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.01560.en.pdf?v=e4c17a7649d75ef2>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.01560.pdf?v=5903bc133d53b93e>) · [arXiv](<https://arxiv.org/abs/2611.01560>) · [Code](<https://github.com/Open-RUA/uni-robot-agent>) · [HF](<https://huggingface.co/papers/2611.01560>) · 48 HF upvotes
+[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.01560_slides.en.pdf?v=e4c17a7649d75ef2>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.01560_slides.pdf?v=5903bc133d53b93e>) · [arXiv](<https://arxiv.org/abs/2611.01560>) · [Code](<https://github.com/Open-RUA/uni-robot-agent>) · [HF](<https://huggingface.co/papers/2611.01560>) · 48 HF upvotes
 
 <details>
 <summary>Summary</summary>
@@ -568,7 +568,7 @@ The paper proposes uni-robot-agent, a unified, modular robot-use agent framework
 
 
 **When Does Latent Prediction Error Support Physical Surprise Claims in Video World Models?**  
-[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.01815.en.pdf?v=29643aaea4a30042>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.01815.pdf?v=5a29c04940bb7dab>) · [arXiv](<https://arxiv.org/abs/2611.01815>) · [Code](<https://github.com/3-ml/jepa-surprise>) · [HF](<https://huggingface.co/papers/2611.01815>) · 27 HF upvotes
+[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.01815_slides.en.pdf?v=29643aaea4a30042>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.01815_slides.pdf?v=5a29c04940bb7dab>) · [arXiv](<https://arxiv.org/abs/2611.01815>) · [Code](<https://github.com/3-ml/jepa-surprise>) · [HF](<https://huggingface.co/papers/2611.01815>) · 27 HF upvotes
 
 <details>
 <summary>Summary</summary>
@@ -579,7 +579,7 @@ The paper proposes uni-robot-agent, a unified, modular robot-use agent framework
 
 
 **PyRUA-DataFarm: LLM Agent as a Cost-Efficient Teleoperator for Real-Ready Robot Data**  
-[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.05320.en.pdf?v=7076ded8d776d78f>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.05320.pdf?v=ca0880096266f41f>) · [arXiv](<https://arxiv.org/abs/2611.05320>) · [Code](<https://github.com/DAGroup-PKU/PyRUA-Lean>) · [HF](<https://huggingface.co/papers/2611.05320>) · 27 HF upvotes
+[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.05320_slides.en.pdf?v=7076ded8d776d78f>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.05320_slides.pdf?v=ca0880096266f41f>) · [arXiv](<https://arxiv.org/abs/2611.05320>) · [Code](<https://github.com/DAGroup-PKU/PyRUA-Lean>) · [HF](<https://huggingface.co/papers/2611.05320>) · 27 HF upvotes
 
 <details>
 <summary>Summary</summary>
@@ -590,7 +590,7 @@ The paper proposes uni-robot-agent, a unified, modular robot-use agent framework
 
 
 **HiFOR: Hierarchical Foresight with Action-Guided World Grounding for Vision-Language-Action Model**  
-[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2610.40373.en.pdf?v=a05ee3eee9f7bdce>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2610.40373.pdf?v=ab45ee52df7bd773>) · [arXiv](<https://arxiv.org/abs/2610.40373>) · Code · [HF](<https://huggingface.co/papers/2610.40373>) · 25 HF upvotes
+[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2610.40373_slides.en.pdf?v=a05ee3eee9f7bdce>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2610.40373_slides.pdf?v=ab45ee52df7bd773>) · [arXiv](<https://arxiv.org/abs/2610.40373>) · Code · [HF](<https://huggingface.co/papers/2610.40373>) · 25 HF upvotes
 
 <details>
 <summary>Summary</summary>
@@ -601,7 +601,7 @@ HiFOR jointly predicts short-term states, semantic milestones, and the final goa
 
 
 **Probing Spatial State Representations in Visual Foundation Models**  
-[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2610.40636.en.pdf?v=1a7ea56e558bbbe8>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2610.40636.pdf?v=5454537e0d72b40f>) · [arXiv](<https://arxiv.org/abs/2610.40636>) · [Code](<https://github.com/yyyybq/Probing_Spatial_State_Release>) · [HF](<https://huggingface.co/papers/2610.40636>) · 20 HF upvotes
+[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2610.40636_slides.en.pdf?v=1a7ea56e558bbbe8>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2610.40636_slides.pdf?v=5454537e0d72b40f>) · [arXiv](<https://arxiv.org/abs/2610.40636>) · [Code](<https://github.com/yyyybq/Probing_Spatial_State_Release>) · [HF](<https://huggingface.co/papers/2610.40636>) · 20 HF upvotes
 
 <details>
 <summary>Summary</summary>
