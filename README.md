@@ -615,3 +615,9 @@ The paper decomposes "spatial state representation" into four progressively hier
 
 
 - [November 2026](papers/2026-11.md) — 31 papers
+
+## Contributors
+
+- [Bojun Zou (BojunZou)](https://github.com/BojunZou)
+- [Yuanhao Guo (guoyuanhao-git)](https://github.com/guoyuanhao-git)
+- [Weihao Yu (yuweihao)](https://github.com/yuweihao)
