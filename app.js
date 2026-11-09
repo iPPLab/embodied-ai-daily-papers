@@ -12,8 +12,8 @@ const messages = {
 const t = (key, value) => typeof messages[language][key] === 'function' ? messages[language][key](value) : messages[language][key];
 Object.assign(messages.zh, {showAll:'展开全部总结',hideAll:'收起全部总结'});
 Object.assign(messages.en, {showAll:'Expand all summaries',hideAll:'Collapse all summaries'});
-Object.assign(messages.zh, {slides:'ppt'});
-Object.assign(messages.en, {slides:'Slides'});
+Object.assign(messages.zh, {slides:'ppt',githubStar:'在 GitHub 上 Star 本项目'});
+Object.assign(messages.en, {slides:'Slides',githubStar:'Star this project on GitHub'});
 const make = (tag, text, className) => {
   const element = document.createElement(tag);
   if (text !== undefined) element.textContent = text;
@@ -54,7 +54,8 @@ function setTheme(theme) {
 function applyLanguage() {
   document.documentElement.lang=language==='zh'?'zh-CN':'en';
   document.querySelectorAll('[data-i18n]').forEach(element=>element.textContent=t(element.dataset.i18n));
-  for (const [id,key] of [['navigation','navigation'],['theme-switch','theme'],['theme-light','light'],['theme-dark','dark'],['paper-list','list']]) $(`#${id}`)?.setAttribute('aria-label',t(key));
+  for (const [id,key] of [['navigation','navigation'],['theme-switch','theme'],['theme-light','light'],['theme-dark','dark'],['paper-list','list'],['github-star','githubStar']]) $(`#${id}`)?.setAttribute('aria-label',t(key));
+  $('#github-star')?.setAttribute('title',t('githubStar'));
   const toggle=$('#language-toggle');
   if(toggle) {toggle.textContent=language==='zh'?'EN':'中文';toggle.lang=language==='zh'?'en':'zh-CN';toggle.setAttribute('aria-label',language==='zh'?'Switch to English':'切换为中文');}
   const daily=new URL('./',location.href);daily.searchParams.set('lang',language);
