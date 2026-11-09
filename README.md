@@ -338,7 +338,7 @@ Instead of having the Action DiT start from Gaussian noise, OSWAM places a small
 ## Popular Papers
 
 
-Snapshot: 2026-11-08 (Asia/Shanghai). Ranked by current cumulative Hugging Face upvotes; updated with the daily publication.
+Snapshot: 2026-11-09 (Asia/Shanghai). Ranked by current cumulative Hugging Face upvotes; updated with the daily publication.
 
 
 ### Last 7 Days
@@ -454,17 +454,6 @@ The paper proposes uni-robot-agent, a unified, modular robot-use agent framework
 </details>
 
 
-**HiFOR: Hierarchical Foresight with Action-Guided World Grounding for Vision-Language-Action Model**  
-[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2610.40373_slides.en.pdf?v=a05ee3eee9f7bdce>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2610.40373_slides.pdf?v=ab45ee52df7bd773>) · [arXiv](<https://arxiv.org/abs/2610.40373>) · Code · [HF](<https://huggingface.co/papers/2610.40373>) · 25 HF upvotes
-
-<details>
-<summary>Summary</summary>
-
-HiFOR jointly predicts short-term states, semantic milestones, and the final goal within a VLA, organizing them into a structured latent world spanning time x viewpoint x space, which is decomposed and retrieved on demand by the action during denoising; compared with π0.5, it improves by 9.05 points on RoboTwin Hard and by 11 points on real robots.
-
-</details>
-
-
 **Are Frontier VLM Agents Ready to Be Robot Generalists? An Empirical Study with the Embodied Agent Arena**  
 [Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2610.00854_slides.en.pdf?v=3592d68d0f51d3ee>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2610.00854_slides.pdf?v=52a4f0873c6e3291>) · [arXiv](<https://arxiv.org/abs/2610.00854>) · [Code](<https://github.com/embodied-agent-arena/embodied-agent-arena>) · [HF](<https://huggingface.co/papers/2610.00854>) · 22 HF upvotes
 
@@ -472,6 +461,17 @@ HiFOR jointly predicts short-term states, semantic milestones, and the final goa
 <summary>Summary</summary>
 
 \*\*Not yet ready.\*\* The authors built the Embodied Agent Arena with 1,000 cases covering five capability domains (including the self-built geometry benchmark GeoProbe), and evaluated 10 frontier VLM agents under a minimal harness. Closed-source models lead in all five domains, but even the strongest model achieves only about 48% success in Manipulation. More importantly, failures often occur after "the intermediate steps were already done correctly": the point lands on the target but the region is not boxed correctly, the placement action call is valid but places the object into the wrong container, the gripper reaches the right position but fails to grasp the object, and the agent claims "already seated" when it has not actually sat down. Extra computation such as code repair and self-review also cannot reliably fix these problems.
+
+</details>
+
+
+**Human-to-Robot Transfer via Bridging Representation and Action Space in VLAs**  
+[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.04391_slides.en.pdf?v=ea668c9cc4077f7c>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.04391_slides.pdf?v=da871431b358a18f>) · [arXiv](<https://arxiv.org/abs/2611.04391>) · [Code](<https://github.com/jun-brro/h2rb-code>) · [HF](<https://huggingface.co/papers/2611.04391>) · 15 HF upvotes
+
+<details>
+<summary>Summary</summary>
+
+H2RB builds two "bridges" on top of a VLA pretrained on robot data: on the perception side, it uses "wrist + five-fingertip geometry" to supervise VLM features; on the action side, it uses a latent action tokenizer with "a shared encoder + separate decoders for human and robot". This way, using only \*\*unpaired\*\* human hand videos, it can teach a real robot new objects and new skills. On OpenArm, object transfer improves from 8.0 to 51.8, and the skill of opening/closing an air fryer, which the baseline cannot transfer, scores 62.7 (out of 100, a score weighted by completion progress).
 
 </details>
 

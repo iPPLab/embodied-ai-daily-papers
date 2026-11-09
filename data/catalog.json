@@ -141,8 +141,7 @@
       "slides_en_revision": null,
       "slides_en_version": "text-only-v1",
       "downloads_en": {
-        "pptx": "https://github.com/iPPLab/embodied-daily-papers-site/releases/download/paper-2611.07613/deck.en.pptx",
-        "pdf": "https://github.com/iPPLab/embodied-daily-papers-site/releases/download/paper-2611.07613/deck.en.pdf"
+        "pdf": "https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.07613_slides.en.pdf?v=7622d0201e1e18cb"
       }
     },
     {
@@ -1469,6 +1468,6 @@
   ],
   "last_checked_at": "2026-11-08T17:04:29.855814+08:00",
   "title": "Embodied AI Daily Papers",
-  "today": "2026-11-08",
+  "today": "2026-11-09",
   "timezone": "Asia/Shanghai"
 }
