@@ -5,13 +5,17 @@
   <meta name="description" content="Embodied AI papers, weekly archives, and concise research summaries.">
   <meta name="theme-color" content="#ffffff"><title>Embodied AI Daily Papers</title>
   <script>try{document.documentElement.dataset.theme=localStorage.getItem('embodied-theme')==='dark'?'dark':'light';}catch{}</script>
-  <link rel="icon" href="./favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="./style.css?v=20261109-github-star">
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="./style.css?v=20261112-github-nav">
 </head>
 <body>
   <a class="skip" href="#main" data-i18n="skip">跳转到论文</a>
   <header class="header">
     <h1 class="brand"><a href="./">Embodied AI Daily Papers</a></h1>
-    <nav aria-label="主导航" id="navigation"><a href="./" id="nav-daily" data-i18n="daily">每日论文</a><a href="./?view=popular" id="nav-popular" data-i18n="popular">热门论文</a></nav>
+    <nav aria-label="主导航" id="navigation">
+      <a id="github-star" class="github-star" href="https://github.com/iPPLab/embodied-ai-daily-papers" target="_blank" rel="noopener noreferrer" aria-label="在 GitHub 上 Star 本项目" title="在 GitHub 上 Star 本项目"><svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.65 7.65 0 0 1 4 0c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg><span>GitHub</span></a>
+      <a href="./" id="nav-daily" data-i18n="daily">每日论文</a>
+      <a href="./?view=popular" id="nav-popular" data-i18n="popular">热门论文</a>
+    </nav>
     <div class="preferences">
       <div class="theme-switch" role="group" aria-label="背景颜色" id="theme-switch">
         <button type="button" class="icon-button" id="theme-light" aria-label="白色背景" aria-pressed="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5"/></svg></button>
@@ -19,7 +23,6 @@
       </div>
       <button type="button" id="language-toggle" class="language-button" lang="en" aria-label="Switch to English">EN</button>
       <button type="button" id="toggle-all-summaries" class="icon-button all-summary-toggle" aria-label="展开全部总结" title="展开全部总结" aria-controls="papers" aria-pressed="false" disabled><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 7 6 5 6-5M6 13l6 5 6-5"/></svg></button>
-      <a id="github-star" class="github-star" href="https://github.com/iPPLab/embodied-ai-daily-papers" target="_blank" rel="noopener noreferrer" aria-label="在 GitHub 上 Star 本项目" title="在 GitHub 上 Star 本项目"><svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.65 7.65 0 0 1 4 0c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg><span>GitHub</span></a>
     </div>
   </header>
   <main id="main" class="main">
