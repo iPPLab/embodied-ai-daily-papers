@@ -26,6 +26,26 @@ Dates refer to the first Hugging Face daily listing. Each paper appears once in 
 
 </details>
 
+**EgoX: Egocentric Cross-Embodiment Manipulation with Embodiment Dreaming**  
+[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.16728_slides.en.pdf?v=ab2a1fd800010241>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.16728_slides.pdf?v=6f84570fc3b682bf>) · [arXiv](<https://arxiv.org/abs/2611.16728>) · [Code](<https://github.com/egox-dream/egox>) · [HF](<https://huggingface.co/papers/2611.16728>)
+
+<details>
+<summary>Summary</summary>
+
+EgoX uniformly decomposes human, real-robot, and simulation demonstrations into semantically aligned modalities such as "image / wrist pose / fingertip keypoints / torso / embodiment-specific joints", and places them all in a single egocentric coordinate frame. The model, MXT+, uses a separate tokenizer for each modality of each embodiment and a separate expert for each action modality, with a shared Transformer backbone in between; during training it adds an "embodiment dreaming" objective used only in the training phase: predicting latent representations of future visual and proprioceptive states. Using this approach, pretraining on mixed data from 7 embodiments (human + 6 robots) and then fine-tuning on the target embodiment raises the average task progress across 13 task-embodiment combinations from 0.63 to 0.80, and from 0.53 to 0.77 under out-of-distribution conditions.
+
+</details>
+
+**JustRUA: A Controlled Study of GPT-6 Robot-Use Agents**  
+[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.16009_slides.en.pdf?v=605f939a2eb8697b>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.16009_slides.pdf?v=986b5e992865ccc6>) · [arXiv](<https://arxiv.org/abs/2611.16009>) · [Code](<https://github.com/ZefanW/JustRUA>) · [HF](<https://huggingface.co/papers/2611.16009>)
+
+<details>
+<summary>Summary</summary>
+
+On the same testbed and the same 111-episode evaluation set, the authors take apart, one by one, the various designs added to recent GPT-6 Astra "robot-use agent" (RUA) systems and run controlled experiments on each. The result: by keeping only a handful of components (full history, early stopping at 20 steps per action segment, compact gripper readings, depth predicted from RGB alone, and computing 3D coordinates from pixels with code), without any learned policy, self-improvement, or task-specific tuning, the RoboDojo score rises from 29.7 to 50.3. The externally reported "weak precision of GPT-6 Astra" is largely caused by the harness (the surrounding software framework), not by the model itself.
+
+</details>
+
 **BirdDreams: Joint Perspective and BEV Video Generation for a Plausible, Reactive Driving World Model**  
 [Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.14815_slides.en.pdf?v=e70a278ce699966c>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.14815_slides.pdf?v=31bac8f189992df0>) · [arXiv](<https://arxiv.org/abs/2611.14815>) · Code · [HF](<https://huggingface.co/papers/2611.14815>)
 
@@ -33,6 +53,16 @@ Dates refer to the first Hugging Face daily listing. Each paper appears once in 
 <summary>Summary</summary>
 
 BirdDreams no longer treats the scene layout (map, surrounding vehicles' trajectories) as an external input, but instead makes it something the model must predict: using two causal video diffusion Transformers coupled through joint attention, it starts from a single front-view image and simultaneously generates a front-view camera video and a metric-scale schematic BEV video, then translates and rotates the latest BEV frame according to the input ego trajectory to serve as the action condition. As a result, the ego trajectory is followed more accurately, and surrounding vehicles can also react more plausibly to counterfactual ego actions.
+
+</details>
+
+**A Cross-Scenario Survey and Analysis of Self-Evolving Multimodal Agents**  
+[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.14256_slides.en.pdf?v=1f9839b942b2a65f>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.14256_slides.pdf?v=000a42a057dfd1a6>) · [arXiv](<https://arxiv.org/abs/2611.14256>) · [Code](<https://github.com/jingjing12110/SE-MMAgents>) · [HF](<https://huggingface.co/papers/2611.14256>)
+
+<details>
+<summary>Summary</summary>
+
+This is a survey with an analytical framework, covering four scenarios: multimodal reasoning (MR), multimodal generation (MG), GUI/Web navigation (GW), and embodied manipulation (EM). It uniformly decomposes self-evolving multimodal agents into a three-stage loop of "experience generation -&gt; feedback acquisition -&gt; update consolidation", then positions the four scenarios using a positioning matrix of "rollout-count ceiling K̄ × feedback-fidelity ceiling F̄", and frames each self-evolution mechanism as a trade that "borrows some task-structure resource (e.g., outputs that can be checked for equivalence, results that can be verified) to boost a scarce factor". On this basis, the paper structurally explains why the transfer of mechanisms across scenarios is asymmetric: for example, majority voting cannot be carried over to robots, while world models are redundant for reasoning tasks. The paper also provides a set of not-yet-validated, falsifiable portability verdicts, along with a list of the measurements needed to validate them.
 
 </details>
 
@@ -568,7 +598,7 @@ Instead of having the Action DiT start from Gaussian noise, OSWAM places a small
 ## Popular Papers
 
 
-Snapshot: 2026-11-13 (Asia/Shanghai). Ranked by current cumulative Hugging Face upvotes; updated with the daily publication.
+Snapshot: 2026-11-14 (Asia/Shanghai). Ranked by current cumulative Hugging Face upvotes; updated with the daily publication.
 
 
 ### Last 7 Days
@@ -597,7 +627,7 @@ The paper first gives an operational, function-level definition of a "generative
 
 
 **World In-Context Learning for Agentic Robot Manipulation**  
-[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.12885_slides.en.pdf?v=41e998cfc4ccf4d7>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.12885_slides.pdf?v=68f4e63330d4b371>) · [arXiv](<https://arxiv.org/abs/2611.12885>) · [Code](<https://github.com/ArcheOne-AI/RoboScript>) · [HF](<https://huggingface.co/papers/2611.12885>) · 58 HF upvotes
+[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.12885_slides.en.pdf?v=41e998cfc4ccf4d7>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.12885_slides.pdf?v=68f4e63330d4b371>) · [arXiv](<https://arxiv.org/abs/2611.12885>) · [Code](<https://github.com/ArcheOne-AI/RoboScript>) · [HF](<https://huggingface.co/papers/2611.12885>) · 57 HF upvotes
 
 <details>
 <summary>Summary</summary>
@@ -619,7 +649,7 @@ The paper first builds A2-WLA, a strong action model combining "VLA + motion-awa
 
 
 **BirdDreams: Joint Perspective and BEV Video Generation for a Plausible, Reactive Driving World Model**  
-[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.14815_slides.en.pdf?v=e70a278ce699966c>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.14815_slides.pdf?v=31bac8f189992df0>) · [arXiv](<https://arxiv.org/abs/2611.14815>) · Code · [HF](<https://huggingface.co/papers/2611.14815>) · 37 HF upvotes
+[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.14815_slides.en.pdf?v=e70a278ce699966c>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.14815_slides.pdf?v=31bac8f189992df0>) · [arXiv](<https://arxiv.org/abs/2611.14815>) · Code · [HF](<https://huggingface.co/papers/2611.14815>) · 49 HF upvotes
 
 <details>
 <summary>Summary</summary>
@@ -651,8 +681,19 @@ During training, the authors use offline depth, kinematic point clouds from the 
 </details>
 
 
+**Ropedia Xperience 2: A Gold Standard for Scaling Physical AI Environments and Behaviors**  
+[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.17060_slides.en.pdf?v=15103b6c559553db>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.17060_slides.pdf?v=73cbd680583e07d0>) · [arXiv](<https://arxiv.org/abs/2611.17060>) · [Code](<https://github.com/Ropedia/Ropedia-Xperience-2>) · [HF](<https://huggingface.co/papers/2611.17060>) · 26 HF upvotes
+
+<details>
+<summary>Summary</summary>
+
+\*\*An operator first scans a real scene with a handheld LiDAR, then puts on the head-mounted camera HOMIE and performs a specified task, and a processing pipeline registers the human video, camera trajectory, and hand/body motions into the same metric-scale scene coordinate frame. In this way, a single on-site capture can serve as a reference for 3D perception benchmarks and can also be converted into simulation environments and robot trajectories. The dataset has released 1,589 scene scans, and the capture inventory contains a further 4,230 recordings (74 tasks, 131 hours). The paper calls this "joint environment + behavior capture" the "gold standard" for physical AI data collection.\*\*
+
+</details>
+
+
 **SWAM: Scaling World Action Models with Cross-Modal Alignment**  
-[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.12870_slides.en.pdf?v=79b8b9d478715dfe>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.12870_slides.pdf?v=f2ea2e14f35af9b4>) · [arXiv](<https://arxiv.org/abs/2611.12870>) · [Code](<https://github.com/shaaaaron/SWAM>) · [HF](<https://huggingface.co/papers/2611.12870>) · 23 HF upvotes
+[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.12870_slides.en.pdf?v=79b8b9d478715dfe>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.12870_slides.pdf?v=f2ea2e14f35af9b4>) · [arXiv](<https://arxiv.org/abs/2611.12870>) · [Code](<https://github.com/shaaaaron/SWAM>) · [HF](<https://huggingface.co/papers/2611.12870>) · 24 HF upvotes
 
 <details>
 <summary>Summary</summary>
@@ -662,13 +703,13 @@ SWAM builds roughly 47,000 hours of multi-source data and systematically studies
 </details>
 
 
-**Ropedia Xperience 2: A Gold Standard for Scaling Physical AI Environments and Behaviors**  
-[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.17060_slides.en.pdf?v=15103b6c559553db>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.17060_slides.pdf?v=73cbd680583e07d0>) · [arXiv](<https://arxiv.org/abs/2611.17060>) · [Code](<https://github.com/Ropedia/Ropedia-Xperience-2>) · [HF](<https://huggingface.co/papers/2611.17060>) · 15 HF upvotes
+**Learning the Task or Learning the Verifier? Rethinking Criteria Exposure in Embodied Self-Improvement**  
+[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.08318_slides.en.pdf?v=bbde2f8937889547>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.08318_slides.pdf?v=561ff1a118dc92d8>) · [arXiv](<https://arxiv.org/abs/2611.08318>) · [Code](<https://github.com/DAGroup-PKU/PyRUA-Lean>) · [HF](<https://huggingface.co/papers/2611.08318>) · 16 HF upvotes
 
 <details>
 <summary>Summary</summary>
 
-\*\*An operator first scans a real scene with a handheld LiDAR, then puts on the head-mounted camera HOMIE and performs a specified task, and a processing pipeline registers the human video, camera trajectory, and hand/body motions into the same metric-scale scene coordinate frame. In this way, a single on-site capture can serve as a reference for 3D perception benchmarks and can also be converted into simulation environments and robot trajectories. The dataset has released 1,589 scene scans, and the capture inventory contains a further 4,230 recordings (74 tasks, 131 hours). The paper calls this "joint environment + behavior capture" the "gold standard" for physical AI data collection.\*\*
+In embodied self-improvement, letting the learner read the benchmark's grading code (Criteria Exposure, CE) yields noticeably higher scores on RoboDojo, but almost all of the extra score comes from hidden rules that are "not stated in the instruction but required by the grading code." When switching to grading criteria that verify only the content of the instruction, this advantage disappears (51.6% vs 27.8% becomes 45.0% vs 47.2%), and it also does not carry over to new tasks. The authors' point is that CE mainly learns the verifier, and learns little about the task itself.
 
 </details>
 
@@ -695,22 +736,11 @@ GTAGym splits the GTA V main-story missions into 150 automatically scorable task
 </details>
 
 
-**Auriga Technical Report: A Task-Agnostic Agent Harness for Zero-Shot Embodied Manipulation**  
-[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.01112_slides.en.pdf?v=e497b354c35e384d>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.01112_slides.pdf?v=5eb57650af827110>) · [arXiv](<https://arxiv.org/abs/2611.01112>) · [Code](<https://github.com/lose4578/Auriga>) · [HF](<https://huggingface.co/papers/2611.01112>) · 8 HF upvotes
-
-<details>
-<summary>Summary</summary>
-
-\*\*Auriga trains no policy and does no trial-and-error on target tasks; instead, it equips a general-purpose VLM with a task-agnostic "execution harness": calibrated 3D measurements, bimanual actions targeted at finger contact points, and a single admission gateway that "pauses the world to preview first, verifies against tolerances during execution, and stops on deviation and reports the measured deviation." With this harness, under zero-shot conditions in a single episode without resets, it closes 68.3% of the "planning-execution gap," tops the RoboDojo leaderboard with 57.7% SR / 64.0 Score (the reference harness with the same model achieves only 22.5% / 29.0), and reaches 73.2% SR on RoboCasa365.\*\*
-
-</details>
-
-
 ### Last 30 Days
 
 
 **VFlash: Fast, Accurate Visual Planning via Flash Primitive Decoding**  
-[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.08449_slides.en.pdf?v=533e65ad6f97bdce>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.08449_slides.pdf?v=fc535a35f7aedecd>) · [arXiv](<https://arxiv.org/abs/2611.08449>) · [Code](<https://github.com/NVlabs/Eagle>) · [HF](<https://huggingface.co/papers/2611.08449>) · 116 HF upvotes
+[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.08449_slides.en.pdf?v=533e65ad6f97bdce>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.08449_slides.pdf?v=fc535a35f7aedecd>) · [arXiv](<https://arxiv.org/abs/2611.08449>) · [Code](<https://github.com/NVlabs/Eagle>) · [HF](<https://huggingface.co/papers/2611.08449>) · 117 HF upvotes
 
 <details>
 <summary>Summary</summary>
@@ -743,7 +773,7 @@ SLA starts from π0.5 and performs continual pre-training on about 1.7M heteroge
 
 
 **Route Anything: A Study of Model and Policy Routing for General-Purpose AI Systems**  
-[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.05275_slides.en.pdf?v=16a9228cd6c10605>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.05275_slides.pdf?v=8a2e2622849e53b2>) · [arXiv](<https://arxiv.org/abs/2611.05275>) · [Code](<https://github.com/InfRec-Cardinal/route-anything>) · [HF](<https://huggingface.co/papers/2611.05275>) · 82 HF upvotes
+[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.05275_slides.en.pdf?v=16a9228cd6c10605>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.05275_slides.pdf?v=8a2e2622849e53b2>) · [arXiv](<https://arxiv.org/abs/2611.05275>) · [Code](<https://github.com/InfRec-Cardinal/route-anything>) · [HF](<https://huggingface.co/papers/2611.05275>) · 83 HF upvotes
 
 <details>
 <summary>Summary</summary>
@@ -776,7 +806,7 @@ The paper first gives an operational, function-level definition of a "generative
 
 
 **World In-Context Learning for Agentic Robot Manipulation**  
-[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.12885_slides.en.pdf?v=41e998cfc4ccf4d7>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.12885_slides.pdf?v=68f4e63330d4b371>) · [arXiv](<https://arxiv.org/abs/2611.12885>) · [Code](<https://github.com/ArcheOne-AI/RoboScript>) · [HF](<https://huggingface.co/papers/2611.12885>) · 58 HF upvotes
+[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.12885_slides.en.pdf?v=41e998cfc4ccf4d7>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.12885_slides.pdf?v=68f4e63330d4b371>) · [arXiv](<https://arxiv.org/abs/2611.12885>) · [Code](<https://github.com/ArcheOne-AI/RoboScript>) · [HF](<https://huggingface.co/papers/2611.12885>) · 57 HF upvotes
 
 <details>
 <summary>Summary</summary>
@@ -831,7 +861,7 @@ The paper proposes uni-robot-agent, a unified, modular robot-use agent framework
 
 
 **BirdDreams: Joint Perspective and BEV Video Generation for a Plausible, Reactive Driving World Model**  
-[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.14815_slides.en.pdf?v=e70a278ce699966c>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.14815_slides.pdf?v=31bac8f189992df0>) · [arXiv](<https://arxiv.org/abs/2611.14815>) · Code · [HF](<https://huggingface.co/papers/2611.14815>) · 37 HF upvotes
+[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.14815_slides.en.pdf?v=e70a278ce699966c>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.14815_slides.pdf?v=31bac8f189992df0>) · [arXiv](<https://arxiv.org/abs/2611.14815>) · Code · [HF](<https://huggingface.co/papers/2611.14815>) · 49 HF upvotes
 
 <details>
 <summary>Summary</summary>
@@ -844,7 +874,7 @@ BirdDreams no longer treats the scene layout (map, surrounding vehicles' traject
 ## Monthly Archive
 
 
-- [November 2026](papers/2026-11.md) — 53 papers
+- [November 2026](papers/2026-11.md) — 56 papers
 
 ## Contributors
 
