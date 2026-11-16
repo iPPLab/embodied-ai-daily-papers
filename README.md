@@ -14,6 +14,38 @@ Daily embodied AI papers from Hugging Face, with paper summaries and reading sli
 Dates refer to the first Hugging Face daily listing. Each paper appears once in the monthly archive.
 
 
+### November 16, 2026
+
+**Gamer: A Generalist Vision-Language-Action Foundation Model for Long-Horizon Real-Time Game Agent**  
+[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.18397_slides.en.pdf?v=72b34e92d820f938>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.18397_slides.pdf?v=a361044dd83c084b>) · [arXiv](<https://arxiv.org/abs/2611.18397>) · [Code](<https://github.com/RainBowLuoCS/Gamer>) · [HF](<https://huggingface.co/papers/2611.18397>)
+
+<details>
+<summary>Summary</summary>
+
+\*\*Gamer looks only at screen pixels and outputs only native keyboard and mouse actions. It uses a three-stage pipeline of "continued pretraining on cross-game keyboard-and-mouse trajectories -&gt; multi-level instruction fine-tuning with sparse thinking and memory summaries -&gt; temporally aware GRPO online reinforcement learning segmented by memory", together with an in-house low-latency inference engine, Streaming-vLLM (which cuts per-step latency from 1.31 s to 65 ms), to train Qwen3-VL-8B into an agent that can complete long-horizon tasks in real time in Honkai: Star Rail: it reaches milestone accuracies of 80.0% and 83.6% on two held-out side quests and a macro average of 49.7% across 7 categories of mini-games, all clearly higher than the various general-purpose large model baselines.\*\*
+
+</details>
+
+**Envisioning Agentic Robotics: A New Era of Robotic Systems**  
+[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.18359_slides.en.pdf?v=96acf31f314ccf09>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.18359_slides.pdf?v=5983062588627d80>) · [arXiv](<https://arxiv.org/abs/2611.18359>) · Code · [HF](<https://huggingface.co/papers/2611.18359>)
+
+<details>
+<summary>Summary</summary>
+
+Since GPT-6 Astra, \*\*Embodied System 2\*\*, composed of "foundation model + embodied harness" and used to understand intent, orchestrate skills, and verify results, is replacing "training one policy per task category" as the decision-making core of robots. For this "agentic robotics" paradigm, the paper provides a testable definition, an S2/S1/S0 reference architecture, an evaluation framework with 9 dimensions and 53 sub-dimensions, and a harness card reporting standard, and proposes a "delegable work ladder" of L1 primitives -&gt; L2 tasks -&gt; L3 workflows -&gt; L4 roles as a roadmap. Its core judgment is that the principles of digital agents can transfer to the physical world, but the preconditions that make these principles hold reliably need to be rebuilt in the physical world.
+
+</details>
+
+**HALO: Human-Aligned Data Collection for WhoLe-body MObile Manipulation**  
+[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.16439_slides.en.pdf?v=365282ed400c1111>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.16439_slides.pdf?v=f0c59600d10417c4>) · [arXiv](<https://arxiv.org/abs/2611.16439>) · [Code](<https://github.com/robbyant-research/Lingbot-ALOHA>) · [HF](<https://huggingface.co/papers/2611.16439>)
+
+<details>
+<summary>Summary</summary>
+
+\*\*For data collection, HALO removes the mobile base and replaces it with a passive cart that a person can easily push around but that has the same motion constraints as the base. The operator stands right next to the real robot arms and grips them directly for kinesthetic teaching, performing bimanual manipulation while walking. After collection, two processing steps follow: the human hands are segmented out of the images and inpainted, and the cart motion is calibrated and time-aligned into velocity commands for the deployment base. Demonstrations collected this way are up to 2.9 times faster than with Mobile ALOHA, with equal or higher success rates. After fine-tuning π0.5, the policy can complete fine-grained tasks such as fastening cable ties, and reaches a 73.3% success rate on six-stage long-horizon mobile manipulation.\*\*
+
+</details>
+
 ### November 13, 2026
 
 **Ropedia Xperience 2: A Gold Standard for Scaling Physical AI Environments and Behaviors**  
@@ -598,19 +630,41 @@ Instead of having the Action DiT start from Gaussian noise, OSWAM places a small
 ## Popular Papers
 
 
-Snapshot: 2026-11-15 (Asia/Shanghai). Ranked by current cumulative Hugging Face upvotes; updated with the daily publication.
+Snapshot: 2026-11-16 (Asia/Shanghai). Ranked by current cumulative Hugging Face upvotes; updated with the daily publication.
 
 
 ### Last 7 Days
 
 
 **Learning Heterogeneous Tactile Representation for General Dexterous Manipulation**  
-[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.12806_slides.en.pdf?v=9e42455bb2de1665>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.12806_slides.pdf?v=4905926edc535cb1>) · [arXiv](<https://arxiv.org/abs/2611.12806>) · [Code](<https://github.com/Robbyant/lingbot-touch>) · [HF](<https://huggingface.co/papers/2611.12806>) · 103 HF upvotes
+[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.12806_slides.en.pdf?v=9e42455bb2de1665>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.12806_slides.pdf?v=4905926edc535cb1>) · [arXiv](<https://arxiv.org/abs/2611.12806>) · [Code](<https://github.com/Robbyant/lingbot-touch>) · [HF](<https://huggingface.co/papers/2611.12806>) · 105 HF upvotes
 
 <details>
 <summary>Summary</summary>
 
 LingBot-Touch unifies three types of tactile sensors into a standard fingertip coordinate frame and uses Tactile-JEPA to pretrain a small encoder on 5,000 hours of data. The encoder is frozen and plug-and-play, raising real-robot success rates of four types of policies by 14-25 points and raising simulated RL success rates from 21% to 69%, and it transfers to new sensors with zero parameters.
+
+</details>
+
+
+**Envisioning Agentic Robotics: A New Era of Robotic Systems**  
+[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.18359_slides.en.pdf?v=96acf31f314ccf09>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.18359_slides.pdf?v=5983062588627d80>) · [arXiv](<https://arxiv.org/abs/2611.18359>) · Code · [HF](<https://huggingface.co/papers/2611.18359>) · 66 HF upvotes
+
+<details>
+<summary>Summary</summary>
+
+Since GPT-6 Astra, \*\*Embodied System 2\*\*, composed of "foundation model + embodied harness" and used to understand intent, orchestrate skills, and verify results, is replacing "training one policy per task category" as the decision-making core of robots. For this "agentic robotics" paradigm, the paper provides a testable definition, an S2/S1/S0 reference architecture, an evaluation framework with 9 dimensions and 53 sub-dimensions, and a harness card reporting standard, and proposes a "delegable work ladder" of L1 primitives -&gt; L2 tasks -&gt; L3 workflows -&gt; L4 roles as a roadmap. Its core judgment is that the principles of digital agents can transfer to the physical world, but the preconditions that make these principles hold reliably need to be rebuilt in the physical world.
+
+</details>
+
+
+**Gamer: A Generalist Vision-Language-Action Foundation Model for Long-Horizon Real-Time Game Agent**  
+[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.18397_slides.en.pdf?v=72b34e92d820f938>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.18397_slides.pdf?v=a361044dd83c084b>) · [arXiv](<https://arxiv.org/abs/2611.18397>) · [Code](<https://github.com/RainBowLuoCS/Gamer>) · [HF](<https://huggingface.co/papers/2611.18397>) · 62 HF upvotes
+
+<details>
+<summary>Summary</summary>
+
+\*\*Gamer looks only at screen pixels and outputs only native keyboard and mouse actions. It uses a three-stage pipeline of "continued pretraining on cross-game keyboard-and-mouse trajectories -&gt; multi-level instruction fine-tuning with sparse thinking and memory summaries -&gt; temporally aware GRPO online reinforcement learning segmented by memory", together with an in-house low-latency inference engine, Streaming-vLLM (which cuts per-step latency from 1.31 s to 65 ms), to train Qwen3-VL-8B into an agent that can complete long-horizon tasks in real time in Honkai: Star Rail: it reaches milestone accuracies of 80.0% and 83.6% on two held-out side quests and a macro average of 49.7% across 7 categories of mini-games, all clearly higher than the various general-purpose large model baselines.\*\*
 
 </details>
 
@@ -627,7 +681,7 @@ The paper first gives an operational, function-level definition of a "generative
 
 
 **World In-Context Learning for Agentic Robot Manipulation**  
-[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.12885_slides.en.pdf?v=41e998cfc4ccf4d7>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.12885_slides.pdf?v=68f4e63330d4b371>) · [arXiv](<https://arxiv.org/abs/2611.12885>) · [Code](<https://github.com/ArcheOne-AI/RoboScript>) · [HF](<https://huggingface.co/papers/2611.12885>) · 57 HF upvotes
+[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.12885_slides.en.pdf?v=41e998cfc4ccf4d7>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.12885_slides.pdf?v=68f4e63330d4b371>) · [arXiv](<https://arxiv.org/abs/2611.12885>) · [Code](<https://github.com/ArcheOne-AI/RoboScript>) · [HF](<https://huggingface.co/papers/2611.12885>) · 58 HF upvotes
 
 <details>
 <summary>Summary</summary>
@@ -637,19 +691,8 @@ The paper proposes \*\*World In-Context Learning (WICL)\*\*: the foundation mode
 </details>
 
 
-**Toward the Era of Agentic Embodied Intelligence**  
-[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.09124_slides.en.pdf?v=cf5c9b77e9a138ba>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.09124_slides.pdf?v=1c1a59cf62ec4af5>) · [arXiv](<https://arxiv.org/abs/2611.09124>) · [Code](<https://github.com/AutoLab-SAI-SJTU/A2MEAS>) · [HF](<https://huggingface.co/papers/2611.09124>) · 53 HF upvotes
-
-<details>
-<summary>Summary</summary>
-
-The paper first builds A2-WLA, a strong action model combining "VLA + motion-aware history + implicit world model". When the robot makes an error, the large model MetaBrain together with a diagnostic agent issues correction instructions backed by spatial evidence; this information is encoded into a "correction code" and injected into a frozen action expert through a residual Adapter. At deployment no weights are changed, and the corrective actions are generated directly inside the policy. The system achieves a Q-score of 0.6411 and a full success rate of 45.40% on the 100 public tasks of BEHAVIOR 2026. However, the largest share of the improvement in the overall score comes from the action model itself and from "selecting a model per task"; agentic correction adds only a few more points on top of that.
-
-</details>
-
-
 **BirdDreams: Joint Perspective and BEV Video Generation for a Plausible, Reactive Driving World Model**  
-[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.14815_slides.en.pdf?v=e70a278ce699966c>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.14815_slides.pdf?v=31bac8f189992df0>) · [arXiv](<https://arxiv.org/abs/2611.14815>) · Code · [HF](<https://huggingface.co/papers/2611.14815>) · 50 HF upvotes
+[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.14815_slides.en.pdf?v=e70a278ce699966c>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.14815_slides.pdf?v=31bac8f189992df0>) · [arXiv](<https://arxiv.org/abs/2611.14815>) · Code · [HF](<https://huggingface.co/papers/2611.14815>) · 54 HF upvotes
 
 <details>
 <summary>Summary</summary>
@@ -659,24 +702,24 @@ BirdDreams no longer treats the scene layout (map, surrounding vehicles' traject
 </details>
 
 
-**Embodied First Exam**  
-[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.12177_slides.en.pdf?v=d57e5fb69aca0224>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.12177_slides.pdf?v=8b48b7b57dcda5c0>) · [arXiv](<https://arxiv.org/abs/2611.12177>) · [Code](<https://github.com/mll-lab-nu/embodied-first-exam>) · [HF](<https://huggingface.co/papers/2611.12177>) · 28 HF upvotes
-
-<details>
-<summary>Summary</summary>
-
-EFE is a unified robotics evaluation framework for general-purpose coding agents (35 suites, 1,156 tasks, 47 robots). Agents can decide for themselves whether to issue commands directly, write control programs, or train policies. The evaluation finds that the strongest agent, GPT-6 Astra (Codex), solves 77% of the core tasks when it has full simulation state and can reset at will. Under real-robot conditions, with only sensors and no resets, it solves only 30%. If the simulation does not wait for it to think (Realtime), the tasks become harder still. The gap comes mainly from "being unable to retry" and from "phases that require precision", not from "being unable to see the exact state".
-
-</details>
-
-
 **Ropedia Xperience 2: A Gold Standard for Scaling Physical AI Environments and Behaviors**  
-[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.17060_slides.en.pdf?v=15103b6c559553db>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.17060_slides.pdf?v=73cbd680583e07d0>) · [arXiv](<https://arxiv.org/abs/2611.17060>) · [Code](<https://github.com/Ropedia/Ropedia-Xperience-2>) · [HF](<https://huggingface.co/papers/2611.17060>) · 27 HF upvotes
+[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.17060_slides.en.pdf?v=15103b6c559553db>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.17060_slides.pdf?v=73cbd680583e07d0>) · [arXiv](<https://arxiv.org/abs/2611.17060>) · [Code](<https://github.com/Ropedia/Ropedia-Xperience-2>) · [HF](<https://huggingface.co/papers/2611.17060>) · 33 HF upvotes
 
 <details>
 <summary>Summary</summary>
 
 \*\*An operator first scans a real scene with a handheld LiDAR, then puts on the head-mounted camera HOMIE and performs a specified task, and a processing pipeline registers the human video, camera trajectory, and hand/body motions into the same metric-scale scene coordinate frame. In this way, a single on-site capture can serve as a reference for 3D perception benchmarks and can also be converted into simulation environments and robot trajectories. The dataset has released 1,589 scene scans, and the capture inventory contains a further 4,230 recordings (74 tasks, 131 hours). The paper calls this "joint environment + behavior capture" the "gold standard" for physical AI data collection.\*\*
+
+</details>
+
+
+**Embodied First Exam**  
+[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.12177_slides.en.pdf?v=d57e5fb69aca0224>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.12177_slides.pdf?v=8b48b7b57dcda5c0>) · [arXiv](<https://arxiv.org/abs/2611.12177>) · [Code](<https://github.com/mll-lab-nu/embodied-first-exam>) · [HF](<https://huggingface.co/papers/2611.12177>) · 30 HF upvotes
+
+<details>
+<summary>Summary</summary>
+
+EFE is a unified robotics evaluation framework for general-purpose coding agents (35 suites, 1,156 tasks, 47 robots). Agents can decide for themselves whether to issue commands directly, write control programs, or train policies. The evaluation finds that the strongest agent, GPT-6 Astra (Codex), solves 77% of the core tasks when it has full simulation state and can reset at will. Under real-robot conditions, with only sensors and no resets, it solves only 30%. If the simulation does not wait for it to think (Realtime), the tasks become harder still. The gap comes mainly from "being unable to retry" and from "phases that require precision", not from "being unable to see the exact state".
 
 </details>
 
@@ -704,7 +747,7 @@ SWAM builds roughly 47,000 hours of multi-source data and systematically studies
 
 
 **Learning the Task or Learning the Verifier? Rethinking Criteria Exposure in Embodied Self-Improvement**  
-[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.08318_slides.en.pdf?v=bbde2f8937889547>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.08318_slides.pdf?v=561ff1a118dc92d8>) · [arXiv](<https://arxiv.org/abs/2611.08318>) · [Code](<https://github.com/DAGroup-PKU/PyRUA-Lean>) · [HF](<https://huggingface.co/papers/2611.08318>) · 20 HF upvotes
+[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.08318_slides.en.pdf?v=bbde2f8937889547>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.08318_slides.pdf?v=561ff1a118dc92d8>) · [arXiv](<https://arxiv.org/abs/2611.08318>) · [Code](<https://github.com/DAGroup-PKU/PyRUA-Lean>) · [HF](<https://huggingface.co/papers/2611.08318>) · 21 HF upvotes
 
 <details>
 <summary>Summary</summary>
@@ -715,23 +758,12 @@ In embodied self-improvement, letting the learner read the benchmark's grading c
 
 
 **GTAGym: Real AAA Game Tasks Environment for Evaluation and Reinforcement Learning**  
-[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.13028_slides.en.pdf?v=ffd4410668c53562>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.13028_slides.pdf?v=993a02eadedcff6e>) · [arXiv](<https://arxiv.org/abs/2611.13028>) · [Code](<https://github.com/ljbro/GTAGym>) · [HF](<https://huggingface.co/papers/2611.13028>) · 14 HF upvotes
+[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.13028_slides.en.pdf?v=ffd4410668c53562>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.13028_slides.pdf?v=993a02eadedcff6e>) · [arXiv](<https://arxiv.org/abs/2611.13028>) · [Code](<https://github.com/ljbro/GTAGym>) · [HF](<https://huggingface.co/papers/2611.13028>) · 16 HF upvotes
 
 <details>
 <summary>Summary</summary>
 
 GTAGym splits the GTA V main-story missions into 150 automatically scorable tasks and provides an RL environment generator. The strongest VLM agent reaches only 70.9% (humans reach 89.8%). Its weak points are closed-loop control tasks such as flying and interception. Small-scale LoRA-GRPO training already brings improvements.
-
-</details>
-
-
-**Interactive Visual Gym: Evaluating Visual Interaction Models with Simulated Users in Interactive Worlds**  
-[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.08286_slides.en.pdf?v=d8650894882583dd>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.08286_slides.pdf?v=854ada7c5e4fdbc3>) · [arXiv](<https://arxiv.org/abs/2611.08286>) · [Code](<https://github.com/SalesforceAIResearch/Interactive-Visual-Gym>) · [HF](<https://huggingface.co/papers/2611.08286>) · 13 HF upvotes
-
-<details>
-<summary>Summary</summary>
-
-The authors move the evaluation of visual assistants, meaning AIs that watch a person perform a task and give advice as they watch, from "replaying recordings and comparing against reference answers" to closed-loop evaluation in executable simulated environments. The environments contain VLM-simulated users that make mistakes and have personalities, and they cover three scenarios: cooking, household chores, and phone settings. On IVG-Bench, the resulting set of 315 scenarios, even the strongest model, Gemini 4 Argon, completes only 53.4% of tasks on time on average. Once real inference latency is taken into account, its reminders often arrive after the user has already made the mistake, and the rankings change accordingly. The environments can also provide useful rewards for RL: with only 12 steps of GRPO, Qwen3.5-4B improves its task success rate by 3–9 percentage points.
 
 </details>
 
@@ -751,7 +783,7 @@ VFlash first uses a tool call to declare the type and length of a visual primiti
 
 
 **Learning Heterogeneous Tactile Representation for General Dexterous Manipulation**  
-[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.12806_slides.en.pdf?v=9e42455bb2de1665>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.12806_slides.pdf?v=4905926edc535cb1>) · [arXiv](<https://arxiv.org/abs/2611.12806>) · [Code](<https://github.com/Robbyant/lingbot-touch>) · [HF](<https://huggingface.co/papers/2611.12806>) · 103 HF upvotes
+[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.12806_slides.en.pdf?v=9e42455bb2de1665>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.12806_slides.pdf?v=4905926edc535cb1>) · [arXiv](<https://arxiv.org/abs/2611.12806>) · [Code](<https://github.com/Robbyant/lingbot-touch>) · [HF](<https://huggingface.co/papers/2611.12806>) · 105 HF upvotes
 
 <details>
 <summary>Summary</summary>
@@ -762,7 +794,7 @@ LingBot-Touch unifies three types of tactile sensors into a standard fingertip c
 
 
 **SLA: Scaling Spatial-Language-Action Model via Continual Pre-training**  
-[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.08373_slides.en.pdf?v=d70a0bbc6417546c>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.08373_slides.pdf?v=448e9e6367e2472f>) · [arXiv](<https://arxiv.org/abs/2611.08373>) · [Code](<https://github.com/OpenHelix-Team/Spatial-Forcing>) · [HF](<https://huggingface.co/papers/2611.08373>) · 90 HF upvotes
+[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.08373_slides.en.pdf?v=d70a0bbc6417546c>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.08373_slides.pdf?v=448e9e6367e2472f>) · [arXiv](<https://arxiv.org/abs/2611.08373>) · [Code](<https://github.com/OpenHelix-Team/Spatial-Forcing>) · [HF](<https://huggingface.co/papers/2611.08373>) · 94 HF upvotes
 
 <details>
 <summary>Summary</summary>
@@ -779,6 +811,28 @@ SLA starts from π0.5 and performs continual pre-training on about 1.7M heteroge
 <summary>Summary</summary>
 
 The authors first build a unified theory of routing (prices, reference models, an information ladder, and certifiable quality floors), then run 452 candidate configurations on the same set of inputs across 25 benchmarks, obtaining 370,000 scored records covering text, images, video, speech, coding agents, and robotics. The conclusion is: \*\*the ceiling for picking the best candidate per input is indeed not low (the oracle is 5.4 points higher than the best fixed candidate), but learned routers capture only a very small portion of this in quality (+0.3 points). The truly reliable gain from routing is that "the cheap route is already good enough": with quality roughly on par, efficiency is on average 8.82 times that of the reference model.\*\*
+
+</details>
+
+
+**Envisioning Agentic Robotics: A New Era of Robotic Systems**  
+[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.18359_slides.en.pdf?v=96acf31f314ccf09>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.18359_slides.pdf?v=5983062588627d80>) · [arXiv](<https://arxiv.org/abs/2611.18359>) · Code · [HF](<https://huggingface.co/papers/2611.18359>) · 66 HF upvotes
+
+<details>
+<summary>Summary</summary>
+
+Since GPT-6 Astra, \*\*Embodied System 2\*\*, composed of "foundation model + embodied harness" and used to understand intent, orchestrate skills, and verify results, is replacing "training one policy per task category" as the decision-making core of robots. For this "agentic robotics" paradigm, the paper provides a testable definition, an S2/S1/S0 reference architecture, an evaluation framework with 9 dimensions and 53 sub-dimensions, and a harness card reporting standard, and proposes a "delegable work ladder" of L1 primitives -&gt; L2 tasks -&gt; L3 workflows -&gt; L4 roles as a roadmap. Its core judgment is that the principles of digital agents can transfer to the physical world, but the preconditions that make these principles hold reliably need to be rebuilt in the physical world.
+
+</details>
+
+
+**Gamer: A Generalist Vision-Language-Action Foundation Model for Long-Horizon Real-Time Game Agent**  
+[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.18397_slides.en.pdf?v=72b34e92d820f938>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.18397_slides.pdf?v=a361044dd83c084b>) · [arXiv](<https://arxiv.org/abs/2611.18397>) · [Code](<https://github.com/RainBowLuoCS/Gamer>) · [HF](<https://huggingface.co/papers/2611.18397>) · 62 HF upvotes
+
+<details>
+<summary>Summary</summary>
+
+\*\*Gamer looks only at screen pixels and outputs only native keyboard and mouse actions. It uses a three-stage pipeline of "continued pretraining on cross-game keyboard-and-mouse trajectories -&gt; multi-level instruction fine-tuning with sparse thinking and memory summaries -&gt; temporally aware GRPO online reinforcement learning segmented by memory", together with an in-house low-latency inference engine, Streaming-vLLM (which cuts per-step latency from 1.31 s to 65 ms), to train Qwen3-VL-8B into an agent that can complete long-horizon tasks in real time in Honkai: Star Rail: it reaches milestone accuracies of 80.0% and 83.6% on two held-out side quests and a macro average of 49.7% across 7 categories of mini-games, all clearly higher than the various general-purpose large model baselines.\*\*
 
 </details>
 
@@ -806,7 +860,7 @@ The paper first gives an operational, function-level definition of a "generative
 
 
 **World In-Context Learning for Agentic Robot Manipulation**  
-[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.12885_slides.en.pdf?v=41e998cfc4ccf4d7>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.12885_slides.pdf?v=68f4e63330d4b371>) · [arXiv](<https://arxiv.org/abs/2611.12885>) · [Code](<https://github.com/ArcheOne-AI/RoboScript>) · [HF](<https://huggingface.co/papers/2611.12885>) · 57 HF upvotes
+[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.12885_slides.en.pdf?v=41e998cfc4ccf4d7>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.12885_slides.pdf?v=68f4e63330d4b371>) · [arXiv](<https://arxiv.org/abs/2611.12885>) · [Code](<https://github.com/ArcheOne-AI/RoboScript>) · [HF](<https://huggingface.co/papers/2611.12885>) · 58 HF upvotes
 
 <details>
 <summary>Summary</summary>
@@ -817,12 +871,23 @@ The paper proposes \*\*World In-Context Learning (WICL)\*\*: the foundation mode
 
 
 **DreamX: Video Diffusion Model is a Universal Latent Action Learner**  
-[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.05377_slides.en.pdf?v=1bbb7939410e6f9f>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.05377_slides.pdf?v=3a7e7fc426e80882>) · [arXiv](<https://arxiv.org/abs/2611.05377>) · Code · [HF](<https://huggingface.co/papers/2611.05377>) · 56 HF upvotes
+[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.05377_slides.en.pdf?v=1bbb7939410e6f9f>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.05377_slides.pdf?v=3a7e7fc426e80882>) · [arXiv](<https://arxiv.org/abs/2611.05377>) · Code · [HF](<https://huggingface.co/papers/2611.05377>) · 57 HF upvotes
 
 <details>
 <summary>Summary</summary>
 
 DreamX uses the pretrained video diffusion model Cosmos-Predict2.5 (2B) \*\*as both the encoder and the decoder\*\*: learnable queries read out latent actions of 4 tokens per latent frame from the backbone's spatiotemporal features (1,200→4, a 300x compression), and then the same backbone reconstructs the future video from only "initial frame + latent actions." In this way, appearance is left to the initial frame and the generative prior to explain, so the latent actions are forced to encode only motion. The resulting latent action space can be shared across humans and robots: on LARYBench it substantially outperforms existing latent action models, it enables human-to-robot video transfer and action transfer without paired data, and it can also serve as the prediction target for lightweight policies, thereby eliminating the step of generating future videos.
+
+</details>
+
+
+**BirdDreams: Joint Perspective and BEV Video Generation for a Plausible, Reactive Driving World Model**  
+[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.14815_slides.en.pdf?v=e70a278ce699966c>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.14815_slides.pdf?v=31bac8f189992df0>) · [arXiv](<https://arxiv.org/abs/2611.14815>) · Code · [HF](<https://huggingface.co/papers/2611.14815>) · 54 HF upvotes
+
+<details>
+<summary>Summary</summary>
+
+BirdDreams no longer treats the scene layout (map, surrounding vehicles' trajectories) as an external input, but instead makes it something the model must predict: using two causal video diffusion Transformers coupled through joint attention, it starts from a single front-view image and simultaneously generates a front-view camera video and a metric-scale schematic BEV video, then translates and rotates the latest BEV frame according to the input ego trajectory to serve as the action condition. As a result, the ego trajectory is followed more accurately, and surrounding vehicles can also react more plausibly to counterfactual ego actions.
 
 </details>
 
@@ -838,43 +903,10 @@ The paper first builds A2-WLA, a strong action model combining "VLA + motion-awa
 </details>
 
 
-**RoboColosseum: Evaluating Physical Intelligence at Scale In-The-Wild**  
-[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.02497_slides.en.pdf?v=4a877e8f2942284a>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.02497_slides.pdf?v=4196d06bd5188744>) · [arXiv](<https://arxiv.org/abs/2611.02497>) · [Code](<https://github.com/RoboColosseum/robocolosseum-client>) · [HF](<https://huggingface.co/papers/2611.02497>) · 51 HF upvotes
-
-<details>
-<summary>Summary</summary>
-
-RoboColosseum evaluates 8 models in a distributed manner across 124 real-world sites and 4 embodiments: frontier agents can match VLAs zero-shot, but success rates on open-ended tasks are generally extremely low; rankings flip depending on embodiment and track, the G1 humanoid completed no tasks at all, and active pairing can save about half of the trials.
-
-</details>
-
-
-**BirdDreams: Joint Perspective and BEV Video Generation for a Plausible, Reactive Driving World Model**  
-[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.14815_slides.en.pdf?v=e70a278ce699966c>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.14815_slides.pdf?v=31bac8f189992df0>) · [arXiv](<https://arxiv.org/abs/2611.14815>) · Code · [HF](<https://huggingface.co/papers/2611.14815>) · 50 HF upvotes
-
-<details>
-<summary>Summary</summary>
-
-BirdDreams no longer treats the scene layout (map, surrounding vehicles' trajectories) as an external input, but instead makes it something the model must predict: using two causal video diffusion Transformers coupled through joint attention, it starts from a single front-view image and simultaneously generates a front-view camera video and a metric-scale schematic BEV video, then translates and rotates the latest BEV frame according to the input ego trajectory to serve as the action condition. As a result, the ego trajectory is followed more accurately, and surrounding vehicles can also react more plausibly to counterfactual ego actions.
-
-</details>
-
-
-**Democratizing Robot-Use Agents: A Unified Harness with Open Models**  
-[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.01560_slides.en.pdf?v=e4c17a7649d75ef2>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.01560_slides.pdf?v=5903bc133d53b93e>) · [arXiv](<https://arxiv.org/abs/2611.01560>) · [Code](<https://github.com/Open-RUA/uni-robot-agent>) · [HF](<https://huggingface.co/papers/2611.01560>) · 49 HF upvotes
-
-<details>
-<summary>Summary</summary>
-
-The paper proposes uni-robot-agent, a unified, modular robot-use agent framework that supports pipelined execution. Without using privileged information such as depth or task-success judges, the open-source Qwen3.8-Flash-Next scores 31.39 on RoboDojo, higher than the officially reported GPT-6 Astra+RoboProbe (28.97), and on 19 real-robot tasks it matches a fine-tuned π0.5. The paper further argues that robot-use ability stems from four general capabilities (visual understanding, spatial grounding, geometric encoding, and embodied reasoning), and that future training should improve all four at the same time.
-
-</details>
-
-
 ## Monthly Archive
 
 
-- [November 2026](papers/2026-11.md) — 56 papers
+- [November 2026](papers/2026-11.md) — 59 papers
 
 ## Contributors
 
