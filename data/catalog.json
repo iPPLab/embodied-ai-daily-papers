@@ -2,6 +2,390 @@
   "version": 1,
   "papers": [
     {
+      "id": "2611.26617",
+      "title": "One Prior, Two Dynamics: Repurposing Video Diffusion Transformers for Self-Supervised Latent Action Learning",
+      "hf_dates": [
+        "2026-11-20"
+      ],
+      "published_at": "2026-11-19",
+      "likes": 1,
+      "arxiv_url": "https://arxiv.org/abs/2611.26617",
+      "hf_url": "https://huggingface.co/papers/2611.26617",
+      "generated_at": "2026-11-20T18:30:48.410412+08:00",
+      "model": "claude-opus-5-5-medium",
+      "summary": "**O²LaF 用同一个预训练视频 DiT（Wan2.2-5B）初始化逆动力学模型（IDM）和前向动力学模型（FDM），各自用 LoRA 适配：IDM 是带\"只读\"动作查询的单次前向编码器，FDM 是帧因果、整段联合预测、偏向高噪声训练的动作条件视频生成器。两者通过 32 维高斯瓶颈端到端训练，从无标注视频中学到隐动作。这些隐动作在导航和操作的少样本动作探测上达到新的 SOTA，并能零样本迁移到新场景，以及在人与机器人之间迁移。**",
+      "downloads": {
+        "pptx": "https://github.com/iPPLab/embodied-ai-daily-papers/releases/download/paper-2611.26617/deck.pptx",
+        "pdf": "https://github.com/iPPLab/embodied-ai-daily-papers/releases/download/paper-2611.26617/deck.pdf"
+      },
+      "summary_en": "**O²LaF initializes both an inverse dynamics model (IDM) and a forward dynamics model (FDM) from the same pretrained video DiT (Wan2.2-5B), each adapted with LoRA: the IDM is a single-forward-pass encoder with \"read-only\" action queries, and the FDM is a frame-causal, action-conditioned video generator that jointly predicts the whole clip and is trained with a bias toward high noise. The two are trained end to end through a 32-dimensional Gaussian bottleneck to learn latent actions from unlabeled video. These latent actions achieve new SOTA in few-shot action probing for navigation and manipulation, and can transfer zero-shot to new scenes as well as between humans and robots.**",
+      "summary_en_source": "8f5985327c50bf715d98a00178b3539db7f1bb23a3c240e7485306e9619abfd0",
+      "code_url": "https://github.com/showlab/O2LaF",
+      "code_checked_at": "2026-11-20",
+      "pdf_url_en": "https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.26617_slides.en.pdf?v=8c16f1ac4d7a5949",
+      "slides_en_source": "bfdd72b197c5f4f39e43f9b2844442a13766640c367b6d3de7c82594df86137c",
+      "slides_en_revision": null,
+      "slides_en_version": "text-only-v1",
+      "downloads_en": {
+        "pptx": "https://github.com/iPPLab/embodied-ai-daily-papers/releases/download/paper-2611.26617/deck.en.pptx",
+        "pdf": "https://github.com/iPPLab/embodied-ai-daily-papers/releases/download/paper-2611.26617/deck.en.pdf"
+      },
+      "pdf_archive": {
+        "owner": "bjipppp",
+        "month": "2026-11",
+        "zh": {
+          "repository": "paper-pdfs-2026-11",
+          "file": "pdfs/2611.26617_slides.pdf",
+          "bytes": 2060013,
+          "sha256": "6c8d61b2b6d0fe3813211ea5cb40a33351b0059b73ea42503fc48eb38b280f73"
+        },
+        "en": {
+          "repository": "paper-pdfs-2026-11",
+          "file": "pdfs/2611.26617_slides.en.pdf",
+          "bytes": 1806761,
+          "sha256": "8c16f1ac4d7a5949bd568947a6e6d37f68509c06298634c707aaaafc375a7c14"
+        }
+      },
+      "pdf_url": "https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.26617_slides.pdf?v=6c8d61b2b6d0fe38",
+      "slide_count": 17
+    },
+    {
+      "id": "2611.26444",
+      "title": "Mind2Act World: A Diagnostic Benchmark for Embodied Mind, Physical Action, and Mind-Action Composition in Robotic Manipulation",
+      "hf_dates": [
+        "2026-11-20"
+      ],
+      "published_at": "2026-11-19",
+      "likes": 39,
+      "arxiv_url": "https://arxiv.org/abs/2611.26444",
+      "hf_url": "https://huggingface.co/papers/2611.26444",
+      "generated_at": "2026-11-20T18:19:59.247421+08:00",
+      "model": "claude-opus-5-5-medium",
+      "summary": "**Mind2Act World 用 30 个双臂仿真操作任务，分成\"只考记忆/推理（Mind）\"\"只考精确与及时执行（Act）\"\"两者闭环组合（Mind2Act）\"三个视图，在 56,700 个回合上评测了 3 个多模态 Agent、4 个 VLA 和 2 个 WAM，并给每个失败回合归因。结论是：最强的 GPT-6 Astra 在 Mind 上成功 52.7%、Act 上 39.0%，到 Mind2Act 只剩 12.0%，端到端策略在 Mind2Act 上都不超过 3.6%。也就是说，单项能力不会自动组合起来；而且大部分组合任务在第一步物理操作就失败了，根本没走到真正需要组合的环节。**",
+      "downloads": {
+        "pptx": "https://github.com/iPPLab/embodied-ai-daily-papers/releases/download/paper-2611.26444/deck.pptx",
+        "pdf": "https://github.com/iPPLab/embodied-ai-daily-papers/releases/download/paper-2611.26444/deck.pdf"
+      },
+      "summary_en": "**Mind2Act World uses 30 bimanual simulated manipulation tasks, divided into three views: \"testing only memory/reasoning (Mind),\" \"testing only precise and timely execution (Act),\" and \"closed-loop composition of the two (Mind2Act).\" It evaluates 3 multimodal agents, 4 VLAs, and 2 WAMs over 56,700 episodes, and attributes a cause to every failed episode. The conclusion: the strongest model, GPT-6 Astra, succeeds 52.7% of the time on Mind and 39.0% on Act, but only 12.0% on Mind2Act, and no end-to-end policy exceeds 3.6% on Mind2Act. In other words, individual capabilities do not automatically compose; moreover, most composition tasks fail at the very first physical manipulation step, never even reaching the stage that actually requires composition.**",
+      "summary_en_source": "58b8398dc6f9d1e1aae8209c8de02a7ae57b99de1ff78176e40efdae64305bb3",
+      "code_url": "https://github.com/Mind2Act/Mind2Act_World",
+      "code_checked_at": "2026-11-20",
+      "pdf_url_en": "https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.26444_slides.en.pdf?v=faaad5dc93e3b5d6",
+      "slides_en_source": "fc90e9020aba760be0c0200b59a1b8f69456df06eb730cbd6a6f655327533c17",
+      "slides_en_revision": null,
+      "slides_en_version": "text-only-v1",
+      "downloads_en": {
+        "pptx": "https://github.com/iPPLab/embodied-ai-daily-papers/releases/download/paper-2611.26444/deck.en.pptx",
+        "pdf": "https://github.com/iPPLab/embodied-ai-daily-papers/releases/download/paper-2611.26444/deck.en.pdf"
+      },
+      "pdf_archive": {
+        "owner": "bjipppp",
+        "month": "2026-11",
+        "zh": {
+          "repository": "paper-pdfs-2026-11",
+          "file": "pdfs/2611.26444_slides.pdf",
+          "bytes": 2646172,
+          "sha256": "b4b6f0260c967db1702d4baee17eed8b3656b1776efd8c7a84fcb549a0704c04"
+        },
+        "en": {
+          "repository": "paper-pdfs-2026-11",
+          "file": "pdfs/2611.26444_slides.en.pdf",
+          "bytes": 2334586,
+          "sha256": "faaad5dc93e3b5d6727493a642fe587ebffab807c720acb107c00426f6b40c95"
+        }
+      },
+      "pdf_url": "https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.26444_slides.pdf?v=b4b6f0260c967db1",
+      "slide_count": 23
+    },
+    {
+      "id": "2611.26414",
+      "title": "ZeroVLN: Learning to Navigate without Supervised Fine-Tuning of the VLM Brain",
+      "hf_dates": [
+        "2026-11-20"
+      ],
+      "published_at": "2026-11-19",
+      "likes": 17,
+      "arxiv_url": "https://arxiv.org/abs/2611.26414",
+      "hf_url": "https://huggingface.co/papers/2611.26414",
+      "generated_at": "2026-11-20T18:15:32.862193+08:00",
+      "model": "claude-opus-5-5-medium",
+      "summary": "ZeroVLN让VLM大脑以自然语言工具调用指挥动作专家，按大脑请求生成轨迹监督专家后联合强化学习，零导航微调即在三个VLN-CE基准取得同条件最高成功率，权重仅变0.015%，通用能力基本保留。",
+      "downloads": {
+        "pptx": "https://github.com/iPPLab/embodied-ai-daily-papers/releases/download/paper-2611.26414/deck.pptx",
+        "pdf": "https://github.com/iPPLab/embodied-ai-daily-papers/releases/download/paper-2611.26414/deck.pdf"
+      },
+      "summary_en": "ZeroVLN has the VLM brain direct an action expert through natural-language tool calls. It supervises the expert with trajectories generated according to the brain's requests and then performs joint reinforcement learning. With zero navigation fine-tuning, it achieves the highest success rate under the same conditions on three VLN-CE benchmarks, while changing only 0.015% of the weights and largely preserving general capabilities.",
+      "summary_en_source": "f12cad1f59dc7d2fd217653d01674b9656862ed1fa1913fd63f85e4df0d3f61f",
+      "code_url": "https://github.com/hzx122/ZeroVLN",
+      "code_checked_at": "2026-11-20",
+      "pdf_url_en": "https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.26414_slides.en.pdf?v=22bb846c71422654",
+      "slides_en_source": "8e592bdea4ccf7bf568f8cc422d839c6217f669dd4928c821d513b713a6d44e6",
+      "slides_en_revision": null,
+      "slides_en_version": "text-only-v1",
+      "downloads_en": {
+        "pptx": "https://github.com/iPPLab/embodied-ai-daily-papers/releases/download/paper-2611.26414/deck.en.pptx",
+        "pdf": "https://github.com/iPPLab/embodied-ai-daily-papers/releases/download/paper-2611.26414/deck.en.pdf"
+      },
+      "pdf_archive": {
+        "owner": "bjipppp",
+        "month": "2026-11",
+        "zh": {
+          "repository": "paper-pdfs-2026-11",
+          "file": "pdfs/2611.26414_slides.pdf",
+          "bytes": 1800657,
+          "sha256": "bfcc388f9f9583c76bac8bab3fb55248859add87d0bf1c19ae5555d0fa52273f"
+        },
+        "en": {
+          "repository": "paper-pdfs-2026-11",
+          "file": "pdfs/2611.26414_slides.en.pdf",
+          "bytes": 1574199,
+          "sha256": "22bb846c71422654e2c5793d10755bea13d17702d9a0db7871779b95ded1662b"
+        }
+      },
+      "pdf_url": "https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.26414_slides.pdf?v=bfcc388f9f9583c7",
+      "slide_count": 18
+    },
+    {
+      "id": "2611.25980",
+      "title": "Learning What Actions Change: Action Effect Matching for Dynamics-Faithful World Models",
+      "hf_dates": [
+        "2026-11-20"
+      ],
+      "published_at": "2026-11-19",
+      "likes": 9,
+      "arxiv_url": "https://arxiv.org/abs/2611.25980",
+      "hf_url": "https://huggingface.co/papers/2611.25980",
+      "generated_at": "2026-11-20T18:22:54.645819+08:00",
+      "model": "claude-opus-5-5-medium",
+      "summary": "作者让 play 策略在执行时注入可记录的、时间相关的动作噪声，再加一个辅助损失 AFFECT：它要求世界模型生成视频里的特征随噪声变化的方式（即二者的协方差）与真实录像一致。这个方法不需要从同一初始状态重复执行，也不需要结果标签，就能让视频世界模型对细小动作差异更敏感。在 DROID 上，世界模型内与真机上策略成功率的 Pearson 相关从 0.47 升到 0.79，用于规划时成功率提高约 8 个百分点。",
+      "downloads": {
+        "pptx": "https://github.com/iPPLab/embodied-ai-daily-papers/releases/download/paper-2611.25980/deck.pptx",
+        "pdf": "https://github.com/iPPLab/embodied-ai-daily-papers/releases/download/paper-2611.25980/deck.pdf"
+      },
+      "summary_en": "The authors have the play policy inject recordable, temporally correlated action noise during execution, and add an auxiliary loss, AFFECT, which requires that the way features in the world model's generated video vary with the noise (i.e., their covariance) match that of the real recordings. This method requires neither repeated executions from the same initial state nor outcome labels, yet it makes video world models more sensitive to small action differences. On DROID, the Pearson correlation between policy success rates inside the world model and on the real robot rises from 0.47 to 0.79, and when used for planning, success rate improves by about 8 percentage points.",
+      "summary_en_source": "11c2ebdc067411e3ee4b5ed2da99fee797a0c1086e7aa81cfb1bdc1b0eeb009e",
+      "code_url": "https://github.com/alshedivat/al-folio",
+      "code_checked_at": "2026-11-20",
+      "pdf_url_en": "https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.25980_slides.en.pdf?v=eec8bba844449265",
+      "slides_en_source": "10fe9f8140a7a4a9f98206ae14b0bcf504f3f90e210066379284a70ec2c8de9e",
+      "slides_en_revision": null,
+      "slides_en_version": "text-only-v1",
+      "downloads_en": {
+        "pptx": "https://github.com/iPPLab/embodied-ai-daily-papers/releases/download/paper-2611.25980/deck.en.pptx",
+        "pdf": "https://github.com/iPPLab/embodied-ai-daily-papers/releases/download/paper-2611.25980/deck.en.pdf"
+      },
+      "pdf_archive": {
+        "owner": "bjipppp",
+        "month": "2026-11",
+        "zh": {
+          "repository": "paper-pdfs-2026-11",
+          "file": "pdfs/2611.25980_slides.pdf",
+          "bytes": 1113810,
+          "sha256": "1eb79b39c7bce10bed2d1dd235d34a0c663613800f1f87a7f5453ae0124bf81f"
+        },
+        "en": {
+          "repository": "paper-pdfs-2026-11",
+          "file": "pdfs/2611.25980_slides.en.pdf",
+          "bytes": 871812,
+          "sha256": "eec8bba844449265b16790b066072f401dd9bda350136f6da565f53981895597"
+        }
+      },
+      "pdf_url": "https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.25980_slides.pdf?v=1eb79b39c7bce10b",
+      "slide_count": 15
+    },
+    {
+      "id": "2611.25279",
+      "title": "Accord: Universal Online Metric Localization and Dense Mapping from one Camera and an IMU",
+      "hf_dates": [
+        "2026-11-20"
+      ],
+      "published_at": "2026-11-18",
+      "likes": 6,
+      "arxiv_url": "https://arxiv.org/abs/2611.25279",
+      "hf_url": "https://huggingface.co/papers/2611.25279",
+      "generated_at": "2026-11-20T18:27:46.817558+08:00",
+      "model": "claude-opus-5-5-medium",
+      "summary": "**Accord 在 DAVIO 的\"VIO 位姿 + 位姿条件化 DA3 深度\"框架上加了两层尺度修正：先用 VIO 三角化的稀疏点给每个关键帧窗口定一个度量锚，再利用不同窗口共视图像之间的双向稠密深度一致性，为每张图解出一个无监督的尺度校正，把单目稠密地图中几个百分点的尺度误差压下去。用同一套配置跑 5 个公开相机-IMU 平台和自采的手机/GoPro 数据，并在\"整图只按系统自身轨迹放置、不拟合尺度\"的严格协议下评测，它在四个有扫描真值的公开数据集上平均 F@5cm 都是第一。**",
+      "downloads": {
+        "pptx": "https://github.com/iPPLab/embodied-ai-daily-papers/releases/download/paper-2611.25279/deck.pptx",
+        "pdf": "https://github.com/iPPLab/embodied-ai-daily-papers/releases/download/paper-2611.25279/deck.pdf"
+      },
+      "summary_en": "**Accord adds two layers of scale correction on top of DAVIO's \"VIO poses + pose-conditioned DA3 depth\" framework: first, it uses sparse points triangulated by VIO to set a metric anchor for each keyframe window; then, using bidirectional dense depth consistency between co-visible images across different windows, it solves for an unsupervised scale correction for each image, suppressing the scale errors of a few percent in the monocular dense map. Running a single configuration on 5 public camera-IMU platforms and self-collected phone/GoPro data, and evaluated under a strict protocol in which \"the entire map is placed only according to the system's own trajectory, with no scale fitting,\" it ranks first in average F@5cm on all four public datasets with scanned ground truth.**",
+      "summary_en_source": "d0bea692d8da48e4f6613157c59ac233192ea72bb892c61e0b84ddaf544315d5",
+      "code_url": "https://github.com/be2rlab/ACCORD",
+      "code_checked_at": "2026-11-20",
+      "pdf_url_en": "https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.25279_slides.en.pdf?v=b2005b083bedde44",
+      "slides_en_source": "d349973d1dc2280eae9e471cafa6e9794369b0b71b80cf42dd1fe12ca4f5cafa",
+      "slides_en_revision": null,
+      "slides_en_version": "text-only-v1",
+      "downloads_en": {
+        "pptx": "https://github.com/iPPLab/embodied-ai-daily-papers/releases/download/paper-2611.25279/deck.en.pptx",
+        "pdf": "https://github.com/iPPLab/embodied-ai-daily-papers/releases/download/paper-2611.25279/deck.en.pdf"
+      },
+      "pdf_archive": {
+        "owner": "bjipppp",
+        "month": "2026-11",
+        "zh": {
+          "repository": "paper-pdfs-2026-11",
+          "file": "pdfs/2611.25279_slides.pdf",
+          "bytes": 1132781,
+          "sha256": "f34d1bd669cace69e7276c4417ee623c0c5eabaafa9d6444765dbe46805116cc"
+        },
+        "en": {
+          "repository": "paper-pdfs-2026-11",
+          "file": "pdfs/2611.25279_slides.en.pdf",
+          "bytes": 892935,
+          "sha256": "b2005b083bedde4477cb9751fb14a0a15fd29d8bb03f3c5af490318c57700652"
+        }
+      },
+      "pdf_url": "https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.25279_slides.pdf?v=f34d1bd669cace69",
+      "slide_count": 19
+    },
+    {
+      "id": "2611.25005",
+      "title": "Inhabitant: An Agent Framework for Long-Horizon Human-Scene Interaction with Spatial Control and Quantitative Feedback",
+      "hf_dates": [
+        "2026-11-20"
+      ],
+      "published_at": "2026-11-18",
+      "likes": 1,
+      "arxiv_url": "https://arxiv.org/abs/2611.25005",
+      "hf_url": "https://huggingface.co/papers/2611.25005",
+      "generated_at": "2026-11-20T18:30:12.999345+08:00",
+      "model": "claude-opus-5-5-medium",
+      "summary": "**Inhabitant 是一个免训练的 LLM 智能体框架：智能体不再只写文本或调技能，而是直接用位置、路径和姿态编写 Kimodo 运动生成器的约束（空间控制），在半物理模拟器里执行后按需测量手离物体多远、物体落在哪（量化反馈），再改约束重试，测量结果符合意图才提交这一段动作。作者在自建的 75 任务全身家务基准 Inhabit 上测试，用 Claude Opus 5.5 完成了 98.7% 的任务，同一模型驱动的最佳已有智能体只有 26.7%。**",
+      "downloads": {
+        "pptx": "https://github.com/iPPLab/embodied-ai-daily-papers/releases/download/paper-2611.25005/deck.pptx",
+        "pdf": "https://github.com/iPPLab/embodied-ai-daily-papers/releases/download/paper-2611.25005/deck.pdf"
+      },
+      "summary_en": "**Inhabitant is a training-free LLM agent framework: instead of merely writing text or invoking skills, the agent directly authors constraints for the Kimodo motion generator using positions, paths, and poses (spatial control). After execution in a semi-physical simulator, it measures on demand how far the hand is from an object and where the object landed (quantitative feedback), then revises the constraints and retries, committing a motion segment only when the measurements match the intent. The authors test it on Inhabit, their self-built 75-task whole-body household benchmark; with Claude Opus 5.5 it completes 98.7% of the tasks, while the best existing agent driven by the same model achieves only 26.7%.**",
+      "summary_en_source": "39db2420c05c9b20e27a23d43539bffb2a35775e897dd0d8a1041c4ad91989a4",
+      "code_url": null,
+      "code_checked_at": "2026-11-20",
+      "pdf_url_en": "https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.25005_slides.en.pdf?v=eadcb2b9eee824b4",
+      "slides_en_source": "0830de82cd55f824950e565065bd7573536c1b28b8c2c6693cf6e8b07616337b",
+      "slides_en_revision": null,
+      "slides_en_version": "text-only-v1",
+      "downloads_en": {
+        "pptx": "https://github.com/iPPLab/embodied-ai-daily-papers/releases/download/paper-2611.25005/deck.en.pptx",
+        "pdf": "https://github.com/iPPLab/embodied-ai-daily-papers/releases/download/paper-2611.25005/deck.en.pdf"
+      },
+      "pdf_archive": {
+        "owner": "bjipppp",
+        "month": "2026-11",
+        "zh": {
+          "repository": "paper-pdfs-2026-11",
+          "file": "pdfs/2611.25005_slides.pdf",
+          "bytes": 974899,
+          "sha256": "ed48f4446a5e37ab58c13920d4870a3c630ec862cb4f5ed823ca63d26bbebff7"
+        },
+        "en": {
+          "repository": "paper-pdfs-2026-11",
+          "file": "pdfs/2611.25005_slides.en.pdf",
+          "bytes": 744971,
+          "sha256": "eadcb2b9eee824b464ed51a236ea7f2f7e2cd04cfe5e69c25831ee11d287872b"
+        }
+      },
+      "pdf_url": "https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.25005_slides.pdf?v=ed48f4446a5e37ab",
+      "slide_count": 16
+    },
+    {
+      "id": "2611.24011",
+      "title": "WAM-Policy: World Action Models with On-Policy Distillation for Quadrupedal Loco-Manipulation",
+      "hf_dates": [
+        "2026-11-20"
+      ],
+      "published_at": "2026-11-18",
+      "likes": 14,
+      "arxiv_url": "https://arxiv.org/abs/2611.24011",
+      "hf_url": "https://huggingface.co/papers/2611.24011",
+      "generated_at": "2026-11-20T18:16:04.977632+08:00",
+      "model": "claude-opus-5-5-medium",
+      "summary": "WAM-Policy 把一个为机械臂预训练的世界动作模型（LingBot-VA）改造成\"三条腿走路、一条前腿干活\"的四足机器人语言条件策略。做法分两步：先换掉视觉和动作接口，再用同噪声的在线自蒸馏把采样压到 1 步视频 + 2 步动作，提速 14 倍且几乎不掉点（77.0%→76.7%）；然后对难任务单独做 RL 训练出专家教师，再用按任务路由的多教师在线蒸馏把它们合并回一个快速学生，十任务成功率升到 85.0%。",
+      "downloads": {
+        "pptx": "https://github.com/iPPLab/embodied-ai-daily-papers/releases/download/paper-2611.24011/deck.pptx",
+        "pdf": "https://github.com/iPPLab/embodied-ai-daily-papers/releases/download/paper-2611.24011/deck.pdf"
+      },
+      "summary_en": "WAM-Policy adapts a world action model pretrained for robotic arms (LingBot-VA) into a language-conditioned policy for a quadruped robot that \"walks on three legs and works with one front leg.\" The approach has two steps. First, it replaces the visual and action interfaces, then uses same-noise on-policy self-distillation to compress sampling to 1 video step + 2 action steps, achieving a 14x speedup with almost no performance drop (77.0% -> 76.7%). Second, it trains expert teachers separately with RL on the hard tasks, then uses task-routed multi-teacher on-policy distillation to merge them back into a single fast student, raising the ten-task success rate to 85.0%.",
+      "summary_en_source": "d101cfa183178df960b0afa0a952c6c5690e8437ca7ce072b5c8eff46273c551",
+      "code_url": "https://github.com/AIGeeksGroup/WAM-Policy",
+      "code_checked_at": "2026-11-20",
+      "pdf_url_en": "https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.24011_slides.en.pdf?v=806a600eebda3788",
+      "slides_en_source": "f329cb9fd7ca4ff600c513600fceef12e82fc88777e209d3e3b4f670ab5d07e7",
+      "slides_en_revision": null,
+      "slides_en_version": "text-only-v1",
+      "downloads_en": {
+        "pptx": "https://github.com/iPPLab/embodied-ai-daily-papers/releases/download/paper-2611.24011/deck.en.pptx",
+        "pdf": "https://github.com/iPPLab/embodied-ai-daily-papers/releases/download/paper-2611.24011/deck.en.pdf"
+      },
+      "pdf_archive": {
+        "owner": "bjipppp",
+        "month": "2026-11",
+        "zh": {
+          "repository": "paper-pdfs-2026-11",
+          "file": "pdfs/2611.24011_slides.pdf",
+          "bytes": 1194841,
+          "sha256": "44555ff861c8da685e7383d83b13168ea6b99dc53a09b89de811e606d708f551"
+        },
+        "en": {
+          "repository": "paper-pdfs-2026-11",
+          "file": "pdfs/2611.24011_slides.en.pdf",
+          "bytes": 952269,
+          "sha256": "806a600eebda37883844732ed1220d9ce1dd23d56c10ce8974f6f38c3d4ee8f4"
+        }
+      },
+      "pdf_url": "https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.24011_slides.pdf?v=44555ff861c8da68",
+      "slide_count": 17
+    },
+    {
+      "id": "2611.22666",
+      "title": "VSpark: Speculative Decoding for Autoregressive Vision-Language-Action Models",
+      "hf_dates": [
+        "2026-11-20"
+      ],
+      "published_at": "2026-11-17",
+      "likes": 8,
+      "arxiv_url": "https://arxiv.org/abs/2611.22666",
+      "hf_url": "https://huggingface.co/papers/2611.22666",
+      "generated_at": "2026-11-20T18:23:52.975472+08:00",
+      "model": "claude-opus-5-5-medium",
+      "summary": "VSpark 保持**严格（无损）验证**不变，把“很多不同 token 编码近似相同动作”这一特点用在**草稿侧**：用按草稿误差标定的动作噪声做 rollout 来扩大训练状态覆盖，用目标模型的隐藏特征对齐来训练草稿，再把目标在被拒分支上已经算好的续写复用到下一轮草稿树里。结果是在 FAST 和 VQ 两类压缩动作分词器的 4 个自回归 VLA、4 个操作基准上，相对逐 token 自回归解码拿到 1.28×–2.10× 的加速，而且在所有模型和基准上都优于 5 种最新推测解码方法。",
+      "downloads": {
+        "pptx": "https://github.com/iPPLab/embodied-ai-daily-papers/releases/download/paper-2611.22666/deck.pptx",
+        "pdf": "https://github.com/iPPLab/embodied-ai-daily-papers/releases/download/paper-2611.22666/deck.pdf"
+      },
+      "summary_en": "VSpark keeps **strict (lossless) verification** unchanged and exploits the property that \"many different tokens encode approximately the same action\" on the **draft side**: it performs rollouts with action noise calibrated to the draft error to expand training state coverage, trains the draft via alignment with the target model's hidden features, and reuses continuations the target has already computed on rejected branches in the next round's draft tree. As a result, across 4 autoregressive VLAs using two types of compressed action tokenizers (FAST and VQ) and 4 manipulation benchmarks, it achieves 1.28x-2.10x speedups over token-by-token autoregressive decoding, and outperforms 5 recent speculative decoding methods on all models and benchmarks.",
+      "summary_en_source": "0f30a8ac61e0b4e67b4995262f4daff0ff48f58bd013ed4539e5ca3c2ea23ea8",
+      "code_url": "https://github.com/suho-yoo/VSpark",
+      "code_checked_at": "2026-11-20",
+      "pdf_url_en": "https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.22666_slides.en.pdf?v=3603be68266f6406",
+      "slides_en_source": "fd792fe5e19151fba34cb9a507570b85137786602641342366c05923fae3650f",
+      "slides_en_revision": null,
+      "slides_en_version": "text-only-v1",
+      "downloads_en": {
+        "pptx": "https://github.com/iPPLab/embodied-ai-daily-papers/releases/download/paper-2611.22666/deck.en.pptx",
+        "pdf": "https://github.com/iPPLab/embodied-ai-daily-papers/releases/download/paper-2611.22666/deck.en.pdf"
+      },
+      "pdf_archive": {
+        "owner": "bjipppp",
+        "month": "2026-11",
+        "zh": {
+          "repository": "paper-pdfs-2026-11",
+          "file": "pdfs/2611.22666_slides.pdf",
+          "bytes": 1044265,
+          "sha256": "f889133bb703cc7e993bdcb6899cb2ac29d79c8e5dad3d99d748d93a8d3c5b2a"
+        },
+        "en": {
+          "repository": "paper-pdfs-2026-11",
+          "file": "pdfs/2611.22666_slides.en.pdf",
+          "bytes": 824588,
+          "sha256": "3603be68266f64060b1ccf87ab23d70d42643efa6a98b08b2709a6a58b51a3af"
+        }
+      },
+      "pdf_url": "https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.22666_slides.pdf?v=f889133bb703cc7e",
+      "slide_count": 15
+    },
+    {
       "id": "2611.24789",
       "title": "HINT-WAM: Hindsight-Informed Training for World Action Models",
       "hf_dates": [
@@ -104,7 +488,7 @@
         "2026-11-18"
       ],
       "published_at": "2026-11-17",
-      "likes": 24,
+      "likes": 25,
       "arxiv_url": "https://arxiv.org/abs/2611.23143",
       "hf_url": "https://huggingface.co/papers/2611.23143",
       "generated_at": "2026-11-20T12:11:17.889198+08:00",
@@ -248,7 +632,7 @@
         "2026-11-18"
       ],
       "published_at": "2026-11-16",
-      "likes": 42,
+      "likes": 43,
       "arxiv_url": "https://arxiv.org/abs/2611.21099",
       "hf_url": "https://huggingface.co/papers/2611.21099",
       "generated_at": "2026-11-20T12:13:35.521019+08:00",
@@ -392,7 +776,7 @@
         "2026-11-17"
       ],
       "published_at": "2026-11-16",
-      "likes": 37,
+      "likes": 39,
       "arxiv_url": "https://arxiv.org/abs/2611.21607",
       "hf_url": "https://huggingface.co/papers/2611.21607",
       "generated_at": "2026-11-17T18:56:10.681058+08:00",
@@ -462,10 +846,24 @@
           "file": "pdfs/2611.17110_slides.pdf",
           "bytes": 1340469,
           "sha256": "951d470d19d502474af4a36a79aebc708d4d9cfa53aa81d7bb66a45cd024224c"
+        },
+        "en": {
+          "repository": "paper-pdfs-2026-11",
+          "file": "pdfs/2611.17110_slides.en.pdf",
+          "bytes": 1136545,
+          "sha256": "a7dc5207fec0f80cd599fee19bdaaab04c50cb421171fe45f629d7b1d0a49d83"
         }
       },
       "pdf_url": "https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.17110_slides.pdf?v=951d470d19d50247",
-      "slide_count": 14
+      "slide_count": 14,
+      "pdf_url_en": "https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.17110_slides.en.pdf?v=a7dc5207fec0f80c",
+      "slides_en_source": "38776b00e18f0ffe84cd507b70bfe4b86a28c1bd30c621af8f3667d9b1ef818d",
+      "slides_en_revision": null,
+      "slides_en_version": "text-only-v1",
+      "downloads_en": {
+        "pptx": "https://github.com/iPPLab/embodied-ai-daily-papers/releases/download/paper-2611.17110/deck.en.pptx",
+        "pdf": "https://github.com/iPPLab/embodied-ai-daily-papers/releases/download/paper-2611.17110/deck.en.pdf"
+      }
     },
     {
       "id": "2611.13685",
@@ -522,7 +920,7 @@
         "2026-11-16"
       ],
       "published_at": "2026-11-13",
-      "likes": 138,
+      "likes": 141,
       "arxiv_url": "https://arxiv.org/abs/2611.18397",
       "hf_url": "https://huggingface.co/papers/2611.18397",
       "generated_at": "2026-11-16T18:02:20.782509+08:00",
@@ -570,7 +968,7 @@
         "2026-11-16"
       ],
       "published_at": "2026-11-13",
-      "likes": 133,
+      "likes": 135,
       "arxiv_url": "https://arxiv.org/abs/2611.18359",
       "hf_url": "https://huggingface.co/papers/2611.18359",
       "generated_at": "2026-11-16T18:03:42.768330+08:00",
@@ -3420,7 +3818,7 @@
       "slide_count": 20
     }
   ],
-  "last_checked_at": "2026-11-20T12:28:39.496232+08:00",
+  "last_checked_at": "2026-11-20T18:30:57.313739+08:00",
   "title": "Embodied AI Daily Papers",
   "today": "2026-11-20",
   "timezone": "Asia/Shanghai"
