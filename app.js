@@ -85,7 +85,8 @@ function searchPattern(term) {
   return new RegExp(`${before}(${escaped})${after}`,'gu');
 }
 function matchesSearch(paper,terms) {
-  const text=[paper.id,paper.title,paper.summary,paper.summary_en].filter(Boolean).join(' ').normalize('NFKC').toLowerCase();
+  const summary=language==='en'?paper.summary_en:paper.summary;
+  const text=[paper.id,paper.title,summary].filter(Boolean).join(' ').normalize('NFKC').toLowerCase();
   return terms.every(term=>searchPattern(term).test(text));
 }
 function highlightSearch(element,value,terms) {
