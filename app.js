@@ -74,18 +74,47 @@ let days=initial.get('days')==='30'?30:7;
 let searchQuery=initial.get('q')||'';
 const opened=new Set();
 function searchTerms(value) {return value.normalize('NFKC').toLowerCase().trim().split(/\s+/).filter(Boolean);}
+function searchPattern(term) {
+  const escaped=term.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');
+  const latin=/\p{Script=Latin}/u.test(term);
+  // Chinese text and punctuation may border an English word, but Latin letters and digits may not.
+  const wordCharacter=/[\p{Script=Latin}\p{Number}_]/u;
+  const boundary='[^\\p{Script=Latin}\\p{Number}_]';
+  const before=latin && wordCharacter.test(term[0])?`(?:^|${boundary})`:'';
+  const after=latin && wordCharacter.test(term.at(-1))?`(?=$|${boundary})`:'';
+  return new RegExp(`${before}(${escaped})${after}`,'gu');
+}
 function matchesSearch(paper,terms) {
   const text=[paper.id,paper.title,paper.summary,paper.summary_en].filter(Boolean).join(' ').normalize('NFKC').toLowerCase();
-  return terms.every(term=>{
-    if(!/\p{Script=Latin}/u.test(term)) return text.includes(term);
-    const escaped=term.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');
-    // Chinese text and punctuation may border an English word, but Latin letters and digits may not.
-    const wordCharacter=/[\p{Script=Latin}\p{Number}_]/u;
-    const boundary='[^\\p{Script=Latin}\\p{Number}_]';
-    const before=wordCharacter.test(term[0])?`(?:^|${boundary})`:'';
-    const after=wordCharacter.test(term.at(-1))?`(?=$|${boundary})`:'';
-    return new RegExp(`${before}${escaped}${after}`,'u').test(text);
-  });
+  return terms.every(term=>searchPattern(term).test(text));
+}
+function highlightSearch(element,value,terms) {
+  const text=String(value||'');element.textContent=text;
+  if(!text || !terms.length) return;
+  const normalized=text.normalize('NFKC').toLowerCase();
+  const ranges=[];
+  for(const term of terms) for(const match of normalized.matchAll(searchPattern(term))) {
+    const end=match.index+match[0].length;ranges.push([end-match[1].length,end]);
+  }
+  if(!ranges.length) return;
+  // Map normalized matches back to the original spelling, including full-width letters and ligatures.
+  const starts=[],ends=[];
+  for(const {segment,index} of new Intl.Segmenter(undefined,{granularity:'grapheme'}).segment(text)) {
+    const length=segment.normalize('NFKC').toLowerCase().length;
+    for(let offset=0;offset<length;offset++) {starts.push(index);ends.push(index+segment.length);}
+  }
+  const merged=[];
+  for(const [start,end] of ranges.map(([start,end])=>[starts[start],ends[end-1]]).sort((a,b)=>a[0]-b[0]||b[1]-a[1])) {
+    const previous=merged.at(-1);
+    if(previous && start<=previous[1]) previous[1]=Math.max(previous[1],end);
+    else merged.push([start,end]);
+  }
+  element.replaceChildren();let cursor=0;
+  for(const [start,end] of merged) {
+    if(start>cursor) element.append(document.createTextNode(text.slice(cursor,start)));
+    element.append(make('mark',text.slice(start,end),'search-highlight'));cursor=end;
+  }
+  if(cursor<text.length) element.append(document.createTextNode(text.slice(cursor)));
 }
 function syncSummaries() {
   const cards=[...document.querySelectorAll('.paper-card')];
@@ -107,6 +136,7 @@ function syncSummaries() {
 }
 function updateURL(key,value) {const url=new URL(location.href);value?url.searchParams.set(key,value):url.searchParams.delete(key);url.searchParams.delete('date');history.replaceState(null,'',url);}
 function paperCard(paper,popular=false) {
+  const terms=searchTerms(searchQuery);
   const card=make('article',undefined,'paper-card');card.dataset.id=paper.id;
   const row=make('div',undefined,'paper-row');
   const title=make('div',undefined,'paper-title');
@@ -122,13 +152,15 @@ function paperCard(paper,popular=false) {
   const toggle=make('button',undefined,'summary-toggle');toggle.type='button';
   toggle.innerHTML='<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="m4 6 4 4 4-4"/></svg>';
   const summary=make('p',language==='en'?paper.summary_en:paper.summary,'paper-summary');
+  highlightSearch(summary,summary.textContent,terms);
   // Never replace a missing translation with Chinese in English mode.
   if(language==='en' && !summary.textContent) summary.textContent='Summary translation is being prepared.';
   summary.id=`summary-${paper.id}-${$('#papers').querySelectorAll('.paper-card').length}`;
   toggle.setAttribute('aria-controls',summary.id);
   function sync() {const expanded=opened.has(paper.id);summary.hidden=!expanded;toggle.setAttribute('aria-expanded',String(expanded));toggle.setAttribute('aria-label',`${t(expanded?'hide':'show')}: ${paper.title}`);}
   toggle.onclick=()=>{opened.has(paper.id)?opened.delete(paper.id):opened.add(paper.id);syncSummaries();};sync();
-  title.append(make('h3',paper.title));actions.append(toggle);row.append(title,actions);
+  const heading=make('h3');highlightSearch(heading,paper.title,terms);
+  title.append(heading);actions.append(toggle);row.append(title,actions);
   if(popular) {const likes=make('span',`↑ ${paper.likes??0}`,'paper-likes');likes.setAttribute('aria-label',t('votes',paper.likes??0));row.append(likes);}
   card.append(row,summary);return card;
 }
