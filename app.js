@@ -76,7 +76,16 @@ const opened=new Set();
 function searchTerms(value) {return value.normalize('NFKC').toLowerCase().trim().split(/\s+/).filter(Boolean);}
 function matchesSearch(paper,terms) {
   const text=[paper.id,paper.title,paper.summary,paper.summary_en].filter(Boolean).join(' ').normalize('NFKC').toLowerCase();
-  return terms.every(term=>text.includes(term));
+  return terms.every(term=>{
+    if(!/\p{Script=Latin}/u.test(term)) return text.includes(term);
+    const escaped=term.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');
+    // Chinese text and punctuation may border an English word, but Latin letters and digits may not.
+    const wordCharacter=/[\p{Script=Latin}\p{Number}_]/u;
+    const boundary='[^\\p{Script=Latin}\\p{Number}_]';
+    const before=wordCharacter.test(term[0])?`(?:^|${boundary})`:'';
+    const after=wordCharacter.test(term.at(-1))?`(?=$|${boundary})`:'';
+    return new RegExp(`${before}${escaped}${after}`,'u').test(text);
+  });
 }
 function syncSummaries() {
   const cards=[...document.querySelectorAll('.paper-card')];
