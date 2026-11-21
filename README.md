@@ -46,6 +46,16 @@ ZeroVLN has the VLM brain direct an action expert through natural-language tool 
 
 </details>
 
+**Teaching Vision-Language-Action Models to Stop Safely**  
+[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.26239_slides.en.pdf?v=7450576e07adb047>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.26239_slides.pdf?v=58e91bd3d85ad45b>) · [arXiv](<https://arxiv.org/abs/2611.26239>) · [Code](<https://github.com/franciscoliu/SAFI>) · [HF](<https://huggingface.co/papers/2611.26239>)
+
+<details>
+<summary>Summary</summary>
+
+The paper finds that existing methods for making a VLA "forget" or "refuse" a prohibited task only appear effective when tested at the start of the task; once control is taken over midway through execution, the robot often completes the task anyway, or drops the object it is holding partway through. To address this, the authors propose SAFI: at \*\*every intermediate state\*\* of the prohibited-task demonstrations, the supervision target is replaced with "hold in place, keep the gripper state unchanged," while the original actions of the retained tasks continue to be imitated. On OpenVLA-OFT + LIBERO, the prohibited-task completion rate after mid-execution takeover drops from 99.7% to 1.3%, no physical accidents were recorded, and retained-task performance is essentially unaffected.
+
+</details>
+
 **Learning What Actions Change: Action Effect Matching for Dynamics-Faithful World Models**  
 [Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.25980_slides.en.pdf?v=eec8bba844449265>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.25980_slides.pdf?v=1eb79b39c7bce10b>) · [arXiv](<https://arxiv.org/abs/2611.25980>) · [Code](<https://github.com/alshedivat/al-folio>) · [HF](<https://huggingface.co/papers/2611.25980>)
 
@@ -53,6 +63,16 @@ ZeroVLN has the VLM brain direct an action expert through natural-language tool 
 <summary>Summary</summary>
 
 The authors have the play policy inject recordable, temporally correlated action noise during execution, and add an auxiliary loss, AFFECT, which requires that the way features in the world model's generated video vary with the noise (i.e., their covariance) match that of the real recordings. This method requires neither repeated executions from the same initial state nor outcome labels, yet it makes video world models more sensitive to small action differences. On DROID, the Pearson correlation between policy success rates inside the world model and on the real robot rises from 0.47 to 0.79, and when used for planning, success rate improves by about 8 percentage points.
+
+</details>
+
+**PAD: Policy-Aware Data Valuation for Autonomous Driving**  
+[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.25604_slides.en.pdf?v=90947ab7b70ff136>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.25604_slides.pdf?v=63953a6f85ff90a5>) · [arXiv](<https://arxiv.org/abs/2611.25604>) · [Code](<https://github.com/PerfectXu88/PAD>) · [HF](<https://huggingface.co/papers/2611.25604>)
+
+<details>
+<summary>Summary</summary>
+
+\*\*PAD defines "how much a driving demonstration is worth" as "how much it helps the downstream driving score of a specific planner." Concretely, it first measures the base policy's per-scenario EPDMS on an independent real calibration set and standardizes these into positive and negative "advantage" weights; it then uses random-projection gradients with a damped covariance (a TRAK-style influence function) to estimate each synthetic demonstration's first-order influence on this "score-weighted calibration loss"; finally, it keeps only the top-B scoring demonstrations for retraining after deduplication. On NAVSIM v2, DiffusionDrive using only 25% of the SimScale synthetic data outperforms training on real data alone by +3.5 (NavTest) and +5.0 (NavHard) EPDMS, also does better than using the full synthetic dataset, and reduces scenario-level degradations to roughly one third of the original.\*\*
 
 </details>
 
@@ -66,8 +86,18 @@ The authors have the play policy inject recordable, temporally correlated action
 
 </details>
 
+**Phantom Success, Silent Failure: Auditing the Success Checkers of Simulated Manipulation Benchmarks**  
+[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.25179_slides.en.pdf?v=bb55a1a46b65abf3>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.25179_slides.pdf?v=052db341e0b7e1e4>) · [arXiv](<https://arxiv.org/abs/2611.25179>) · Code · [HF](<https://huggingface.co/papers/2611.25179>)
+
+<details>
+<summary>Summary</summary>
+
+The paper proposes SimAudit: an LLM agent reads the success-checking code against the task instruction, hypothesizes states that might be misjudged, actually constructs those states in the unmodified simulator, and then hands them to an independent VLM to re-check using multi-view renderings. Using this pipeline, the authors found 61 visually verified checker defects across three mainstream simulation benchmarks, RoboTwin 2.0, RoboCasa365, and RoboDojo, including 40 "phantom successes" and 21 "silent failures." After fixing them and re-scoring replays of the same set of policies, up to 9.1% of episodes had their outcomes flipped.
+
+</details>
+
 **Inhabitant: An Agent Framework for Long-Horizon Human-Scene Interaction with Spatial Control and Quantitative Feedback**  
-[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.25005_slides.en.pdf?v=eadcb2b9eee824b4>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.25005_slides.pdf?v=ed48f4446a5e37ab>) · [arXiv](<https://arxiv.org/abs/2611.25005>) · Code · [HF](<https://huggingface.co/papers/2611.25005>)
+[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.25005_slides.en.pdf?v=eadcb2b9eee824b4>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.25005_slides.pdf?v=ed48f4446a5e37ab>) · [arXiv](<https://arxiv.org/abs/2611.25005>) · [Code](<https://github.com/yaozhang182/inhabitant>) · [HF](<https://huggingface.co/papers/2611.25005>)
 
 <details>
 <summary>Summary</summary>
@@ -848,14 +878,14 @@ Instead of having the Action DiT start from Gaussian noise, OSWAM places a small
 ## Popular Papers
 
 
-Snapshot: 2026-11-20 (Asia/Shanghai). Ranked by current cumulative Hugging Face upvotes; updated with the daily publication.
+Snapshot: 2026-11-21 (Asia/Shanghai). Ranked by current cumulative Hugging Face upvotes; updated with the daily publication.
 
 
 ### Last 7 Days
 
 
 **Gamer: A Generalist Vision-Language-Action Foundation Model for Long-Horizon Real-Time Game Agent**  
-[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.18397_slides.en.pdf?v=72b34e92d820f938>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.18397_slides.pdf?v=a361044dd83c084b>) · [arXiv](<https://arxiv.org/abs/2611.18397>) · [Code](<https://github.com/RainBowLuoCS/Gamer>) · [HF](<https://huggingface.co/papers/2611.18397>) · 141 HF upvotes
+[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.18397_slides.en.pdf?v=72b34e92d820f938>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.18397_slides.pdf?v=a361044dd83c084b>) · [arXiv](<https://arxiv.org/abs/2611.18397>) · [Code](<https://github.com/RainBowLuoCS/Gamer>) · [HF](<https://huggingface.co/papers/2611.18397>) · 144 HF upvotes
 
 <details>
 <summary>Summary</summary>
@@ -866,7 +896,7 @@ Snapshot: 2026-11-20 (Asia/Shanghai). Ranked by current cumulative Hugging Face 
 
 
 **Envisioning Agentic Robotics: A New Era of Robotic Systems**  
-[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.18359_slides.en.pdf?v=96acf31f314ccf09>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.18359_slides.pdf?v=5983062588627d80>) · [arXiv](<https://arxiv.org/abs/2611.18359>) · Code · [HF](<https://huggingface.co/papers/2611.18359>) · 135 HF upvotes
+[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.18359_slides.en.pdf?v=96acf31f314ccf09>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.18359_slides.pdf?v=5983062588627d80>) · [arXiv](<https://arxiv.org/abs/2611.18359>) · Code · [HF](<https://huggingface.co/papers/2611.18359>) · 136 HF upvotes
 
 <details>
 <summary>Summary</summary>
@@ -876,8 +906,19 @@ Since GPT-6 Astra, \*\*Embodied System 2\*\*, composed of "foundation model + em
 </details>
 
 
+**Mind2Act World: A Diagnostic Benchmark for Embodied Mind, Physical Action, and Mind-Action Composition in Robotic Manipulation**  
+[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.26444_slides.en.pdf?v=faaad5dc93e3b5d6>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.26444_slides.pdf?v=b4b6f0260c967db1>) · [arXiv](<https://arxiv.org/abs/2611.26444>) · [Code](<https://github.com/Mind2Act/Mind2Act_World>) · [HF](<https://huggingface.co/papers/2611.26444>) · 47 HF upvotes
+
+<details>
+<summary>Summary</summary>
+
+\*\*Mind2Act World uses 30 bimanual simulated manipulation tasks, divided into three views: "testing only memory/reasoning (Mind)," "testing only precise and timely execution (Act)," and "closed-loop composition of the two (Mind2Act)." It evaluates 3 multimodal agents, 4 VLAs, and 2 WAMs over 56,700 episodes, and attributes a cause to every failed episode. The conclusion: the strongest model, GPT-6 Astra, succeeds 52.7% of the time on Mind and 39.0% on Act, but only 12.0% on Mind2Act, and no end-to-end policy exceeds 3.6% on Mind2Act. In other words, individual capabilities do not automatically compose; moreover, most composition tasks fail at the very first physical manipulation step, never even reaching the stage that actually requires composition.\*\*
+
+</details>
+
+
 **ForceHarness: Turning Force into Action and Physics for Frozen Frontier Models**  
-[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.21099_slides.en.pdf?v=04864c1959db9ff1>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.21099_slides.pdf?v=15169b78d6259a17>) · [arXiv](<https://arxiv.org/abs/2611.21099>) · [Code](<https://github.com/showlab/ForceHarness>) · [HF](<https://huggingface.co/papers/2611.21099>) · 43 HF upvotes
+[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.21099_slides.en.pdf?v=04864c1959db9ff1>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.21099_slides.pdf?v=15169b78d6259a17>) · [arXiv](<https://arxiv.org/abs/2611.21099>) · [Code](<https://github.com/showlab/ForceHarness>) · [HF](<https://huggingface.co/papers/2611.21099>) · 45 HF upvotes
 
 <details>
 <summary>Summary</summary>
@@ -888,23 +929,12 @@ ForceHarness adds three layers of "harness" between a frontier multimodal model 
 
 
 **ScaleVLA: Scaling Vision-Language-Action Models to 552 Billion Parameters**  
-[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.21607_slides.en.pdf?v=6fd694d72e6ca8eb>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.21607_slides.pdf?v=b627a50de1e75e34>) · [arXiv](<https://arxiv.org/abs/2611.21607>) · [Code](<https://github.com/GalaxyGeneralRobotics/ScaleVLA>) · [HF](<https://huggingface.co/papers/2611.21607>) · 39 HF upvotes
+[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.21607_slides.en.pdf?v=6fd694d72e6ca8eb>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.21607_slides.pdf?v=b627a50de1e75e34>) · [arXiv](<https://arxiv.org/abs/2611.21607>) · [Code](<https://github.com/GalaxyGeneralRobotics/ScaleVLA>) · [HF](<https://huggingface.co/papers/2611.21607>) · 40 HF upvotes
 
 <details>
 <summary>Summary</summary>
 
 \*\*ScaleVLA runs only the first half (the causal encoder) of a frozen 552B MoE frontier VLM (DeepSeek-V4.1-Flash) to extract features, and attaches a GR00T-style flow-matching action DiT trained from scratch. In a controlled comparison with the action head, data, and training budget all held fixed, scaling the backbone from 2B to 552B improves sample efficiency (10 demonstrations outperform the 2B model with 50), out-of-distribution generalization (45.1% vs. at most 31.3% on LIBERO-PRO), and fine-grained real-robot insertion (9/10 vs. 4/10), while the median latency per action chunk remains only 216 ms. This shows that frontier VLMs can serve not only as "reasoning agents" but also as the representational foundation for learned robot policies.\*\*
-
-</details>
-
-
-**Mind2Act World: A Diagnostic Benchmark for Embodied Mind, Physical Action, and Mind-Action Composition in Robotic Manipulation**  
-[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.26444_slides.en.pdf?v=faaad5dc93e3b5d6>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.26444_slides.pdf?v=b4b6f0260c967db1>) · [arXiv](<https://arxiv.org/abs/2611.26444>) · [Code](<https://github.com/Mind2Act/Mind2Act_World>) · [HF](<https://huggingface.co/papers/2611.26444>) · 39 HF upvotes
-
-<details>
-<summary>Summary</summary>
-
-\*\*Mind2Act World uses 30 bimanual simulated manipulation tasks, divided into three views: "testing only memory/reasoning (Mind)," "testing only precise and timely execution (Act)," and "closed-loop composition of the two (Mind2Act)." It evaluates 3 multimodal agents, 4 VLAs, and 2 WAMs over 56,700 episodes, and attributes a cause to every failed episode. The conclusion: the strongest model, GPT-6 Astra, succeeds 52.7% of the time on Mind and 39.0% on Act, but only 12.0% on Mind2Act, and no end-to-end policy exceeds 3.6% on Mind2Act. In other words, individual capabilities do not automatically compose; moreover, most composition tasks fail at the very first physical manipulation step, never even reaching the stage that actually requires composition.\*\*
 
 </details>
 
@@ -943,12 +973,23 @@ HINT-WAM makes the world action model serve as its own teacher: the teacher sees
 
 
 **ZeroVLN: Learning to Navigate without Supervised Fine-Tuning of the VLM Brain**  
-[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.26414_slides.en.pdf?v=22bb846c71422654>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.26414_slides.pdf?v=bfcc388f9f9583c7>) · [arXiv](<https://arxiv.org/abs/2611.26414>) · [Code](<https://github.com/hzx122/ZeroVLN>) · [HF](<https://huggingface.co/papers/2611.26414>) · 17 HF upvotes
+[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.26414_slides.en.pdf?v=22bb846c71422654>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.26414_slides.pdf?v=bfcc388f9f9583c7>) · [arXiv](<https://arxiv.org/abs/2611.26414>) · [Code](<https://github.com/hzx122/ZeroVLN>) · [HF](<https://huggingface.co/papers/2611.26414>) · 21 HF upvotes
 
 <details>
 <summary>Summary</summary>
 
 ZeroVLN has the VLM brain direct an action expert through natural-language tool calls. It supervises the expert with trajectories generated according to the brain's requests and then performs joint reinforcement learning. With zero navigation fine-tuning, it achieves the highest success rate under the same conditions on three VLN-CE benchmarks, while changing only 0.015% of the weights and largely preserving general capabilities.
+
+</details>
+
+
+**WAM-Policy: World Action Models with On-Policy Distillation for Quadrupedal Loco-Manipulation**  
+[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.24011_slides.en.pdf?v=806a600eebda3788>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.24011_slides.pdf?v=44555ff861c8da68>) · [arXiv](<https://arxiv.org/abs/2611.24011>) · [Code](<https://github.com/AIGeeksGroup/WAM-Policy>) · [HF](<https://huggingface.co/papers/2611.24011>) · 16 HF upvotes
+
+<details>
+<summary>Summary</summary>
+
+WAM-Policy adapts a world action model pretrained for robotic arms (LingBot-VA) into a language-conditioned policy for a quadruped robot that "walks on three legs and works with one front leg." The approach has two steps. First, it replaces the visual and action interfaces, then uses same-noise on-policy self-distillation to compress sampling to 1 video step + 2 action steps, achieving a 14x speedup with almost no performance drop (77.0% -&gt; 76.7%). Second, it trains expert teachers separately with RL on the hard tasks, then uses task-routed multi-teacher on-policy distillation to merge them back into a single fast student, raising the ten-task success rate to 85.0%.
 
 </details>
 
@@ -960,17 +1001,6 @@ ZeroVLN has the VLM brain direct an action expert through natural-language tool 
 <summary>Summary</summary>
 
 \*\*Using only atomic-action language descriptions of human and robot videos separately (e.g., "grasp the cup"), and without requiring paired data, SALA softly aligns the latent actions of human videos to robot latent actions that have been "anchored with real robot actions." As a result, human videos without action labels can also directly supervise the same VLA policy that controls the robot. Both usages improve as more human video is added: when the general human video used for pretraining increases from 0 to 2,678 hours, robot action prediction error decreases steadily; as more task-specific human demonstrations are used in post-training, the real-robot success rate rises from 53.75% to 72.5%.\*\*
-
-</details>
-
-
-**WAM-Policy: World Action Models with On-Policy Distillation for Quadrupedal Loco-Manipulation**  
-[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.24011_slides.en.pdf?v=806a600eebda3788>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.24011_slides.pdf?v=44555ff861c8da68>) · [arXiv](<https://arxiv.org/abs/2611.24011>) · [Code](<https://github.com/AIGeeksGroup/WAM-Policy>) · [HF](<https://huggingface.co/papers/2611.24011>) · 14 HF upvotes
-
-<details>
-<summary>Summary</summary>
-
-WAM-Policy adapts a world action model pretrained for robotic arms (LingBot-VA) into a language-conditioned policy for a quadruped robot that "walks on three legs and works with one front leg." The approach has two steps. First, it replaces the visual and action interfaces, then uses same-noise on-policy self-distillation to compress sampling to 1 video step + 2 action steps, achieving a 14x speedup with almost no performance drop (77.0% -&gt; 76.7%). Second, it trains expert teachers separately with RL on the hard tasks, then uses task-routed multi-teacher on-policy distillation to merge them back into a single fast student, raising the ten-task success rate to 85.0%.
 
 </details>
 
@@ -990,7 +1020,7 @@ OneSteer turns a general-purpose motion tracker for humanoid robots into a "one-
 
 
 **Gamer: A Generalist Vision-Language-Action Foundation Model for Long-Horizon Real-Time Game Agent**  
-[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.18397_slides.en.pdf?v=72b34e92d820f938>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.18397_slides.pdf?v=a361044dd83c084b>) · [arXiv](<https://arxiv.org/abs/2611.18397>) · [Code](<https://github.com/RainBowLuoCS/Gamer>) · [HF](<https://huggingface.co/papers/2611.18397>) · 141 HF upvotes
+[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.18397_slides.en.pdf?v=72b34e92d820f938>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.18397_slides.pdf?v=a361044dd83c084b>) · [arXiv](<https://arxiv.org/abs/2611.18397>) · [Code](<https://github.com/RainBowLuoCS/Gamer>) · [HF](<https://huggingface.co/papers/2611.18397>) · 144 HF upvotes
 
 <details>
 <summary>Summary</summary>
@@ -1001,7 +1031,7 @@ OneSteer turns a general-purpose motion tracker for humanoid robots into a "one-
 
 
 **Envisioning Agentic Robotics: A New Era of Robotic Systems**  
-[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.18359_slides.en.pdf?v=96acf31f314ccf09>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.18359_slides.pdf?v=5983062588627d80>) · [arXiv](<https://arxiv.org/abs/2611.18359>) · Code · [HF](<https://huggingface.co/papers/2611.18359>) · 135 HF upvotes
+[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.18359_slides.en.pdf?v=96acf31f314ccf09>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.18359_slides.pdf?v=5983062588627d80>) · [arXiv](<https://arxiv.org/abs/2611.18359>) · Code · [HF](<https://huggingface.co/papers/2611.18359>) · 136 HF upvotes
 
 <details>
 <summary>Summary</summary>
@@ -1023,7 +1053,7 @@ VFlash first uses a tool call to declare the type and length of a visual primiti
 
 
 **Learning Heterogeneous Tactile Representation for General Dexterous Manipulation**  
-[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.12806_slides.en.pdf?v=9e42455bb2de1665>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.12806_slides.pdf?v=4905926edc535cb1>) · [arXiv](<https://arxiv.org/abs/2611.12806>) · [Code](<https://github.com/Robbyant/lingbot-touch>) · [HF](<https://huggingface.co/papers/2611.12806>) · 108 HF upvotes
+[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.12806_slides.en.pdf?v=9e42455bb2de1665>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.12806_slides.pdf?v=4905926edc535cb1>) · [arXiv](<https://arxiv.org/abs/2611.12806>) · [Code](<https://github.com/Robbyant/lingbot-touch>) · [HF](<https://huggingface.co/papers/2611.12806>) · 109 HF upvotes
 
 <details>
 <summary>Summary</summary>
@@ -1124,7 +1154,7 @@ RoboColosseum evaluates 8 models in a distributed manner across 124 real-world s
 ## Monthly Archive
 
 
-- [November 2026](papers/2026-11.md) — 80 papers
+- [November 2026](papers/2026-11.md) — 83 papers
 
 ## Contributors
 
