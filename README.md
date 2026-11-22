@@ -878,14 +878,14 @@ Instead of having the Action DiT start from Gaussian noise, OSWAM places a small
 ## Popular Papers
 
 
-Snapshot: 2026-11-21 (Asia/Shanghai). Ranked by current cumulative Hugging Face upvotes; updated with the daily publication.
+Snapshot: 2026-11-22 (Asia/Shanghai). Ranked by current cumulative Hugging Face upvotes; updated with the daily publication.
 
 
 ### Last 7 Days
 
 
 **Gamer: A Generalist Vision-Language-Action Foundation Model for Long-Horizon Real-Time Game Agent**  
-[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.18397_slides.en.pdf?v=72b34e92d820f938>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.18397_slides.pdf?v=a361044dd83c084b>) · [arXiv](<https://arxiv.org/abs/2611.18397>) · [Code](<https://github.com/RainBowLuoCS/Gamer>) · [HF](<https://huggingface.co/papers/2611.18397>) · 144 HF upvotes
+[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.18397_slides.en.pdf?v=72b34e92d820f938>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.18397_slides.pdf?v=a361044dd83c084b>) · [arXiv](<https://arxiv.org/abs/2611.18397>) · [Code](<https://github.com/RainBowLuoCS/Gamer>) · [HF](<https://huggingface.co/papers/2611.18397>) · 148 HF upvotes
 
 <details>
 <summary>Summary</summary>
@@ -907,7 +907,7 @@ Since GPT-6 Astra, \*\*Embodied System 2\*\*, composed of "foundation model + em
 
 
 **Mind2Act World: A Diagnostic Benchmark for Embodied Mind, Physical Action, and Mind-Action Composition in Robotic Manipulation**  
-[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.26444_slides.en.pdf?v=faaad5dc93e3b5d6>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.26444_slides.pdf?v=b4b6f0260c967db1>) · [arXiv](<https://arxiv.org/abs/2611.26444>) · [Code](<https://github.com/Mind2Act/Mind2Act_World>) · [HF](<https://huggingface.co/papers/2611.26444>) · 47 HF upvotes
+[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.26444_slides.en.pdf?v=faaad5dc93e3b5d6>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.26444_slides.pdf?v=b4b6f0260c967db1>) · [arXiv](<https://arxiv.org/abs/2611.26444>) · [Code](<https://github.com/Mind2Act/Mind2Act_World>) · [HF](<https://huggingface.co/papers/2611.26444>) · 51 HF upvotes
 
 <details>
 <summary>Summary</summary>
@@ -973,7 +973,7 @@ HINT-WAM makes the world action model serve as its own teacher: the teacher sees
 
 
 **ZeroVLN: Learning to Navigate without Supervised Fine-Tuning of the VLM Brain**  
-[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.26414_slides.en.pdf?v=22bb846c71422654>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.26414_slides.pdf?v=bfcc388f9f9583c7>) · [arXiv](<https://arxiv.org/abs/2611.26414>) · [Code](<https://github.com/hzx122/ZeroVLN>) · [HF](<https://huggingface.co/papers/2611.26414>) · 21 HF upvotes
+[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.26414_slides.en.pdf?v=22bb846c71422654>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.26414_slides.pdf?v=bfcc388f9f9583c7>) · [arXiv](<https://arxiv.org/abs/2611.26414>) · [Code](<https://github.com/hzx122/ZeroVLN>) · [HF](<https://huggingface.co/papers/2611.26414>) · 22 HF upvotes
 
 <details>
 <summary>Summary</summary>
@@ -1005,13 +1005,13 @@ WAM-Policy adapts a world action model pretrained for robotic arms (LingBot-VA) 
 </details>
 
 
-**OneSteer: Unlocking Steerable General Humanoid Motion Tracking via One-Step Diffusion Whole-Body Control**  
-[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2610.41354_slides.en.pdf?v=df39de6d9f5beebb>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2610.41354_slides.pdf?v=de1105429ef21444>) · [arXiv](<https://arxiv.org/abs/2610.41354>) · Code · [HF](<https://huggingface.co/papers/2610.41354>) · 13 HF upvotes
+**Learning What Actions Change: Action Effect Matching for Dynamics-Faithful World Models**  
+[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.25980_slides.en.pdf?v=eec8bba844449265>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.25980_slides.pdf?v=1eb79b39c7bce10b>) · [arXiv](<https://arxiv.org/abs/2611.25980>) · [Code](<https://github.com/alshedivat/al-folio>) · [HF](<https://huggingface.co/papers/2611.25980>) · 15 HF upvotes
 
 <details>
 <summary>Summary</summary>
 
-OneSteer turns a general-purpose motion tracker for humanoid robots into a "one-step diffusion" state-action plan generator: normally, a single forward pass is enough to track any reference motion (with the lowest local error among the methods tested); at deployment, without changing the weights, it simply performs two steps of gradient descent on the generator's \*\*input noise\*\* using a differentiable task cost, and, combined with masking the reference by body-part groups, this lets the same controller, under zero-shot conditions, duck under low bars, step over obstacles, reach for objects, and withstand motor failures. In addition, the dispersion among plans generated from different noise samples can be used to identify in advance motions that are prone to tracking failure, without needing to run a simulation.
+The authors have the play policy inject recordable, temporally correlated action noise during execution, and add an auxiliary loss, AFFECT, which requires that the way features in the world model's generated video vary with the noise (i.e., their covariance) match that of the real recordings. This method requires neither repeated executions from the same initial state nor outcome labels, yet it makes video world models more sensitive to small action differences. On DROID, the Pearson correlation between policy success rates inside the world model and on the real robot rises from 0.47 to 0.79, and when used for planning, success rate improves by about 8 percentage points.
 
 </details>
 
@@ -1020,7 +1020,7 @@ OneSteer turns a general-purpose motion tracker for humanoid robots into a "one-
 
 
 **Gamer: A Generalist Vision-Language-Action Foundation Model for Long-Horizon Real-Time Game Agent**  
-[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.18397_slides.en.pdf?v=72b34e92d820f938>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.18397_slides.pdf?v=a361044dd83c084b>) · [arXiv](<https://arxiv.org/abs/2611.18397>) · [Code](<https://github.com/RainBowLuoCS/Gamer>) · [HF](<https://huggingface.co/papers/2611.18397>) · 144 HF upvotes
+[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.18397_slides.en.pdf?v=72b34e92d820f938>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.18397_slides.pdf?v=a361044dd83c084b>) · [arXiv](<https://arxiv.org/abs/2611.18397>) · [Code](<https://github.com/RainBowLuoCS/Gamer>) · [HF](<https://huggingface.co/papers/2611.18397>) · 148 HF upvotes
 
 <details>
 <summary>Summary</summary>
