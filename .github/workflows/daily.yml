@@ -165,6 +165,11 @@ jobs:
             exit 1
           fi
           python -u -m pipeline.pdf_storage --previous-site ../public
+      - name: Archive and verify editable PPTX sources
+        working-directory: engine
+        env:
+          GH_TOKEN: ${{ secrets.PDF_STORAGE_TOKEN }}
+        run: python -u -m pipeline.slide_storage
       - name: Build static site
         working-directory: engine
         run: python -m pipeline.build --previous-site ../public
@@ -178,7 +183,7 @@ jobs:
             engine/state/artifacts/
           retention-days: 14
           if-no-files-found: error
-      - name: Publish downloads and site files
+      - name: Publish site files without website Releases
         working-directory: engine
         env:
           GH_TOKEN: ${{ github.token }}

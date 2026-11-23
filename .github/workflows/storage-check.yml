@@ -1,4 +1,4 @@
-name: Check PDF archive authorization
+name: Check slide archive authorization
 
 on:
   workflow_dispatch:
@@ -50,6 +50,16 @@ jobs:
           assert pages.get('source') == {'branch': 'main', 'path': '/'}
           api(f'repos/{name}/pages', {'build_type': 'legacy', 'source': pages['source']}, method='PUT')
           print(f'Verified Administration, Contents, and Pages write access: {name}')
+          sources = f'{owner}/paper-slide-sources'
+          source = api(f'repos/{sources}')
+          assert source.get('description') == 'Editable slide sources for Embodied AI Daily Papers'
+          releases = api(f'repos/{sources}/releases?per_page=1')
+          if not releases:
+              raise SystemExit('No editable slide archive exists yet')
+          release = releases[0]
+          # Reapplying the existing name verifies release write access without changing assets.
+          api(f'repos/{sources}/releases/{release["id"]}', {'name': release['name']}, method='PATCH')
+          print(f'Verified editable source Release write access: {sources}')
           with open(os.environ['GITHUB_STEP_SUMMARY'], 'a') as summary:
               summary.write(f'组织专用令牌校验通过：{name}。未改动 PDF 内容或分支。\n')
           PY
