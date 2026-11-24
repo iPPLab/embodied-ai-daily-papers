@@ -14,6 +14,198 @@ Daily embodied AI papers from Hugging Face, with paper summaries and reading sli
 Dates refer to the first Hugging Face daily listing. Each paper appears once in the monthly archive.
 
 
+### November 24, 2026
+
+**Embo-Harness: Towards Understanding Frontier-Model-as-Policy Harness**  
+[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.31201_slides.en.pdf?v=e4c12c69ecca8775>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.31201_slides.pdf?v=30409e46b4ab120d>) · [arXiv](<https://arxiv.org/abs/2611.31201>) · [Code](<https://github.com/DravenALG/Embo-Harness>) · [HF](<https://huggingface.co/papers/2611.31201>)
+
+<details>
+<summary>Summary</summary>
+
+The authors have frontier multimodal large models such as GPT-6-Astra act directly as robot policies, and run controlled, factor-by-factor ablations of the harness (prompting, planning, action execution, tool use). From this they distill a recipe: xhigh reasoning, 640x360 dual-view images, absolute EEF coordinates, fixed 8-step chunks, a short multi-action-sequence tool, plus having the large model correct the actions proposed by a VLA. This recipe reaches an 83.3% success rate on RoboLab-120, 26.2 percentage points higher than the strongest baseline. The authors further argue that the large model's manipulation ability comes mainly from \*\*spatial target estimation\*\*, rather than from the ability to generate low-level joint or trajectory actions.
+
+</details>
+
+**WeaveVLA: 3D Relational Grounding for Vision-Language-Action Models**  
+[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.31126_slides.en.pdf?v=17fcfa10ed65dbef>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.31126_slides.pdf?v=86bab43658a1bcc6>) · [arXiv](<https://arxiv.org/abs/2611.31126>) · [Code](<https://github.com/Kingzein/WeaveVLA>) · [HF](<https://huggingface.co/papers/2611.31126>)
+
+<details>
+<summary>Summary</summary>
+
+WeaveVLA is a plug-in module that can be attached to existing VLAs. It builds a \*\*sparse 3D relational graph\*\* around task-relevant objects, the gripper TCP, and nearby reference objects, assigns a \*\*GRU memory\*\* to each "entity-pair" edge that is continuously updated with observations, and then uses a Q-Former to compress the entire graph into 16 relation tokens passed to the action expert. It yields improvements on both the StarVLA-GR00T and π0.5 backbones: the average LIBERO success rate exceeds 98%, the LIBERO-Plus zero-shot robustness test rises from 74.9% to 82.0% (StarVLA-GR00T backbone), and the real-robot OOD average success rate rises from 33.3% to 53.3%.
+
+</details>
+
+**RUIBench: What Makes a Good Robot-Use Interface?**  
+[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.31115_slides.en.pdf?v=82a3c860f0784a1d>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.31115_slides.pdf?v=43aeb049be0e1ee2>) · [arXiv](<https://arxiv.org/abs/2611.31115>) · [Code](<https://github.com/showlab/RUIBench>) · [HF](<https://huggingface.co/papers/2611.31115>)
+
+<details>
+<summary>Summary</summary>
+
+\*\*With the same model and the same task, merely swapping the "robot-use interface" (RUI, i.e., what actions the agent can issue and how those actions are organized and executed) makes Claude Code's success rate vary between 45% and 81%, a range far larger than the gap between two frontier models. Based on this, the paper proposes that a good RUI should "eliminate unnecessary decisions while preserving necessary feedback"; it also points out that agents commonly exhibit a "verification gap": declaring completion even when they have clearly failed.\*\*
+
+</details>
+
+**ReWeave: Emergent Physical Task Topologies for Embodied Harness Optimization and Cross-Task Meta-Distillation**  
+[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.31053_slides.en.pdf?v=ebd6c7f5ac1240fe>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.31053_slides.pdf?v=848c4e0f63fe1342>) · [arXiv](<https://arxiv.org/abs/2611.31053>) · [Code](<https://github.com/xuyicheng-zju/ReWeave>) · [HF](<https://huggingface.co/papers/2611.31053>)
+
+<details>
+<summary>Summary</summary>
+
+ReWeave does not update any policy weights. It has an outer LLM agent induce from interaction a \*\*revisable physical task topology\*\* (milestones, preconditions, evidence, code); after each revision, all historical trials are re-scored under the new topology, and the results guide the search over the harness (context C / workflow W / control loop L); the "causal units" verified in each expert task are retrieved according to unmet preconditions and merged into a compact shared harness. Ultimately, the LIBERO-PRO success rate rises from 89.00% to 98.75%, RoboDojo from 25.50% to 58.25%, and transfer to unseen tasks from 41.3% to 51.3%, reaching 75.0% after continual learning.
+
+</details>
+
+**WorldLeague: Benchmarking Physical Agency**  
+[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.30989_slides.en.pdf?v=818c3ccc9ded286c>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.30989_slides.pdf?v=2b5726befa6c8747>) · [arXiv](<https://arxiv.org/abs/2611.30989>) · [Code](<https://github.com/xyangzhou/WorldLeague>) · [HF](<https://huggingface.co/papers/2611.30989>)
+
+<details>
+<summary>Summary</summary>
+
+WorldLeague uses 60 simulated robot tasks to score three classes of systems, VLMs, VLAs, and WAMs, uniformly along 6 capability dimensions: the score only considers whether the robot's trajectory actually achieves the physical goal. Even the strongest system, Claude Fable 5.2, obtains only 28.58/100 on the Interactive Score, completing 13/60 tasks; among episodes in which a VLM answered all the final-state questions correctly, 71.8% received a physical manipulation score of 0. In other words, there is a wide gap between "understanding and answering correctly" and "actually getting it done".
+
+</details>
+
+**World Models as Native Latent Action Models**  
+[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.30898_slides.en.pdf?v=a6c7281c99ceba2d>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.30898_slides.pdf?v=654962fedcec5aff>) · [arXiv](<https://arxiv.org/abs/2611.30898>) · [Code](<https://github.com/PAWTeam-EAI/native-lam>) · [HF](<https://huggingface.co/papers/2611.30898>)
+
+<details>
+<summary>Summary</summary>
+
+The paper uses a pretrained video diffusion world model (Kairos 3.1, 4B) \*\*simultaneously\*\* as an inverse dynamics model (IDM) and a forward dynamics model (FDM), adding only learnable "dynamics registers", and trains with counterfactual temporal pairs that "share the same first frame and differ only in motion" to distill compact \*\*native latent actions\*\* (32 tokens of 128 dimensions) from video. Building on this, it proposes \*\*PAWlicy\*\*: using the frozen Native LAM as a dynamics teacher, it pretrains a VLA on large-scale human/robot/simulation videos, without generating video during either training or inference. It ultimately surpasses all existing LAMs on LARY; on RoboTwin 2.0 it averages 93.6%, the highest in the table; and on two real-robot tasks it also outperforms π0.5.
+
+</details>
+
+**HIVE-Bench: Evaluating Patch-Level Visual Representations for Egocentric Robot Manipulation**  
+[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.30813_slides.en.pdf?v=ef28d2f49b8ee714>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.30813_slides.pdf?v=5e44b535659a6f13>) · [arXiv](<https://arxiv.org/abs/2611.30813>) · [Code](<https://github.com/KolaKivy/HIVE-Bench>) · [HF](<https://huggingface.co/papers/2611.30813>)
+
+<details>
+<summary>Summary</summary>
+
+HIVE-Bench fixes a GR00T-style flow-matching DiT action head and has it directly read \*\*all patch tokens\*\* from 20 pretrained visual encoders (7 families) under the robot's own cameras, performing closed-loop evaluation on 24 egocentric bimanual tasks. There are three conclusions: retaining patch tokens, fine-tuning the encoder, and adding more demonstration data all consistently improve success rates; general vision scores such as ImageNet, segmentation, depth, and correspondence largely fail to predict control performance; the inverse dynamics (IDM) probe is one of the most useful cheap indicators before training a policy, but it is also not stable enough to replace real-robot or simulation rollouts.
+
+</details>
+
+**SWEEP-Bench: Do Embodied Policies Act on the Speed They See?**  
+[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.30637_slides.en.pdf?v=29bbeb905e8e65a2>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.30637_slides.pdf?v=070d6eac24659663>) · [arXiv](<https://arxiv.org/abs/2611.30637>) · [Code](<https://github.com/Damin3927/SWEEP-Bench>) · [HF](<https://huggingface.co/papers/2611.30637>)
+
+<details>
+<summary>Summary</summary>
+
+SWEEP-Bench tests each of 80 conveyor-belt manipulation tasks at 13 belt-speed levels. The findings: most mainstream VLAs do not look at the actual speed and only learn the "average-speed timing" of the demonstration data, so their success rate peaks at medium speed and drops at both ends (an inverted U shape); adding past frames helps only a few models that were pretrained on multiple frames and from which speed can be read out internally (Fast-WAM, Cosmos Policy, DynamicVLA); directly giving the policy a belt speed estimated from optical flow recovers most of the gain obtained from the ground-truth speed.
+
+</details>
+
+**ViDiHand2: Unifying Video Diffusion Priors and Hand Geometry for 3D Hand Motion Reconstruction in the Wild**  
+[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.30597_slides.en.pdf?v=a3ee405d81a1fa51>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.30597_slides.pdf?v=3e484cbbd770a8ea>) · [arXiv](<https://arxiv.org/abs/2611.30597>) · [Code](<https://github.com/NTUYWANG103/ViDiHand>) · [HF](<https://huggingface.co/papers/2611.30597>)
+
+<details>
+<summary>Summary</summary>
+
+\*\*ViDiHand2 no longer has the video diffusion model directly regress hand depth; instead, it has it predict pixel-aligned 2D joints and the MANO hand shape, and then solves for depth via a whole-video geometric optimization along the test camera's rays using MANO's metric bone lengths. This preserves accuracy when switching to unseen cameras: in-the-wild absolute joint error is 42% lower than the strongest baseline (56.55 -&gt; 32.59 mm), at 57 FPS.\*\*
+
+</details>
+
+**Write, Evolve, Read: Streaming Cameras into a Persistent World State for 4D Occupancy Forecasting**  
+[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.30573_slides.en.pdf?v=464bab8099564894>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.30573_slides.pdf?v=3c5acf893828ffaf>) · [arXiv](<https://arxiv.org/abs/2611.30573>) · [Code](<https://github.com/wangzian828/PersistWorld>) · [HF](<https://huggingface.co/papers/2611.30573>)
+
+<details>
+<summary>Summary</summary>
+
+The authors first split the future scene into three types of space, "unchanged / changed / unseen", and find that camera-only occupancy world models lose mainly on the first type: they fail to remember things that have already been seen and have not changed, rather than failing to predict the changes. Based on this, they propose PersistWorld: camera frames are streamed and \*\*written\*\* into a persistent 3D world state anchored in the scene coordinate frame, an Evolver \*\*evolves\*\* the state to any query time according to the ego-vehicle trajectory, and a Reader \*\*reads\*\* out occupancy. On Occ3D-nuScenes, it is 19 IoU points higher than the strongest camera-based method, SparseWorld-TC, at 1-3 s and 18-24 points higher at 1-8 s, while also being more than twice as fast (23.15 FPS).
+
+</details>
+
+**DexDuet: Learning Contact-Preserving Bimanual Dexterity from Human Demonstrations**  
+[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.30495_slides.en.pdf?v=506c3fc127c2f075>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.30495_slides.pdf?v=a3bc0c8517a7ae76>) · [arXiv](<https://arxiv.org/abs/2611.30495>) · [Code](<https://github.com/HaoranZhangumich/DexDuet>) · [HF](<https://huggingface.co/papers/2611.30495>)
+
+<details>
+<summary>Summary</summary>
+
+Starting from a \*\*single\*\* human bimanual demonstration, DexDuet trains two dexterous robot hands with reinforcement learning in simulation. It uses three components: "one policy per hand" with shared weights that can observe the other hand, two interaction rewards aligned with the human hands, and A-RSI, a segment-wise adaptive auxiliary curriculum. The goal is not only to make the object follow the demonstrated trajectory, but also to have the robot \*\*grasp where the human hand grasped, without the fingers slipping on the object\*\*. Across 4 benchmarks, 3 simulators, and 5 robot embodiments, object-tracking ADD-AUC is 11-41 points higher than the corresponding baselines, and contact preservation leads across the board.
+
+</details>
+
+**Motion Mamba 2.0: Autoregressive Diffusion Mamba for Long-Horizon Humanoid Control**  
+[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.29897_slides.en.pdf?v=4a00de0ee349d7ef>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.29897_slides.pdf?v=78c2fa9663041e57>) · [arXiv](<https://arxiv.org/abs/2611.29897>) · [Code](<https://github.com/AIGeeksGroup/MotionMamba2.0>) · [HF](<https://huggingface.co/papers/2611.29897>)
+
+<details>
+<summary>Summary</summary>
+
+\*\*Motion Mamba 2.0 turns the ARDY-style two-stage "root trajectory, then body" autoregressive diffusion denoiser into a hybrid architecture of "local attention + resumable Mamba-3 recurrent state + Persistent Content Memory (PCM)". Historical state is committed only after a clean window has been accepted. On the inference side, CUDA Graphs and operator fusion bring the per-window latency down to 276 ms (6.1x faster than the authors' own eager implementation). As a result, on the G1 humanoid robot, it achieves the lowest endpoint spatial-constraint error in streaming motion generation of up to 39.5 s, and in 100 real-robot trials it achieves 94 complete successes and 0 falls.\*\*
+
+</details>
+
+**A Glimpse of Training VLMs as Foundation Models for Robotic Manipulation**  
+[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.29338_slides.en.pdf?v=737c799d1c6b024a>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.29338_slides.pdf?v=ab45459d6adc271a>) · [arXiv](<https://arxiv.org/abs/2611.29338>) · Code · [HF](<https://huggingface.co/papers/2611.29338>)
+
+<details>
+<summary>Summary</summary>
+
+A Tsinghua team proposes nanoAstra, which organizes 5,300 hours of heterogeneous real-robot/UMI demonstrations into semantic steps consisting of a "progress description + parameterized action primitives (e.g., \`move x +5.0\`, \`gripper open\`)", and trains jointly with capability-preserving fine-tuning (CP-SFT) using a robot system prompt together with general VQA data. Using only the text-generation interface, this enables Qwen3.5-9B to reach a 17.8% zero-shot success rate under the RoboTwin 2.0 randomized setting. This result exceeds the tested VLAs, WAMs, and larger VLMs; on a single H20, inference is faster than action execution, so it can execute in a streaming manner. It is an open, reproducible early attempt at replicating the GPT-6 Astra-style ability of a "VLM directly controlling a robot".
+
+</details>
+
+**Embodied-Harness: Towards Recursive Self-Improvement for Robotic Manipulation**  
+[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.27689_slides.en.pdf?v=76500bae6bb64dc8>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.27689_slides.pdf?v=35c8213bedfb96dc>) · [arXiv](<https://arxiv.org/abs/2611.27689>) · Code · [HF](<https://huggingface.co/papers/2611.27689>)
+
+<details>
+<summary>Summary</summary>
+
+\*\*The model parameters stay fixed; only the "execution framework (harness)" is changed\*\*: Embodied-Harness has a frozen VLM act as the Actor, manipulating the robot arm through five control instructions; another VLM acts as the Reflector, identifying the causes of failure from execution trajectories, writing them up as reusable operational guidance, and updating the harness round by round. Using GPT-6 Astra as the backbone and no demonstrations at all, it achieves success rates of 82.4%, 76.7%, and 94.4% on RoboTwin 2.0 C2R, RoboSPA, and RMBench respectively, and 96.7% on a real robot, surpassing VLAs and WAMs that require training on full demonstrations.
+
+</details>
+
+**MomentMem: Memorizing Key Moments for Robot Manipulation**  
+[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.26745_slides.en.pdf?v=6a603effb5ed3d05>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.26745_slides.pdf?v=d1a5c600f2b03891>) · [arXiv](<https://arxiv.org/abs/2611.26745>) · [Code](<https://github.com/PKU-VaLuE-Lab/MomentMem>) · [HF](<https://huggingface.co/papers/2611.26745>)
+
+<details>
+<summary>Summary</summary>
+
+\*\*MomentMem uses a trained VLM "memorizer" to select online a small number of raw image frames containing key visual evidence, stores them in a memory stack, and then passes them to a π0.5 executor to produce actions; on VMBench, newly built by the authors (9 tasks that require remembering "fleeting positions/appearances/position-appearance correspondences"), it reaches an average success rate of 49.9%, 31.7 percentage points higher than the strongest baseline. The memorizer remains usable after appearance changes without new annotations, and learning a new task requires only 5 memory annotations.\*\*
+
+</details>
+
+**Plan4D: Generative Plannable 4D Worlds**  
+[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.26516_slides.en.pdf?v=79150586a869e5dd>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.26516_slides.pdf?v=731f05f5f1976876>) · [arXiv](<https://arxiv.org/abs/2611.26516>) · [Code](<https://github.com/AMAP-ML/plan4d>) · [HF](<https://huggingface.co/papers/2611.26516>)
+
+<details>
+<summary>Summary</summary>
+
+\*\*Plan4D "stitches" the video generation model LongCat-Video and the 3D reconstruction model Depth Anything 3 (DA3) together at the latent level: it adds a scene-flow head to DA3, trains a linear 3D convolutional interface that feeds Wan VAE latents directly into DA3's 1st block, and then uses this frozen geometry decoder as a differentiable "geometry critic" to constrain the video diffusion model. In this way, given an initial frame and an action text, a single generated latent can be decoded simultaneously into future RGB video, depth, camera rays, point clouds, and scene flow. The action videos themselves require no 4D annotations.\*\*
+
+</details>
+
+**ViDecide: Teaching Video Diffusion Models to Reason and Plan Step by Step**  
+[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.26389_slides.en.pdf?v=edd72c1ed22abde8>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.26389_slides.pdf?v=7d3444a1645c25e8>) · [arXiv](<https://arxiv.org/abs/2611.26389>) · [Code](<https://github.com/Kevin-thu/ViDecide>) · [HF](<https://huggingface.co/papers/2611.26389>)
+
+<details>
+<summary>Summary</summary>
+
+ViDecide treats video reasoning as "a sequence of decisions" rather than "a fixed-length video". It has the video diffusion model generate state transitions segment by segment in a causal manner, and uses a visual EOS frame to decide on its own when to stop; training noise is concentrated in the high-noise region that determines "what to do next"; it then uses Corrective Fine-tuning (CFT) to map "the noise that led to failure" onto successful continuations resampled by the model itself. On game, planning, and bimanual robot block tasks, the strict success rate rises from 23.3% with standard fine-tuning to 83.8% (the previous strongest method achieved 67.8%).
+
+</details>
+
+**UniVEP: Unifying Velocity and Endpoint Prediction for Robot Manipulation**  
+Slides (EN) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.26103_slides.pdf?v=c5a1e17c6f10bc2a>) · [arXiv](<https://arxiv.org/abs/2611.26103>) · Code · [HF](<https://huggingface.co/papers/2611.26103>)
+
+<details>
+<summary>Summary</summary>
+
+Should the network of a flow-matching robot policy predict the "velocity" or the "clean action endpoint"? After a systematic comparison, the authors find that endpoint prediction suits the high-noise stage, while velocity prediction suits the low-noise stage. They therefore propose UniVEP: a single DiT is jointly trained on both predictions with a consistency constraint, and during sampling it first uses endpoint prediction and then switches to velocity prediction. Each step still runs the network only once; on RoboTwin, 1-step inference surpasses the 16-step results of single-objective baselines, and 2-step inference with LiLa-WAM reduces latency by 77.1%.
+
+</details>
+
+**Fast-JEPA: Advancing the Success-Latency Frontier for Latent World Models**  
+[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.25927_slides.en.pdf?v=d01bbc3e92c76a66>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.25927_slides.pdf?v=31d0b24c3b05583f>) · [arXiv](<https://arxiv.org/abs/2611.25927>) · [Code](<https://github.com/DeepCybo-PhysAI/Fast-JEPA>) · [HF](<https://huggingface.co/papers/2611.25927>)
+
+<details>
+<summary>Summary</summary>
+
+Fast-JEPA's approach is: first, use the world model's intermediate predictions to generate a "goal-directed" initial action plan step by step, and then run a lightweight CEM search in the neighborhood of this plan; each complete candidate is scored with just a single query that "predicts the endpoint directly from the current observation", no longer recursively rolling out intermediate states. As a result, on the four tasks PushT, Reacher, Cube, and TwoRoom, it achieves a 96.50% average success rate with a planning latency of 10.88 ms, 2.41x faster than INTACT. The paper also proposes the DynaGoal benchmark to test planning ability under dynamic goals, deadlines, and response latency.
+
+</details>
+
 ### November 23, 2026
 
 **Non-penetrating World Models**  
@@ -930,10 +1122,43 @@ Instead of having the Action DiT start from Gaussian noise, OSWAM places a small
 ## Popular Papers
 
 
-Snapshot: 2026-11-23 (Asia/Shanghai). Ranked by current cumulative Hugging Face upvotes; updated with the daily publication.
+Snapshot: 2026-11-24 (Asia/Shanghai). Ranked by current cumulative Hugging Face upvotes; updated with the daily publication.
 
 
 ### Last 7 Days
+
+
+**Motion Mamba 2.0: Autoregressive Diffusion Mamba for Long-Horizon Humanoid Control**  
+[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.29897_slides.en.pdf?v=4a00de0ee349d7ef>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.29897_slides.pdf?v=78c2fa9663041e57>) · [arXiv](<https://arxiv.org/abs/2611.29897>) · [Code](<https://github.com/AIGeeksGroup/MotionMamba2.0>) · [HF](<https://huggingface.co/papers/2611.29897>) · 137 HF upvotes
+
+<details>
+<summary>Summary</summary>
+
+\*\*Motion Mamba 2.0 turns the ARDY-style two-stage "root trajectory, then body" autoregressive diffusion denoiser into a hybrid architecture of "local attention + resumable Mamba-3 recurrent state + Persistent Content Memory (PCM)". Historical state is committed only after a clean window has been accepted. On the inference side, CUDA Graphs and operator fusion bring the per-window latency down to 276 ms (6.1x faster than the authors' own eager implementation). As a result, on the G1 humanoid robot, it achieves the lowest endpoint spatial-constraint error in streaming motion generation of up to 39.5 s, and in 100 real-robot trials it achieves 94 complete successes and 0 falls.\*\*
+
+</details>
+
+
+**Embo-Harness: Towards Understanding Frontier-Model-as-Policy Harness**  
+[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.31201_slides.en.pdf?v=e4c12c69ecca8775>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.31201_slides.pdf?v=30409e46b4ab120d>) · [arXiv](<https://arxiv.org/abs/2611.31201>) · [Code](<https://github.com/DravenALG/Embo-Harness>) · [HF](<https://huggingface.co/papers/2611.31201>) · 86 HF upvotes
+
+<details>
+<summary>Summary</summary>
+
+The authors have frontier multimodal large models such as GPT-6-Astra act directly as robot policies, and run controlled, factor-by-factor ablations of the harness (prompting, planning, action execution, tool use). From this they distill a recipe: xhigh reasoning, 640x360 dual-view images, absolute EEF coordinates, fixed 8-step chunks, a short multi-action-sequence tool, plus having the large model correct the actions proposed by a VLA. This recipe reaches an 83.3% success rate on RoboLab-120, 26.2 percentage points higher than the strongest baseline. The authors further argue that the large model's manipulation ability comes mainly from \*\*spatial target estimation\*\*, rather than from the ability to generate low-level joint or trajectory actions.
+
+</details>
+
+
+**Non-penetrating World Models**  
+[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.27963_slides.en.pdf?v=ee8b94620140d29e>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.27963_slides.pdf?v=19aaad01b7c17c23>) · [arXiv](<https://arxiv.org/abs/2611.27963>) · [Code](<https://github.com/yuhangdai427/NoPeWorld>) · [HF](<https://huggingface.co/papers/2611.27963>) · 58 HF upvotes
+
+<details>
+<summary>Summary</summary>
+
+When commanded to run into a wall, most existing interactive video world models simply "pass through the wall". The authors find that a frozen DiT, before it renders the next video segment, already contains in its hidden states information about "whether this action will cause a collision". They therefore attach a prediction head with fewer than 2M parameters to the DiT, which scores 34 candidate motions before generation and replaces dangerous commands with a stop or a wall-sliding motion that best matches the user's intent. Without modifying any of the generator's weights, the average penetration rate across six open-source world models drops from 74% to 16%, and the approach transfers zero-shot to open-domain images, third-person viewpoints, and moving obstacles.
+
+</details>
 
 
 **Mind2Act World: A Diagnostic Benchmark for Embodied Mind, Physical Action, and Mind-Action Composition in Robotic Manipulation**  
@@ -948,7 +1173,7 @@ Snapshot: 2026-11-23 (Asia/Shanghai). Ranked by current cumulative Hugging Face 
 
 
 **ForceHarness: Turning Force into Action and Physics for Frozen Frontier Models**  
-[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.21099_slides.en.pdf?v=04864c1959db9ff1>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.21099_slides.pdf?v=15169b78d6259a17>) · [arXiv](<https://arxiv.org/abs/2611.21099>) · [Code](<https://github.com/showlab/ForceHarness>) · [HF](<https://huggingface.co/papers/2611.21099>) · 46 HF upvotes
+[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.21099_slides.en.pdf?v=04864c1959db9ff1>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.21099_slides.pdf?v=15169b78d6259a17>) · [arXiv](<https://arxiv.org/abs/2611.21099>) · [Code](<https://github.com/showlab/ForceHarness>) · [HF](<https://huggingface.co/papers/2611.21099>) · 45 HF upvotes
 
 <details>
 <summary>Summary</summary>
@@ -958,35 +1183,68 @@ ForceHarness adds three layers of "harness" between a frontier multimodal model 
 </details>
 
 
-**Non-penetrating World Models**  
-[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.27963_slides.en.pdf?v=ee8b94620140d29e>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.27963_slides.pdf?v=19aaad01b7c17c23>) · [arXiv](<https://arxiv.org/abs/2611.27963>) · [Code](<https://github.com/yuhangdai427/NoPeWorld>) · [HF](<https://huggingface.co/papers/2611.27963>) · 44 HF upvotes
+**WorldLeague: Benchmarking Physical Agency**  
+[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.30989_slides.en.pdf?v=818c3ccc9ded286c>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.30989_slides.pdf?v=2b5726befa6c8747>) · [arXiv](<https://arxiv.org/abs/2611.30989>) · [Code](<https://github.com/xyangzhou/WorldLeague>) · [HF](<https://huggingface.co/papers/2611.30989>) · 41 HF upvotes
 
 <details>
 <summary>Summary</summary>
 
-When commanded to run into a wall, most existing interactive video world models simply "pass through the wall". The authors find that a frozen DiT, before it renders the next video segment, already contains in its hidden states information about "whether this action will cause a collision". They therefore attach a prediction head with fewer than 2M parameters to the DiT, which scores 34 candidate motions before generation and replaces dangerous commands with a stop or a wall-sliding motion that best matches the user's intent. Without modifying any of the generator's weights, the average penetration rate across six open-source world models drops from 74% to 16%, and the approach transfers zero-shot to open-domain images, third-person viewpoints, and moving obstacles.
+WorldLeague uses 60 simulated robot tasks to score three classes of systems, VLMs, VLAs, and WAMs, uniformly along 6 capability dimensions: the score only considers whether the robot's trajectory actually achieves the physical goal. Even the strongest system, Claude Fable 5.2, obtains only 28.58/100 on the Interactive Score, completing 13/60 tasks; among episodes in which a VLM answered all the final-state questions correctly, 71.8% received a physical manipulation score of 0. In other words, there is a wide gap between "understanding and answering correctly" and "actually getting it done".
 
 </details>
 
 
-**ScaleVLA: Scaling Vision-Language-Action Models to 552 Billion Parameters**  
-[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.21607_slides.en.pdf?v=6fd694d72e6ca8eb>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.21607_slides.pdf?v=b627a50de1e75e34>) · [arXiv](<https://arxiv.org/abs/2611.21607>) · [Code](<https://github.com/GalaxyGeneralRobotics/ScaleVLA>) · [HF](<https://huggingface.co/papers/2611.21607>) · 41 HF upvotes
+**A Glimpse of Training VLMs as Foundation Models for Robotic Manipulation**  
+[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.29338_slides.en.pdf?v=737c799d1c6b024a>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.29338_slides.pdf?v=ab45459d6adc271a>) · [arXiv](<https://arxiv.org/abs/2611.29338>) · Code · [HF](<https://huggingface.co/papers/2611.29338>) · 35 HF upvotes
 
 <details>
 <summary>Summary</summary>
 
-\*\*ScaleVLA runs only the first half (the causal encoder) of a frozen 552B MoE frontier VLM (DeepSeek-V4.1-Flash) to extract features, and attaches a GR00T-style flow-matching action DiT trained from scratch. In a controlled comparison with the action head, data, and training budget all held fixed, scaling the backbone from 2B to 552B improves sample efficiency (10 demonstrations outperform the 2B model with 50), out-of-distribution generalization (45.1% vs. at most 31.3% on LIBERO-PRO), and fine-grained real-robot insertion (9/10 vs. 4/10), while the median latency per action chunk remains only 216 ms. This shows that frontier VLMs can serve not only as "reasoning agents" but also as the representational foundation for learned robot policies.\*\*
+A Tsinghua team proposes nanoAstra, which organizes 5,300 hours of heterogeneous real-robot/UMI demonstrations into semantic steps consisting of a "progress description + parameterized action primitives (e.g., \`move x +5.0\`, \`gripper open\`)", and trains jointly with capability-preserving fine-tuning (CP-SFT) using a robot system prompt together with general VQA data. Using only the text-generation interface, this enables Qwen3.5-9B to reach a 17.8% zero-shot success rate under the RoboTwin 2.0 randomized setting. This result exceeds the tested VLAs, WAMs, and larger VLMs; on a single H20, inference is faster than action execution, so it can execute in a streaming manner. It is an open, reproducible early attempt at replicating the GPT-6 Astra-style ability of a "VLM directly controlling a robot".
+
+</details>
+
+
+**ViDecide: Teaching Video Diffusion Models to Reason and Plan Step by Step**  
+[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.26389_slides.en.pdf?v=edd72c1ed22abde8>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.26389_slides.pdf?v=7d3444a1645c25e8>) · [arXiv](<https://arxiv.org/abs/2611.26389>) · [Code](<https://github.com/Kevin-thu/ViDecide>) · [HF](<https://huggingface.co/papers/2611.26389>) · 32 HF upvotes
+
+<details>
+<summary>Summary</summary>
+
+ViDecide treats video reasoning as "a sequence of decisions" rather than "a fixed-length video". It has the video diffusion model generate state transitions segment by segment in a causal manner, and uses a visual EOS frame to decide on its own when to stop; training noise is concentrated in the high-noise region that determines "what to do next"; it then uses Corrective Fine-tuning (CFT) to map "the noise that led to failure" onto successful continuations resampled by the model itself. On game, planning, and bimanual robot block tasks, the strict success rate rises from 23.3% with standard fine-tuning to 83.8% (the previous strongest method achieved 67.8%).
+
+</details>
+
+
+**Plan4D: Generative Plannable 4D Worlds**  
+[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.26516_slides.en.pdf?v=79150586a869e5dd>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.26516_slides.pdf?v=731f05f5f1976876>) · [arXiv](<https://arxiv.org/abs/2611.26516>) · [Code](<https://github.com/AMAP-ML/plan4d>) · [HF](<https://huggingface.co/papers/2611.26516>) · 27 HF upvotes
+
+<details>
+<summary>Summary</summary>
+
+\*\*Plan4D "stitches" the video generation model LongCat-Video and the 3D reconstruction model Depth Anything 3 (DA3) together at the latent level: it adds a scene-flow head to DA3, trains a linear 3D convolutional interface that feeds Wan VAE latents directly into DA3's 1st block, and then uses this frozen geometry decoder as a differentiable "geometry critic" to constrain the video diffusion model. In this way, given an initial frame and an action text, a single generated latent can be decoded simultaneously into future RGB video, depth, camera rays, point clouds, and scene flow. The action videos themselves require no 4D annotations.\*\*
 
 </details>
 
 
 **TCP4D: A Unified Tool-Center-Point Tracking and Generation Model for Robot Manipulation**  
-[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.23143_slides.en.pdf?v=1c266ec65cac6791>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.23143_slides.pdf?v=fe5428f9433eed61>) · [arXiv](<https://arxiv.org/abs/2611.23143>) · [Code](<https://github.com/Livioni/TCP4D>) · [HF](<https://huggingface.co/papers/2611.23143>) · 25 HF upvotes
+[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.23143_slides.en.pdf?v=1c266ec65cac6791>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.23143_slides.pdf?v=fe5428f9433eed61>) · [arXiv](<https://arxiv.org/abs/2611.23143>) · [Code](<https://github.com/Livioni/TCP4D>) · [HF](<https://huggingface.co/papers/2611.23143>) · 24 HF upvotes
 
 <details>
 <summary>Summary</summary>
 
 TCP4D uses a single feed-forward 4D scene representation to directly regress, from monocular RGB video, the metric-scale SE(3) pose of the end-effector tool center point (TCP) and the gripper opening/closing (Tracker), then samples features along these trajectories and uses a DiT to generate future TCP trajectories as a policy (Generator). As a by-product, it yields a cross-embodiment data augmentation pipeline that does not require state recordings from the source robot: video → TCP trajectory → target-robot IK → erase the original robot and render the new robot.
+
+</details>
+
+
+**ZeroVLN: Learning to Navigate without Supervised Fine-Tuning of the VLM Brain**  
+[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.26414_slides.en.pdf?v=22bb846c71422654>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.26414_slides.pdf?v=bfcc388f9f9583c7>) · [arXiv](<https://arxiv.org/abs/2611.26414>) · [Code](<https://github.com/hzx122/ZeroVLN>) · [HF](<https://huggingface.co/papers/2611.26414>) · 24 HF upvotes
+
+<details>
+<summary>Summary</summary>
+
+ZeroVLN has the VLM brain direct an action expert through natural-language tool calls. It supervises the expert with trajectories generated according to the brain's requests and then performs joint reinforcement learning. With zero navigation fine-tuning, it achieves the highest success rate under the same conditions on three VLN-CE benchmarks, while changing only 0.015% of the weights and largely preserving general capabilities.
 
 </details>
 
@@ -1002,77 +1260,11 @@ Heave-Ho uses a two-level structure to let multiple humanoid robots cooperativel
 </details>
 
 
-**HINT-WAM: Hindsight-Informed Training for World Action Models**  
-[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.24789_slides.en.pdf?v=ae300e354d290b4c>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.24789_slides.pdf?v=b22ee35555b42d0e>) · [arXiv](<https://arxiv.org/abs/2611.24789>) · [Code](<https://github.com/tuandattt/hintwam_code>) · [HF](<https://huggingface.co/papers/2611.24789>) · 22 HF upvotes
-
-<details>
-<summary>Summary</summary>
-
-HINT-WAM makes the world action model serve as its own teacher: the teacher sees more than the student, namely the "future frames" (hindsight) in the demonstration video. The student generates actions along its own denoising sampling trajectory and is then aligned with this teacher at the distribution level using an energy score. The whole process requires no rewards, no simulator, and no additional teacher model. In the end, the LIBERO-90 success rate rises from 78.9% with SFT to 85.2%, with less forgetting as well.
-
-</details>
-
-
-**ZeroVLN: Learning to Navigate without Supervised Fine-Tuning of the VLM Brain**  
-[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.26414_slides.en.pdf?v=22bb846c71422654>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.26414_slides.pdf?v=bfcc388f9f9583c7>) · [arXiv](<https://arxiv.org/abs/2611.26414>) · [Code](<https://github.com/hzx122/ZeroVLN>) · [HF](<https://huggingface.co/papers/2611.26414>) · 22 HF upvotes
-
-<details>
-<summary>Summary</summary>
-
-ZeroVLN has the VLM brain direct an action expert through natural-language tool calls. It supervises the expert with trajectories generated according to the brain's requests and then performs joint reinforcement learning. With zero navigation fine-tuning, it achieves the highest success rate under the same conditions on three VLN-CE benchmarks, while changing only 0.015% of the weights and largely preserving general capabilities.
-
-</details>
-
-
-**WAM-Policy: World Action Models with On-Policy Distillation for Quadrupedal Loco-Manipulation**  
-[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.24011_slides.en.pdf?v=806a600eebda3788>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.24011_slides.pdf?v=44555ff861c8da68>) · [arXiv](<https://arxiv.org/abs/2611.24011>) · [Code](<https://github.com/AIGeeksGroup/WAM-Policy>) · [HF](<https://huggingface.co/papers/2611.24011>) · 18 HF upvotes
-
-<details>
-<summary>Summary</summary>
-
-WAM-Policy adapts a world action model pretrained for robotic arms (LingBot-VA) into a language-conditioned policy for a quadruped robot that "walks on three legs and works with one front leg." The approach has two steps. First, it replaces the visual and action interfaces, then uses same-noise on-policy self-distillation to compress sampling to 1 video step + 2 action steps, achieving a 14x speedup with almost no performance drop (77.0% -&gt; 76.7%). Second, it trains expert teachers separately with RL on the hard tasks, then uses task-routed multi-teacher on-policy distillation to merge them back into a single fast student, raising the ten-task success rate to 85.0%.
-
-</details>
-
-
-**Learning What Actions Change: Action Effect Matching for Dynamics-Faithful World Models**  
-[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.25980_slides.en.pdf?v=eec8bba844449265>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.25980_slides.pdf?v=1eb79b39c7bce10b>) · [arXiv](<https://arxiv.org/abs/2611.25980>) · [Code](<https://github.com/alshedivat/al-folio>) · [HF](<https://huggingface.co/papers/2611.25980>) · 17 HF upvotes
-
-<details>
-<summary>Summary</summary>
-
-The authors have the play policy inject recordable, temporally correlated action noise during execution, and add an auxiliary loss, AFFECT, which requires that the way features in the world model's generated video vary with the noise (i.e., their covariance) match that of the real recordings. This method requires neither repeated executions from the same initial state nor outcome labels, yet it makes video world models more sensitive to small action differences. On DROID, the Pearson correlation between policy success rates inside the world model and on the real robot rises from 0.47 to 0.79, and when used for planning, success rate improves by about 8 percentage points.
-
-</details>
-
-
-**SALA: Semantically Aligned Latent Actions Enable Dual-Axis Scaling of Embodied Foundation Models**  
-[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.17110_slides.en.pdf?v=a7dc5207fec0f80c>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.17110_slides.pdf?v=951d470d19d50247>) · [arXiv](<https://arxiv.org/abs/2611.17110>) · Code · [HF](<https://huggingface.co/papers/2611.17110>) · 15 HF upvotes
-
-<details>
-<summary>Summary</summary>
-
-\*\*Using only atomic-action language descriptions of human and robot videos separately (e.g., "grasp the cup"), and without requiring paired data, SALA softly aligns the latent actions of human videos to robot latent actions that have been "anchored with real robot actions." As a result, human videos without action labels can also directly supervise the same VLA policy that controls the robot. Both usages improve as more human video is added: when the general human video used for pretraining increases from 0 to 2,678 hours, robot action prediction error decreases steadily; as more task-specific human demonstrations are used in post-training, the real-robot success rate rises from 53.75% to 72.5%.\*\*
-
-</details>
-
-
-**One Prior, Two Dynamics: Repurposing Video Diffusion Transformers for Self-Supervised Latent Action Learning**  
-[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.26617_slides.en.pdf?v=8c16f1ac4d7a5949>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.26617_slides.pdf?v=6c8d61b2b6d0fe38>) · [arXiv](<https://arxiv.org/abs/2611.26617>) · [Code](<https://github.com/showlab/O2LaF>) · [HF](<https://huggingface.co/papers/2611.26617>) · 12 HF upvotes
-
-<details>
-<summary>Summary</summary>
-
-\*\*O²LaF initializes both an inverse dynamics model (IDM) and a forward dynamics model (FDM) from the same pretrained video DiT (Wan2.2-5B), each adapted with LoRA: the IDM is a single-forward-pass encoder with "read-only" action queries, and the FDM is a frame-causal, action-conditioned video generator that jointly predicts the whole clip and is trained with a bias toward high noise. The two are trained end to end through a 32-dimensional Gaussian bottleneck to learn latent actions from unlabeled video. These latent actions achieve new SOTA in few-shot action probing for navigation and manipulation, and can transfer zero-shot to new scenes as well as between humans and robots.\*\*
-
-</details>
-
-
 ### Last 30 Days
 
 
 **Gamer: A Generalist Vision-Language-Action Foundation Model for Long-Horizon Real-Time Game Agent**  
-[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.18397_slides.en.pdf?v=72b34e92d820f938>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.18397_slides.pdf?v=a361044dd83c084b>) · [arXiv](<https://arxiv.org/abs/2611.18397>) · [Code](<https://github.com/RainBowLuoCS/Gamer>) · [HF](<https://huggingface.co/papers/2611.18397>) · 158 HF upvotes
+[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.18397_slides.en.pdf?v=72b34e92d820f938>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.18397_slides.pdf?v=a361044dd83c084b>) · [arXiv](<https://arxiv.org/abs/2611.18397>) · [Code](<https://github.com/RainBowLuoCS/Gamer>) · [HF](<https://huggingface.co/papers/2611.18397>) · 160 HF upvotes
 
 <details>
 <summary>Summary</summary>
@@ -1093,6 +1285,17 @@ Since GPT-6 Astra, \*\*Embodied System 2\*\*, composed of "foundation model + em
 </details>
 
 
+**Motion Mamba 2.0: Autoregressive Diffusion Mamba for Long-Horizon Humanoid Control**  
+[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.29897_slides.en.pdf?v=4a00de0ee349d7ef>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.29897_slides.pdf?v=78c2fa9663041e57>) · [arXiv](<https://arxiv.org/abs/2611.29897>) · [Code](<https://github.com/AIGeeksGroup/MotionMamba2.0>) · [HF](<https://huggingface.co/papers/2611.29897>) · 137 HF upvotes
+
+<details>
+<summary>Summary</summary>
+
+\*\*Motion Mamba 2.0 turns the ARDY-style two-stage "root trajectory, then body" autoregressive diffusion denoiser into a hybrid architecture of "local attention + resumable Mamba-3 recurrent state + Persistent Content Memory (PCM)". Historical state is committed only after a clean window has been accepted. On the inference side, CUDA Graphs and operator fusion bring the per-window latency down to 276 ms (6.1x faster than the authors' own eager implementation). As a result, on the G1 humanoid robot, it achieves the lowest endpoint spatial-constraint error in streaming motion generation of up to 39.5 s, and in 100 real-robot trials it achieves 94 complete successes and 0 falls.\*\*
+
+</details>
+
+
 **VFlash: Fast, Accurate Visual Planning via Flash Primitive Decoding**  
 [Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.08449_slides.en.pdf?v=533e65ad6f97bdce>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.08449_slides.pdf?v=fc535a35f7aedecd>) · [arXiv](<https://arxiv.org/abs/2611.08449>) · [Code](<https://github.com/NVlabs/Eagle>) · [HF](<https://huggingface.co/papers/2611.08449>) · 121 HF upvotes
 
@@ -1105,12 +1308,23 @@ VFlash first uses a tool call to declare the type and length of a visual primiti
 
 
 **Learning Heterogeneous Tactile Representation for General Dexterous Manipulation**  
-[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.12806_slides.en.pdf?v=9e42455bb2de1665>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.12806_slides.pdf?v=4905926edc535cb1>) · [arXiv](<https://arxiv.org/abs/2611.12806>) · [Code](<https://github.com/Robbyant/lingbot-touch>) · [HF](<https://huggingface.co/papers/2611.12806>) · 109 HF upvotes
+[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.12806_slides.en.pdf?v=9e42455bb2de1665>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.12806_slides.pdf?v=4905926edc535cb1>) · [arXiv](<https://arxiv.org/abs/2611.12806>) · [Code](<https://github.com/Robbyant/lingbot-touch>) · [HF](<https://huggingface.co/papers/2611.12806>) · 107 HF upvotes
 
 <details>
 <summary>Summary</summary>
 
 LingBot-Touch unifies three types of tactile sensors into a standard fingertip coordinate frame and uses Tactile-JEPA to pretrain a small encoder on 5,000 hours of data. The encoder is frozen and plug-and-play, raising real-robot success rates of four types of policies by 14-25 points and raising simulated RL success rates from 21% to 69%, and it transfers to new sensors with zero parameters.
+
+</details>
+
+
+**Embo-Harness: Towards Understanding Frontier-Model-as-Policy Harness**  
+[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.31201_slides.en.pdf?v=e4c12c69ecca8775>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.31201_slides.pdf?v=30409e46b4ab120d>) · [arXiv](<https://arxiv.org/abs/2611.31201>) · [Code](<https://github.com/DravenALG/Embo-Harness>) · [HF](<https://huggingface.co/papers/2611.31201>) · 86 HF upvotes
+
+<details>
+<summary>Summary</summary>
+
+The authors have frontier multimodal large models such as GPT-6-Astra act directly as robot policies, and run controlled, factor-by-factor ablations of the harness (prompting, planning, action execution, tool use). From this they distill a recipe: xhigh reasoning, 640x360 dual-view images, absolute EEF coordinates, fixed 8-step chunks, a short multi-action-sequence tool, plus having the large model correct the actions proposed by a VLA. This recipe reaches an 83.3% success rate on RoboLab-120, 26.2 percentage points higher than the strongest baseline. The authors further argue that the large model's manipulation ability comes mainly from \*\*spatial target estimation\*\*, rather than from the ability to generate low-level joint or trajectory actions.
 
 </details>
 
@@ -1133,6 +1347,17 @@ NEO-VLA removes the vision encoder: pixels are patchified via convolution and fe
 <summary>Summary</summary>
 
 SLA starts from π0.5 and performs continual pre-training on about 1.7M heterogeneous robot trajectories: during training, it cosine-aligns the visual tokens from the VLA's intermediate layers with features from the frozen 3D perception model OmniVGGT (using multi-layer gated fusion together with state dropout), and this alignment is kept during the post-training stage as well. At inference, the architecture is exactly the same as π0.5, and neither depth nor camera calibration is required. The method achieves SOTA on LIBERO-Plus, RoboTwin 2.0 (Clean2Random), RoboCasa-Panda, and RoboDojo-Real, and across 8 real-robot conditions its average success rate is 24 percentage points higher than π0.5.
+
+</details>
+
+
+**Non-penetrating World Models**  
+[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.27963_slides.en.pdf?v=ee8b94620140d29e>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.27963_slides.pdf?v=19aaad01b7c17c23>) · [arXiv](<https://arxiv.org/abs/2611.27963>) · [Code](<https://github.com/yuhangdai427/NoPeWorld>) · [HF](<https://huggingface.co/papers/2611.27963>) · 58 HF upvotes
+
+<details>
+<summary>Summary</summary>
+
+When commanded to run into a wall, most existing interactive video world models simply "pass through the wall". The authors find that a frozen DiT, before it renders the next video segment, already contains in its hidden states information about "whether this action will cause a collision". They therefore attach a prediction head with fewer than 2M parameters to the DiT, which scores 34 candidate motions before generation and replaces dangerous commands with a stop or a wall-sliding motion that best matches the user's intent. Without modifying any of the generator's weights, the average penetration rate across six open-source world models drops from 74% to 16%, and the approach transfers zero-shot to open-domain images, third-person viewpoints, and moving obstacles.
 
 </details>
 
@@ -1170,43 +1395,10 @@ BirdDreams no longer treats the scene layout (map, surrounding vehicles' traject
 </details>
 
 
-**WorldFoundry: Towards Unified Infrastructure for World Intelligence**  
-[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.10771_slides.en.pdf?v=f68cc0cedc3bcb1a>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.10771_slides.pdf?v=f3a47b69aa4b8c58>) · [arXiv](<https://arxiv.org/abs/2611.10771>) · [Code](<https://github.com/OpenEnvision/WorldFoundry>) · [HF](<https://huggingface.co/papers/2611.10771>) · 55 HF upvotes
-
-<details>
-<summary>Summary</summary>
-
-The paper first gives an operational, function-level definition of a "generative world model": a world model must maintain a \*\*persistent state\*\* that interventions change and observations correct, and this loop must be closed, rather than judging only whether the frames look realistic. It then releases the open-source infrastructure \*\*WorldFoundry\*\*, which uses a unified manifest, artifact contract, and evidence scorecard to bring 270 models spanning video, 3D/4D, interactive worlds, and embodied action, together with 74 benchmarks and 62 metric entries, into a single reproducible inference and evaluation pipeline.
-
-</details>
-
-
-**World In-Context Learning for Agentic Robot Manipulation**  
-[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.12885_slides.en.pdf?v=41e998cfc4ccf4d7>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.12885_slides.pdf?v=68f4e63330d4b371>) · [arXiv](<https://arxiv.org/abs/2611.12885>) · [Code](<https://github.com/ArcheOne-AI/RoboScript>) · [HF](<https://huggingface.co/papers/2611.12885>) · 55 HF upvotes
-
-<details>
-<summary>Summary</summary>
-
-The paper proposes \*\*World In-Context Learning (WICL)\*\*: the foundation model's weights stay frozen, and starting from \*\*a single demonstration\*\*, the task is repeatedly "rehearsed" in a simulator, with the feedback from the world written into a readable, semantic \*\*Task Memory\*\* (rather than into network weights). The agentic system built on this paradigm, \*\*RoboScript\*\*, performs no gradient updates and achieves an average clean/randomized success rate of \*\*83.4%\*\* across all 50 tasks of RoboTwin 2.0. The strongest action policy, trained with 50 demonstrations per task, reaches only 61.7%. Moreover, RoboScript shows almost no drop in randomized scenes, and its memory can also transfer to a real heterogeneous dual-arm robot.
-
-</details>
-
-
-**Toward the Era of Agentic Embodied Intelligence**  
-[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.09124_slides.en.pdf?v=cf5c9b77e9a138ba>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.09124_slides.pdf?v=1c1a59cf62ec4af5>) · [arXiv](<https://arxiv.org/abs/2611.09124>) · [Code](<https://github.com/AutoLab-SAI-SJTU/A2MEAS>) · [HF](<https://huggingface.co/papers/2611.09124>) · 54 HF upvotes
-
-<details>
-<summary>Summary</summary>
-
-The paper first builds A2-WLA, a strong action model combining "VLA + motion-aware history + implicit world model". When the robot makes an error, the large model MetaBrain together with a diagnostic agent issues correction instructions backed by spatial evidence; this information is encoded into a "correction code" and injected into a frozen action expert through a residual Adapter. At deployment no weights are changed, and the corrective actions are generated directly inside the policy. The system achieves a Q-score of 0.6411 and a full success rate of 45.40% on the 100 public tasks of BEHAVIOR 2026. However, the largest share of the improvement in the overall score comes from the action model itself and from "selecting a model per task"; agentic correction adds only a few more points on top of that.
-
-</details>
-
-
 ## Monthly Archive
 
 
-- [November 2026](papers/2026-11.md) — 88 papers
+- [November 2026](papers/2026-11.md) — 107 papers
 
 ## Contributors
 
