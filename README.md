@@ -28,6 +28,16 @@ This paper shapes wide and explicit handoff boundaries for the policy through co
 
 ### November 26, 2026
 
+**Real2SimLab: A Unified Platform for Real-to-Simulation Transfer**  
+[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.34849_slides.en.pdf?v=26371d7217298b74>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.34849_slides.pdf?v=f418b7c3246c3f34>) · [arXiv](<https://arxiv.org/abs/2611.34849>) · [Code](<https://github.com/Real2SimHub/Real2SimLab>) · [HF](<https://huggingface.co/papers/2611.34849>)
+
+<details>
+<summary>Summary</summary>
+
+\*\*Real2SimLab makes "the runnable simulation program a method hands over" the sole interface between methods and benchmarks: the program is frozen first, then re-run offline, and then scored with each benchmark's own official scorer. This way, evaluating N methods on M benchmarks requires only N+M integrations rather than N×M. The platform also comes with a contamination-proof, reward-annotated training data pipeline, as well as Awesome-Real2Sim, a research map covering about 300 papers. However, this is purely a platform/infrastructure paper: it does not compare methods against one another, and no model has yet been trained using this pipeline.\*\*
+
+</details>
+
 **HOG-WAM: Improving Visual Robustness through Future Gradient Prediction**  
 [Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.34811_slides.en.pdf?v=4995c844b69ea333>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.34811_slides.pdf?v=1fc76ce37e39e5e0>) · [arXiv](<https://arxiv.org/abs/2611.34811>) · [Code](<https://github.com/iPPLab/HOG-WAM>) · [HF](<https://huggingface.co/papers/2611.34811>)
 
@@ -159,7 +169,7 @@ Using only the first frame and the action sequence, SimPWM first "computes" how 
 </details>
 
 **GOLD-SLAM: Gaussian-splatting Omnidirectional LiDAR-Depth SLAM**  
-Slides (EN) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.32335_slides.pdf?v=aff1bf86ade6d434>) · [arXiv](<https://arxiv.org/abs/2611.32335>) · [Code](<https://github.com/InSAI-Lab/GOLD-SLAM>) · [HF](<https://huggingface.co/papers/2611.32335>)
+[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.32335_slides.en.pdf?v=15b30b64c0ee4be4>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.32335_slides.pdf?v=aff1bf86ade6d434>) · [arXiv](<https://arxiv.org/abs/2611.32335>) · [Code](<https://github.com/InSAI-Lab/GOLD-SLAM>) · [HF](<https://huggingface.co/papers/2611.32335>)
 
 <details>
 <summary>Summary</summary>
@@ -1428,14 +1438,14 @@ Instead of having the Action DiT start from Gaussian noise, OSWAM places a small
 ## Popular Papers
 
 
-Snapshot: 2026-11-27 (Asia/Shanghai). Ranked by current cumulative Hugging Face upvotes; updated with the daily publication.
+Snapshot: 2026-11-28 (Asia/Shanghai). Ranked by current cumulative Hugging Face upvotes; updated with the daily publication.
 
 
 ### Last 7 Days
 
 
 **Motion Mamba 2.0: Autoregressive Diffusion Mamba for Long-Horizon Humanoid Control**  
-[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.29897_slides.en.pdf?v=4a00de0ee349d7ef>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.29897_slides.pdf?v=78c2fa9663041e57>) · [arXiv](<https://arxiv.org/abs/2611.29897>) · [Code](<https://github.com/AIGeeksGroup/MotionMamba2.0>) · [HF](<https://huggingface.co/papers/2611.29897>) · 226 HF upvotes
+[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.29897_slides.en.pdf?v=4a00de0ee349d7ef>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.29897_slides.pdf?v=78c2fa9663041e57>) · [arXiv](<https://arxiv.org/abs/2611.29897>) · [Code](<https://github.com/AIGeeksGroup/MotionMamba2.0>) · [HF](<https://huggingface.co/papers/2611.29897>) · 229 HF upvotes
 
 <details>
 <summary>Summary</summary>
@@ -1446,7 +1456,7 @@ Snapshot: 2026-11-27 (Asia/Shanghai). Ranked by current cumulative Hugging Face 
 
 
 **Embo-Harness: Towards Understanding Frontier-Model-as-Policy Harness**  
-[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.31201_slides.en.pdf?v=e4c12c69ecca8775>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.31201_slides.pdf?v=30409e46b4ab120d>) · [arXiv](<https://arxiv.org/abs/2611.31201>) · [Code](<https://github.com/DravenALG/Embo-Harness>) · [HF](<https://huggingface.co/papers/2611.31201>) · 106 HF upvotes
+[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.31201_slides.en.pdf?v=e4c12c69ecca8775>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.31201_slides.pdf?v=30409e46b4ab120d>) · [arXiv](<https://arxiv.org/abs/2611.31201>) · [Code](<https://github.com/DravenALG/Embo-Harness>) · [HF](<https://huggingface.co/papers/2611.31201>) · 107 HF upvotes
 
 <details>
 <summary>Summary</summary>
@@ -1468,7 +1478,7 @@ WorldLeague uses 60 simulated robot tasks to score three classes of systems, VLM
 
 
 **ACAP: Asynchronous Coding Agents for Efficient Robot Control**  
-[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.31205_slides.en.pdf?v=8a3797f81bdef988>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.31205_slides.pdf?v=654b1e2520c5b424>) · [arXiv](<https://arxiv.org/abs/2611.31205>) · Code · [HF](<https://huggingface.co/papers/2611.31205>) · 66 HF upvotes
+[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.31205_slides.en.pdf?v=8a3797f81bdef988>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.31205_slides.pdf?v=654b1e2520c5b424>) · [arXiv](<https://arxiv.org/abs/2611.31205>) · Code · [HF](<https://huggingface.co/papers/2611.31205>) · 67 HF upvotes
 
 <details>
 <summary>Summary</summary>
@@ -1479,7 +1489,7 @@ WorldLeague uses 60 simulated robot tasks to score three classes of systems, VLM
 
 
 **Non-penetrating World Models**  
-[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.27963_slides.en.pdf?v=ee8b94620140d29e>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.27963_slides.pdf?v=19aaad01b7c17c23>) · [arXiv](<https://arxiv.org/abs/2611.27963>) · [Code](<https://github.com/yuhangdai427/NoPeWorld>) · [HF](<https://huggingface.co/papers/2611.27963>) · 62 HF upvotes
+[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.27963_slides.en.pdf?v=ee8b94620140d29e>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.27963_slides.pdf?v=19aaad01b7c17c23>) · [arXiv](<https://arxiv.org/abs/2611.27963>) · [Code](<https://github.com/yuhangdai427/NoPeWorld>) · [HF](<https://huggingface.co/papers/2611.27963>) · 63 HF upvotes
 
 <details>
 <summary>Summary</summary>
@@ -1523,7 +1533,7 @@ ViDecide treats video reasoning as "a sequence of decisions" rather than "a fixe
 
 
 **PyRUA-Dex: Learning Programmatic Policies for Dexterous Bimanual Manipulation with Coding Agents**  
-[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.33144_slides.en.pdf?v=4793ba93c90afa7a>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.33144_slides.pdf?v=41cbb2e2d6fd70aa>) · [arXiv](<https://arxiv.org/abs/2611.33144>) · [Code](<https://github.com/DAGroup-PKU/PyRUA-Lean>) · [HF](<https://huggingface.co/papers/2611.33144>) · 42 HF upvotes
+[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.33144_slides.en.pdf?v=4793ba93c90afa7a>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.33144_slides.pdf?v=41cbb2e2d6fd70aa>) · [arXiv](<https://arxiv.org/abs/2611.33144>) · [Code](<https://github.com/DAGroup-PKU/PyRUA-Lean>) · [HF](<https://huggingface.co/papers/2611.33144>) · 43 HF upvotes
 
 <details>
 <summary>Summary</summary>
@@ -1544,6 +1554,17 @@ S-Mind inserts a small set of "spatial tokens" into the sequence of a multimodal
 </details>
 
 
+**Entangle: Scaling Human-Video In-Context World-Action Models across Unseen Tasks and Contexts**  
+[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.28732_slides.en.pdf?v=c7986c53b8125259>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.28732_slides.pdf?v=ad2611ab24ac4c41>) · [arXiv](<https://arxiv.org/abs/2611.28732>) · Code · [HF](<https://huggingface.co/papers/2611.28732>) · 34 HF upvotes
+
+<details>
+<summary>Summary</summary>
+
+\*\*Entangle uses "video-to-video" generation to convert existing robot recordings into human-hand versions in bulk, producing human-robot paired data aligned frame by frame in time. On this basis, it trains a world-action model (WAM) that concatenates human demonstration videos and robot observations along the time axis, and adds an "intra-task contrastive" InfoNCE loss. As a result, without any parameter updates, the robot can execute tasks never seen during training just by watching a single human video: on 7 unseen RoboTwin tasks it achieves a 69.5% success rate, 22.6 points higher than Zero-WAM; on 6 unseen tasks on the real Astribot S1 robot it averages 83.5/100. The model also shows a certain degree of transfer ability to changed layouts and changed tools (for example, using a banana as a broom).\*\*
+
+</details>
+
+
 **Embodied AI Fails the Mirror Test: How a Simple Mirror Breaks Robot Policies**  
 [Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.33010_slides.en.pdf?v=df0c4a38b763fac2>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.33010_slides.pdf?v=7334424657218e76>) · [arXiv](<https://arxiv.org/abs/2611.33010>) · [Code](<https://github.com/iPPLab/robodojo-mirror>) · [HF](<https://huggingface.co/papers/2611.33010>) · 34 HF upvotes
 
@@ -1555,22 +1576,11 @@ RoboDojo-Mirror only adds a mirror to the scene, yet the success rates of all 5 
 </details>
 
 
-**Plan4D: Generative Plannable 4D Worlds**  
-[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.26516_slides.en.pdf?v=79150586a869e5dd>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.26516_slides.pdf?v=731f05f5f1976876>) · [arXiv](<https://arxiv.org/abs/2611.26516>) · [Code](<https://github.com/AMAP-ML/plan4d>) · [HF](<https://huggingface.co/papers/2611.26516>) · 30 HF upvotes
-
-<details>
-<summary>Summary</summary>
-
-\*\*Plan4D "stitches" the video generation model LongCat-Video and the 3D reconstruction model Depth Anything 3 (DA3) together at the latent level: it adds a scene-flow head to DA3, trains a linear 3D convolutional interface that feeds Wan VAE latents directly into DA3's 1st block, and then uses this frozen geometry decoder as a differentiable "geometry critic" to constrain the video diffusion model. In this way, given an initial frame and an action text, a single generated latent can be decoded simultaneously into future RGB video, depth, camera rays, point clouds, and scene flow. The action videos themselves require no 4D annotations.\*\*
-
-</details>
-
-
 ### Last 30 Days
 
 
 **Motion Mamba 2.0: Autoregressive Diffusion Mamba for Long-Horizon Humanoid Control**  
-[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.29897_slides.en.pdf?v=4a00de0ee349d7ef>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.29897_slides.pdf?v=78c2fa9663041e57>) · [arXiv](<https://arxiv.org/abs/2611.29897>) · [Code](<https://github.com/AIGeeksGroup/MotionMamba2.0>) · [HF](<https://huggingface.co/papers/2611.29897>) · 226 HF upvotes
+[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.29897_slides.en.pdf?v=4a00de0ee349d7ef>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.29897_slides.pdf?v=78c2fa9663041e57>) · [arXiv](<https://arxiv.org/abs/2611.29897>) · [Code](<https://github.com/AIGeeksGroup/MotionMamba2.0>) · [HF](<https://huggingface.co/papers/2611.29897>) · 229 HF upvotes
 
 <details>
 <summary>Summary</summary>
@@ -1581,7 +1591,7 @@ RoboDojo-Mirror only adds a mirror to the scene, yet the success rates of all 5 
 
 
 **Gamer: A Generalist Vision-Language-Action Foundation Model for Long-Horizon Real-Time Game Agent**  
-[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.18397_slides.en.pdf?v=72b34e92d820f938>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.18397_slides.pdf?v=a361044dd83c084b>) · [arXiv](<https://arxiv.org/abs/2611.18397>) · [Code](<https://github.com/RainBowLuoCS/Gamer>) · [HF](<https://huggingface.co/papers/2611.18397>) · 167 HF upvotes
+[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.18397_slides.en.pdf?v=72b34e92d820f938>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.18397_slides.pdf?v=a361044dd83c084b>) · [arXiv](<https://arxiv.org/abs/2611.18397>) · [Code](<https://github.com/RainBowLuoCS/Gamer>) · [HF](<https://huggingface.co/papers/2611.18397>) · 171 HF upvotes
 
 <details>
 <summary>Summary</summary>
@@ -1592,7 +1602,7 @@ RoboDojo-Mirror only adds a mirror to the scene, yet the success rates of all 5 
 
 
 **Envisioning Agentic Robotics: A New Era of Robotic Systems**  
-[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.18359_slides.en.pdf?v=96acf31f314ccf09>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.18359_slides.pdf?v=5983062588627d80>) · [arXiv](<https://arxiv.org/abs/2611.18359>) · Code · [HF](<https://huggingface.co/papers/2611.18359>) · 144 HF upvotes
+[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.18359_slides.en.pdf?v=96acf31f314ccf09>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.18359_slides.pdf?v=5983062588627d80>) · [arXiv](<https://arxiv.org/abs/2611.18359>) · Code · [HF](<https://huggingface.co/papers/2611.18359>) · 145 HF upvotes
 
 <details>
 <summary>Summary</summary>
@@ -1625,7 +1635,7 @@ LingBot-Touch unifies three types of tactile sensors into a standard fingertip c
 
 
 **Embo-Harness: Towards Understanding Frontier-Model-as-Policy Harness**  
-[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.31201_slides.en.pdf?v=e4c12c69ecca8775>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.31201_slides.pdf?v=30409e46b4ab120d>) · [arXiv](<https://arxiv.org/abs/2611.31201>) · [Code](<https://github.com/DravenALG/Embo-Harness>) · [HF](<https://huggingface.co/papers/2611.31201>) · 106 HF upvotes
+[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.31201_slides.en.pdf?v=e4c12c69ecca8775>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.31201_slides.pdf?v=30409e46b4ab120d>) · [arXiv](<https://arxiv.org/abs/2611.31201>) · [Code](<https://github.com/DravenALG/Embo-Harness>) · [HF](<https://huggingface.co/papers/2611.31201>) · 107 HF upvotes
 
 <details>
 <summary>Summary</summary>
@@ -1647,7 +1657,7 @@ WorldLeague uses 60 simulated robot tasks to score three classes of systems, VLM
 
 
 **ACAP: Asynchronous Coding Agents for Efficient Robot Control**  
-[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.31205_slides.en.pdf?v=8a3797f81bdef988>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.31205_slides.pdf?v=654b1e2520c5b424>) · [arXiv](<https://arxiv.org/abs/2611.31205>) · Code · [HF](<https://huggingface.co/papers/2611.31205>) · 66 HF upvotes
+[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.31205_slides.en.pdf?v=8a3797f81bdef988>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.31205_slides.pdf?v=654b1e2520c5b424>) · [arXiv](<https://arxiv.org/abs/2611.31205>) · Code · [HF](<https://huggingface.co/papers/2611.31205>) · 67 HF upvotes
 
 <details>
 <summary>Summary</summary>
@@ -1658,7 +1668,7 @@ WorldLeague uses 60 simulated robot tasks to score three classes of systems, VLM
 
 
 **Non-penetrating World Models**  
-[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.27963_slides.en.pdf?v=ee8b94620140d29e>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.27963_slides.pdf?v=19aaad01b7c17c23>) · [arXiv](<https://arxiv.org/abs/2611.27963>) · [Code](<https://github.com/yuhangdai427/NoPeWorld>) · [HF](<https://huggingface.co/papers/2611.27963>) · 62 HF upvotes
+[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.27963_slides.en.pdf?v=ee8b94620140d29e>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.27963_slides.pdf?v=19aaad01b7c17c23>) · [arXiv](<https://arxiv.org/abs/2611.27963>) · [Code](<https://github.com/yuhangdai427/NoPeWorld>) · [HF](<https://huggingface.co/papers/2611.27963>) · 63 HF upvotes
 
 <details>
 <summary>Summary</summary>
@@ -1691,7 +1701,7 @@ SLA starts from π0.5 and performs continual pre-training on about 1.7M heteroge
 
 
 **DreamX: Video Diffusion Model is a Universal Latent Action Learner**  
-[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.05377_slides.en.pdf?v=1bbb7939410e6f9f>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.05377_slides.pdf?v=3a7e7fc426e80882>) · [arXiv](<https://arxiv.org/abs/2611.05377>) · Code · [HF](<https://huggingface.co/papers/2611.05377>) · 57 HF upvotes
+[Slides (EN)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.05377_slides.en.pdf?v=1bbb7939410e6f9f>) · [Slides (ZH)](<https://bjipppp.github.io/paper-pdfs-2026-11/pdfs/2611.05377_slides.pdf?v=3a7e7fc426e80882>) · [arXiv](<https://arxiv.org/abs/2611.05377>) · Code · [HF](<https://huggingface.co/papers/2611.05377>) · 58 HF upvotes
 
 <details>
 <summary>Summary</summary>
@@ -1704,7 +1714,7 @@ DreamX uses the pretrained video diffusion model Cosmos-Predict2.5 (2B) \*\*as b
 ## Monthly Archive
 
 
-- [November 2026](papers/2026-11.md) — 137 papers
+- [November 2026](papers/2026-11.md) — 138 papers
 
 ## Contributors
 
